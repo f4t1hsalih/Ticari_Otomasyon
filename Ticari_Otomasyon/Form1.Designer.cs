@@ -30,19 +30,19 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem11 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem12 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem13 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnProducts = new DevExpress.XtraBars.BarButtonItem();
+            this.btnStocks = new DevExpress.XtraBars.BarButtonItem();
+            this.btnCustomers = new DevExpress.XtraBars.BarButtonItem();
+            this.btnCompanies = new DevExpress.XtraBars.BarButtonItem();
+            this.btnStaff = new DevExpress.XtraBars.BarButtonItem();
+            this.btnExpenses = new DevExpress.XtraBars.BarButtonItem();
+            this.btnCase = new DevExpress.XtraBars.BarButtonItem();
+            this.btnNotes = new DevExpress.XtraBars.BarButtonItem();
+            this.btnBanks = new DevExpress.XtraBars.BarButtonItem();
+            this.btnDirectory = new DevExpress.XtraBars.BarButtonItem();
+            this.btnBills = new DevExpress.XtraBars.BarButtonItem();
+            this.btnSettings = new DevExpress.XtraBars.BarButtonItem();
+            this.btnMainPage = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
@@ -53,174 +53,182 @@
             this.ribbonControl1.ExpandCollapseItem.Id = 0;
             this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl1.ExpandCollapseItem,
-            this.barButtonItem1,
-            this.barButtonItem2,
-            this.barButtonItem3,
-            this.barButtonItem4,
-            this.barButtonItem5,
-            this.barButtonItem6,
-            this.barButtonItem7,
-            this.barButtonItem8,
-            this.barButtonItem9,
-            this.barButtonItem10,
-            this.barButtonItem11,
-            this.barButtonItem12,
-            this.barButtonItem13});
+            this.btnProducts,
+            this.btnStocks,
+            this.btnCustomers,
+            this.btnCompanies,
+            this.btnStaff,
+            this.btnExpenses,
+            this.btnCase,
+            this.btnNotes,
+            this.btnBanks,
+            this.btnDirectory,
+            this.btnBills,
+            this.btnSettings,
+            this.btnMainPage});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl1.MaxItemId = 14;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
-            this.ribbonControl1.Size = new System.Drawing.Size(1184, 150);
+            this.ribbonControl1.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
+            this.ribbonControl1.ShowDisplayOptionsMenuButton = DevExpress.Utils.DefaultBoolean.False;
+            this.ribbonControl1.ShowExpandCollapseButton = DevExpress.Utils.DefaultBoolean.False;
+            this.ribbonControl1.ShowMoreCommandsButton = DevExpress.Utils.DefaultBoolean.False;
+            this.ribbonControl1.ShowPageHeadersInFormCaption = DevExpress.Utils.DefaultBoolean.True;
+            this.ribbonControl1.ShowToolbarCustomizeItem = false;
+            this.ribbonControl1.Size = new System.Drawing.Size(1002, 150);
+            this.ribbonControl1.Toolbar.ShowCustomizeItem = false;
             // 
-            // barButtonItem1
+            // btnProducts
             // 
-            this.barButtonItem1.Caption = "ÜRÜNLER";
-            this.barButtonItem1.Id = 1;
-            this.barButtonItem1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem1.ImageOptions.SvgImage")));
-            this.barButtonItem1.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.barButtonItem1.ItemAppearance.Normal.Options.UseFont = true;
-            this.barButtonItem1.Name = "barButtonItem1";
+            this.btnProducts.Caption = "ÜRÜNLER";
+            this.btnProducts.Id = 1;
+            this.btnProducts.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem1.ImageOptions.SvgImage")));
+            this.btnProducts.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnProducts.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnProducts.Name = "btnProducts";
             // 
-            // barButtonItem2
+            // btnStocks
             // 
-            this.barButtonItem2.Caption = "STOKLAR";
-            this.barButtonItem2.Id = 2;
-            this.barButtonItem2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem2.ImageOptions.SvgImage")));
-            this.barButtonItem2.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.barButtonItem2.ItemAppearance.Normal.Options.UseFont = true;
-            this.barButtonItem2.Name = "barButtonItem2";
+            this.btnStocks.Caption = "STOKLAR";
+            this.btnStocks.Id = 2;
+            this.btnStocks.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem2.ImageOptions.SvgImage")));
+            this.btnStocks.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnStocks.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnStocks.Name = "btnStocks";
             // 
-            // barButtonItem3
+            // btnCustomers
             // 
-            this.barButtonItem3.Caption = "MÜŞTERİLER";
-            this.barButtonItem3.Id = 3;
-            this.barButtonItem3.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem3.ImageOptions.SvgImage")));
-            this.barButtonItem3.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.barButtonItem3.ItemAppearance.Normal.Options.UseFont = true;
-            this.barButtonItem3.Name = "barButtonItem3";
+            this.btnCustomers.Caption = "MÜŞTERİLER";
+            this.btnCustomers.Id = 3;
+            this.btnCustomers.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem3.ImageOptions.SvgImage")));
+            this.btnCustomers.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnCustomers.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnCustomers.Name = "btnCustomers";
             // 
-            // barButtonItem4
+            // btnCompanies
             // 
-            this.barButtonItem4.Caption = "FİRMALAR";
-            this.barButtonItem4.Id = 4;
-            this.barButtonItem4.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem4.ImageOptions.SvgImage")));
-            this.barButtonItem4.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.barButtonItem4.ItemAppearance.Normal.Options.UseFont = true;
-            this.barButtonItem4.Name = "barButtonItem4";
+            this.btnCompanies.Caption = "FİRMALAR";
+            this.btnCompanies.Id = 4;
+            this.btnCompanies.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem4.ImageOptions.SvgImage")));
+            this.btnCompanies.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnCompanies.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnCompanies.Name = "btnCompanies";
             // 
-            // barButtonItem5
+            // btnStaff
             // 
-            this.barButtonItem5.Caption = "PERSONELLER";
-            this.barButtonItem5.Id = 5;
-            this.barButtonItem5.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem5.ImageOptions.SvgImage")));
-            this.barButtonItem5.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.barButtonItem5.ItemAppearance.Normal.Options.UseFont = true;
-            this.barButtonItem5.Name = "barButtonItem5";
+            this.btnStaff.Caption = "PERSONELLER";
+            this.btnStaff.Id = 5;
+            this.btnStaff.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem5.ImageOptions.SvgImage")));
+            this.btnStaff.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnStaff.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnStaff.Name = "btnStaff";
             // 
-            // barButtonItem6
+            // btnExpenses
             // 
-            this.barButtonItem6.Caption = "GİDERLER";
-            this.barButtonItem6.Id = 6;
-            this.barButtonItem6.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem6.ImageOptions.SvgImage")));
-            this.barButtonItem6.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.barButtonItem6.ItemAppearance.Normal.Options.UseFont = true;
-            this.barButtonItem6.Name = "barButtonItem6";
+            this.btnExpenses.Caption = "GİDERLER";
+            this.btnExpenses.Id = 6;
+            this.btnExpenses.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem6.ImageOptions.SvgImage")));
+            this.btnExpenses.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnExpenses.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnExpenses.Name = "btnExpenses";
             // 
-            // barButtonItem7
+            // btnCase
             // 
-            this.barButtonItem7.Caption = "KASA";
-            this.barButtonItem7.Id = 7;
-            this.barButtonItem7.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem7.ImageOptions.SvgImage")));
-            this.barButtonItem7.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.barButtonItem7.ItemAppearance.Normal.Options.UseFont = true;
-            this.barButtonItem7.Name = "barButtonItem7";
+            this.btnCase.Caption = "KASA";
+            this.btnCase.Id = 7;
+            this.btnCase.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem7.ImageOptions.SvgImage")));
+            this.btnCase.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnCase.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnCase.Name = "btnCase";
             // 
-            // barButtonItem8
+            // btnNotes
             // 
-            this.barButtonItem8.Caption = "NOTLAR";
-            this.barButtonItem8.Id = 8;
-            this.barButtonItem8.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem8.ImageOptions.SvgImage")));
-            this.barButtonItem8.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.barButtonItem8.ItemAppearance.Normal.Options.UseFont = true;
-            this.barButtonItem8.Name = "barButtonItem8";
+            this.btnNotes.Caption = "NOTLAR";
+            this.btnNotes.Id = 8;
+            this.btnNotes.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem8.ImageOptions.SvgImage")));
+            this.btnNotes.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnNotes.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnNotes.Name = "btnNotes";
             // 
-            // barButtonItem9
+            // btnBanks
             // 
-            this.barButtonItem9.Caption = "BANKALAR";
-            this.barButtonItem9.Id = 9;
-            this.barButtonItem9.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem9.ImageOptions.SvgImage")));
-            this.barButtonItem9.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.barButtonItem9.ItemAppearance.Normal.Options.UseFont = true;
-            this.barButtonItem9.Name = "barButtonItem9";
+            this.btnBanks.Caption = "BANKALAR";
+            this.btnBanks.Id = 9;
+            this.btnBanks.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem9.ImageOptions.SvgImage")));
+            this.btnBanks.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnBanks.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnBanks.Name = "btnBanks";
             // 
-            // barButtonItem10
+            // btnDirectory
             // 
-            this.barButtonItem10.Caption = "REHBER";
-            this.barButtonItem10.Id = 10;
-            this.barButtonItem10.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem10.ImageOptions.SvgImage")));
-            this.barButtonItem10.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.barButtonItem10.ItemAppearance.Normal.Options.UseFont = true;
-            this.barButtonItem10.Name = "barButtonItem10";
+            this.btnDirectory.Caption = "REHBER";
+            this.btnDirectory.Id = 10;
+            this.btnDirectory.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem10.ImageOptions.SvgImage")));
+            this.btnDirectory.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnDirectory.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnDirectory.Name = "btnDirectory";
             // 
-            // barButtonItem11
+            // btnBills
             // 
-            this.barButtonItem11.Caption = "FATURALAR";
-            this.barButtonItem11.Id = 11;
-            this.barButtonItem11.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem11.ImageOptions.SvgImage")));
-            this.barButtonItem11.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.barButtonItem11.ItemAppearance.Normal.Options.UseFont = true;
-            this.barButtonItem11.Name = "barButtonItem11";
+            this.btnBills.Caption = "FATURALAR";
+            this.btnBills.Id = 11;
+            this.btnBills.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem11.ImageOptions.SvgImage")));
+            this.btnBills.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnBills.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnBills.Name = "btnBills";
             // 
-            // barButtonItem12
+            // btnSettings
             // 
-            this.barButtonItem12.Caption = "AYARLAR";
-            this.barButtonItem12.Id = 12;
-            this.barButtonItem12.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem12.ImageOptions.SvgImage")));
-            this.barButtonItem12.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.barButtonItem12.ItemAppearance.Normal.Options.UseFont = true;
-            this.barButtonItem12.Name = "barButtonItem12";
+            this.btnSettings.Caption = "AYARLAR";
+            this.btnSettings.Id = 12;
+            this.btnSettings.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem12.ImageOptions.SvgImage")));
+            this.btnSettings.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnSettings.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnSettings.Name = "btnSettings";
             // 
-            // barButtonItem13
+            // btnMainPage
             // 
-            this.barButtonItem13.Caption = "ANA SAYFA";
-            this.barButtonItem13.Id = 13;
-            this.barButtonItem13.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem13.ImageOptions.SvgImage")));
-            this.barButtonItem13.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.barButtonItem13.ItemAppearance.Normal.Options.UseFont = true;
-            this.barButtonItem13.Name = "barButtonItem13";
+            this.btnMainPage.Caption = "ANA SAYFA";
+            this.btnMainPage.Id = 13;
+            this.btnMainPage.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem13.ImageOptions.SvgImage")));
+            this.btnMainPage.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnMainPage.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnMainPage.Name = "btnMainPage";
             // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup1});
             this.ribbonPage1.Name = "ribbonPage1";
-            this.ribbonPage1.Text = "ribbonPage1";
+            this.ribbonPage1.Text = "Ticari Otomasyon";
             // 
             // ribbonPageGroup1
             // 
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem13);
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem1);
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem2);
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem3);
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem4);
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem5);
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem6);
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem7);
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem8);
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem9);
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem10);
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem11);
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem12);
+            this.ribbonPageGroup1.ItemLinks.Add(this.btnMainPage);
+            this.ribbonPageGroup1.ItemLinks.Add(this.btnProducts);
+            this.ribbonPageGroup1.ItemLinks.Add(this.btnStocks);
+            this.ribbonPageGroup1.ItemLinks.Add(this.btnCustomers);
+            this.ribbonPageGroup1.ItemLinks.Add(this.btnCompanies);
+            this.ribbonPageGroup1.ItemLinks.Add(this.btnStaff);
+            this.ribbonPageGroup1.ItemLinks.Add(this.btnExpenses);
+            this.ribbonPageGroup1.ItemLinks.Add(this.btnCase);
+            this.ribbonPageGroup1.ItemLinks.Add(this.btnNotes);
+            this.ribbonPageGroup1.ItemLinks.Add(this.btnBanks);
+            this.ribbonPageGroup1.ItemLinks.Add(this.btnDirectory);
+            this.ribbonPageGroup1.ItemLinks.Add(this.btnBills);
+            this.ribbonPageGroup1.ItemLinks.Add(this.btnSettings);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1184, 561);
+            this.ClientSize = new System.Drawing.Size(1002, 561);
             this.Controls.Add(this.ribbonControl1);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TİCARİ OTOMASYON";
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             this.ResumeLayout(false);
@@ -233,19 +241,19 @@
         private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl1;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem2;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem3;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem4;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem5;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem6;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem7;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem8;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem9;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem10;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem11;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem12;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem13;
+        private DevExpress.XtraBars.BarButtonItem btnProducts;
+        private DevExpress.XtraBars.BarButtonItem btnStocks;
+        private DevExpress.XtraBars.BarButtonItem btnCustomers;
+        private DevExpress.XtraBars.BarButtonItem btnCompanies;
+        private DevExpress.XtraBars.BarButtonItem btnStaff;
+        private DevExpress.XtraBars.BarButtonItem btnExpenses;
+        private DevExpress.XtraBars.BarButtonItem btnCase;
+        private DevExpress.XtraBars.BarButtonItem btnNotes;
+        private DevExpress.XtraBars.BarButtonItem btnBanks;
+        private DevExpress.XtraBars.BarButtonItem btnDirectory;
+        private DevExpress.XtraBars.BarButtonItem btnBills;
+        private DevExpress.XtraBars.BarButtonItem btnSettings;
+        private DevExpress.XtraBars.BarButtonItem btnMainPage;
     }
 }
 
