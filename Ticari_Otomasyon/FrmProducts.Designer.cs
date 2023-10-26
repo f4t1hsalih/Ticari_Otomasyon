@@ -32,6 +32,8 @@
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.btnUpdate = new DevExpress.XtraEditors.SimpleButton();
+            this.btnDelete = new DevExpress.XtraEditors.SimpleButton();
             this.txtSPrice = new DevExpress.XtraEditors.TextEdit();
             this.mskYear = new System.Windows.Forms.MaskedTextBox();
             this.nudPiece = new System.Windows.Forms.NumericUpDown();
@@ -84,6 +86,8 @@
             // 
             this.groupControl1.Appearance.BackColor = System.Drawing.Color.DarkGray;
             this.groupControl1.Appearance.Options.UseBackColor = true;
+            this.groupControl1.Controls.Add(this.btnUpdate);
+            this.groupControl1.Controls.Add(this.btnDelete);
             this.groupControl1.Controls.Add(this.txtSPrice);
             this.groupControl1.Controls.Add(this.mskYear);
             this.groupControl1.Controls.Add(this.nudPiece);
@@ -108,6 +112,29 @@
             this.groupControl1.Size = new System.Drawing.Size(240, 549);
             this.groupControl1.TabIndex = 1;
             // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnUpdate.Appearance.Options.UseFont = true;
+            this.btnUpdate.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnUpdate.ImageOptions.SvgImage")));
+            this.btnUpdate.Location = new System.Drawing.Point(99, 454);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(120, 29);
+            this.btnUpdate.TabIndex = 19;
+            this.btnUpdate.Text = "Güncelle";
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnDelete.Appearance.Options.UseFont = true;
+            this.btnDelete.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnDelete.ImageOptions.SvgImage")));
+            this.btnDelete.Location = new System.Drawing.Point(99, 419);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(120, 29);
+            this.btnDelete.TabIndex = 18;
+            this.btnDelete.Text = "Sil";
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
             // txtSPrice
             // 
             this.txtSPrice.Location = new System.Drawing.Point(99, 250);
@@ -115,7 +142,7 @@
             this.txtSPrice.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtSPrice.Properties.Appearance.Options.UseFont = true;
             this.txtSPrice.Size = new System.Drawing.Size(120, 24);
-            this.txtSPrice.TabIndex = 21;
+            this.txtSPrice.TabIndex = 6;
             // 
             // mskYear
             // 
@@ -124,7 +151,7 @@
             this.mskYear.Mask = "0000";
             this.mskYear.Name = "mskYear";
             this.mskYear.Size = new System.Drawing.Size(120, 26);
-            this.mskYear.TabIndex = 20;
+            this.mskYear.TabIndex = 3;
             this.mskYear.ValidatingType = typeof(int);
             // 
             // nudPiece
@@ -133,7 +160,7 @@
             this.nudPiece.Location = new System.Drawing.Point(99, 188);
             this.nudPiece.Name = "nudPiece";
             this.nudPiece.Size = new System.Drawing.Size(120, 26);
-            this.nudPiece.TabIndex = 19;
+            this.nudPiece.TabIndex = 4;
             // 
             // btnSave
             // 
@@ -143,7 +170,7 @@
             this.btnSave.Location = new System.Drawing.Point(99, 384);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(120, 29);
-            this.btnSave.TabIndex = 18;
+            this.btnSave.TabIndex = 8;
             this.btnSave.Text = "Kaydet";
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
@@ -174,7 +201,7 @@
             this.txtBPrice.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtBPrice.Properties.Appearance.Options.UseFont = true;
             this.txtBPrice.Size = new System.Drawing.Size(120, 24);
-            this.txtBPrice.TabIndex = 15;
+            this.txtBPrice.TabIndex = 5;
             // 
             // labelControl7
             // 
@@ -213,7 +240,7 @@
             this.txtModel.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtModel.Properties.Appearance.Options.UseFont = true;
             this.txtModel.Size = new System.Drawing.Size(120, 24);
-            this.txtModel.TabIndex = 9;
+            this.txtModel.TabIndex = 2;
             // 
             // labelControl4
             // 
@@ -232,7 +259,7 @@
             this.txtBrand.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtBrand.Properties.Appearance.Options.UseFont = true;
             this.txtBrand.Size = new System.Drawing.Size(120, 24);
-            this.txtBrand.TabIndex = 7;
+            this.txtBrand.TabIndex = 1;
             // 
             // labelControl3
             // 
@@ -251,7 +278,7 @@
             this.txtName.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtName.Properties.Appearance.Options.UseFont = true;
             this.txtName.Size = new System.Drawing.Size(120, 24);
-            this.txtName.TabIndex = 5;
+            this.txtName.TabIndex = 0;
             // 
             // labelControl2
             // 
@@ -269,11 +296,12 @@
             this.rtbDetail.Location = new System.Drawing.Point(99, 282);
             this.rtbDetail.Name = "rtbDetail";
             this.rtbDetail.Size = new System.Drawing.Size(120, 96);
-            this.rtbDetail.TabIndex = 3;
+            this.rtbDetail.TabIndex = 7;
             this.rtbDetail.Text = "";
             // 
             // txtID
             // 
+            this.txtID.Enabled = false;
             this.txtID.Location = new System.Drawing.Point(99, 36);
             this.txtID.Name = "txtID";
             this.txtID.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -341,5 +369,7 @@
         private DevExpress.XtraEditors.SimpleButton btnSave;
         private System.Windows.Forms.MaskedTextBox mskYear;
         private DevExpress.XtraEditors.TextEdit txtSPrice;
+        private DevExpress.XtraEditors.SimpleButton btnUpdate;
+        private DevExpress.XtraEditors.SimpleButton btnDelete;
     }
 }

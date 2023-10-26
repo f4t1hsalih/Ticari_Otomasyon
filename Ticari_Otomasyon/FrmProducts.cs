@@ -30,7 +30,7 @@ namespace Ticari_Otomasyon
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            //Verileri kaydetme
+            //Verileri Kaydetme
             string command = "insert into tbl_products (name, brand, model, year, piece, bprice, sprice, detail) values (@p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)";
             SqlCommand cmd = new SqlCommand(command, con.connection());
             cmd.Parameters.AddWithValue("@p1", txtName.Text);
@@ -44,6 +44,18 @@ namespace Ticari_Otomasyon
             cmd.ExecuteNonQuery();
             con.connection().Close();
             MessageBox.Show("Ürün Sisteme Eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            List();
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            //Verileri Silme
+            string command = "delete from tbl_products where prod_id = @p1";
+            SqlCommand cmd = new SqlCommand(command, con.connection());
+            cmd.Parameters.AddWithValue("@p1", txtID.Text);
+            cmd.ExecuteNonQuery();
+            con.connection().Close();
+            MessageBox.Show("Ürün Başarıyla Silindi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             List();
         }
     }
