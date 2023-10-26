@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 namespace Ticari_Otomasyon
 {
@@ -17,5 +9,15 @@ namespace Ticari_Otomasyon
             InitializeComponent();
         }
 
+        FrmProducts products = null;
+        private void btnProducts_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (products == null)
+            {
+                products = new FrmProducts();
+                products.MdiParent = this;
+                products.Show();
+            }
+        }
     }
 }
