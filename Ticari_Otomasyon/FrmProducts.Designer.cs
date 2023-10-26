@@ -145,6 +145,7 @@
             this.btnSave.Size = new System.Drawing.Size(120, 29);
             this.btnSave.TabIndex = 18;
             this.btnSave.Text = "Kaydet";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // labelControl9
             // 
@@ -264,6 +265,7 @@
             // 
             // rtbDetail
             // 
+            this.rtbDetail.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.rtbDetail.Location = new System.Drawing.Point(99, 282);
             this.rtbDetail.Name = "rtbDetail";
             this.rtbDetail.Size = new System.Drawing.Size(120, 96);
