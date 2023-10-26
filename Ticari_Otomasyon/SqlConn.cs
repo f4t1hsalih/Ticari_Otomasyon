@@ -4,16 +4,11 @@ namespace Ticari_Otomasyon
 {
     internal class SqlConn
     {
-
-        class sqlconnection
+        public SqlConnection connection()
         {
-            public SqlConnection connection()
-            {
-                SqlConnection connect = new SqlConnection(@"Data Source = SALIH\SQLEXPRESS; Initial Catalog = Hastane; Integrated Security = True");
-                connect.Open();
-                return connect;
-            }
-
+            SqlConnection connect = new SqlConnection(@"Data Source = .\SQLEXPRESS; Initial Catalog = DB_TicariOtomasyon; Integrated Security = True");
+            connect.Open();
+            return connect;
         }
     }
 }

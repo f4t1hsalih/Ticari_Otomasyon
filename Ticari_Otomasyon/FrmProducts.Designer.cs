@@ -32,6 +32,8 @@
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.txtSPrice = new DevExpress.XtraEditors.TextEdit();
+            this.mskYear = new System.Windows.Forms.MaskedTextBox();
             this.nudPiece = new System.Windows.Forms.NumericUpDown();
             this.btnSave = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
@@ -49,19 +51,17 @@
             this.rtbDetail = new System.Windows.Forms.RichTextBox();
             this.txtID = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.mskYear = new System.Windows.Forms.MaskedTextBox();
-            this.txtSPrice = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSPrice.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPiece)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtBPrice.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtModel.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtBrand.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtSPrice.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // gridControl1
@@ -78,6 +78,7 @@
             // 
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsView.ShowGroupPanel = false;
             // 
             // groupControl1
             // 
@@ -107,6 +108,25 @@
             this.groupControl1.Size = new System.Drawing.Size(240, 549);
             this.groupControl1.TabIndex = 1;
             // 
+            // txtSPrice
+            // 
+            this.txtSPrice.Location = new System.Drawing.Point(99, 250);
+            this.txtSPrice.Name = "txtSPrice";
+            this.txtSPrice.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtSPrice.Properties.Appearance.Options.UseFont = true;
+            this.txtSPrice.Size = new System.Drawing.Size(120, 24);
+            this.txtSPrice.TabIndex = 21;
+            // 
+            // mskYear
+            // 
+            this.mskYear.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.mskYear.Location = new System.Drawing.Point(99, 156);
+            this.mskYear.Mask = "0000";
+            this.mskYear.Name = "mskYear";
+            this.mskYear.Size = new System.Drawing.Size(120, 26);
+            this.mskYear.TabIndex = 20;
+            this.mskYear.ValidatingType = typeof(int);
+            // 
             // nudPiece
             // 
             this.nudPiece.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -119,7 +139,7 @@
             // 
             this.btnSave.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnSave.Appearance.Options.UseFont = true;
-            this.btnSave.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton1.ImageOptions.SvgImage")));
+            this.btnSave.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnSave.ImageOptions.SvgImage")));
             this.btnSave.Location = new System.Drawing.Point(99, 384);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(120, 29);
@@ -269,25 +289,6 @@
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "ID:";
             // 
-            // mskYear
-            // 
-            this.mskYear.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.mskYear.Location = new System.Drawing.Point(99, 156);
-            this.mskYear.Mask = "0000";
-            this.mskYear.Name = "mskYear";
-            this.mskYear.Size = new System.Drawing.Size(120, 26);
-            this.mskYear.TabIndex = 20;
-            this.mskYear.ValidatingType = typeof(int);
-            // 
-            // txtSPrice
-            // 
-            this.txtSPrice.Location = new System.Drawing.Point(99, 250);
-            this.txtSPrice.Name = "txtSPrice";
-            this.txtSPrice.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtSPrice.Properties.Appearance.Options.UseFont = true;
-            this.txtSPrice.Size = new System.Drawing.Size(120, 24);
-            this.txtSPrice.TabIndex = 21;
-            // 
             // FrmProducts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -297,18 +298,19 @@
             this.Controls.Add(this.gridControl1);
             this.Name = "FrmProducts";
             this.Text = "Ürünler";
+            this.Load += new System.EventHandler(this.FrmProducts_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSPrice.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPiece)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtBPrice.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtModel.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtBrand.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtSPrice.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
