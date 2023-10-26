@@ -58,5 +58,18 @@ namespace Ticari_Otomasyon
             MessageBox.Show("Ürün Başarıyla Silindi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             List();
         }
+
+        private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
+        {
+            DataRow dr = gridView1.GetDataRow(gridView1.FocusedRowHandle);
+            txtID.Text = dr["prod_id"].ToString();
+            txtName.Text = dr["name"].ToString();
+            txtBrand.Text = dr["brand"].ToString();
+            txtModel.Text = dr["model"].ToString();
+            mskYear.Text = dr["year"].ToString();
+            nudPiece.Text = dr["piece"].ToString();
+            txtBPrice.Text = dr["bprice"].ToString();
+            txtSPrice.Text = dr["sprice"].ToString();
+        }
     }
 }
