@@ -1,6 +1,6 @@
 ﻿namespace Ticari_Otomasyon
 {
-    partial class Form1
+    partial class FrmMain
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.btnProducts = new DevExpress.XtraBars.BarButtonItem();
             this.btnStocks = new DevExpress.XtraBars.BarButtonItem();
@@ -76,15 +76,16 @@
             this.ribbonControl1.ShowExpandCollapseButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowMoreCommandsButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowPageHeadersInFormCaption = DevExpress.Utils.DefaultBoolean.True;
+            this.ribbonControl1.ShowPageHeadersMode = DevExpress.XtraBars.Ribbon.ShowPageHeadersMode.Hide;
             this.ribbonControl1.ShowToolbarCustomizeItem = false;
-            this.ribbonControl1.Size = new System.Drawing.Size(1002, 150);
+            this.ribbonControl1.Size = new System.Drawing.Size(1002, 124);
             this.ribbonControl1.Toolbar.ShowCustomizeItem = false;
             // 
             // btnProducts
             // 
             this.btnProducts.Caption = "ÜRÜNLER";
             this.btnProducts.Id = 1;
-            this.btnProducts.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem1.ImageOptions.SvgImage")));
+            this.btnProducts.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnProducts.ImageOptions.SvgImage")));
             this.btnProducts.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnProducts.ItemAppearance.Normal.Options.UseFont = true;
             this.btnProducts.Name = "btnProducts";
@@ -93,7 +94,7 @@
             // 
             this.btnStocks.Caption = "STOKLAR";
             this.btnStocks.Id = 2;
-            this.btnStocks.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem2.ImageOptions.SvgImage")));
+            this.btnStocks.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnStocks.ImageOptions.SvgImage")));
             this.btnStocks.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnStocks.ItemAppearance.Normal.Options.UseFont = true;
             this.btnStocks.Name = "btnStocks";
@@ -102,7 +103,7 @@
             // 
             this.btnCustomers.Caption = "MÜŞTERİLER";
             this.btnCustomers.Id = 3;
-            this.btnCustomers.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem3.ImageOptions.SvgImage")));
+            this.btnCustomers.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnCustomers.ImageOptions.SvgImage")));
             this.btnCustomers.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnCustomers.ItemAppearance.Normal.Options.UseFont = true;
             this.btnCustomers.Name = "btnCustomers";
@@ -111,7 +112,7 @@
             // 
             this.btnCompanies.Caption = "FİRMALAR";
             this.btnCompanies.Id = 4;
-            this.btnCompanies.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem4.ImageOptions.SvgImage")));
+            this.btnCompanies.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnCompanies.ImageOptions.SvgImage")));
             this.btnCompanies.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnCompanies.ItemAppearance.Normal.Options.UseFont = true;
             this.btnCompanies.Name = "btnCompanies";
@@ -120,7 +121,7 @@
             // 
             this.btnStaff.Caption = "PERSONELLER";
             this.btnStaff.Id = 5;
-            this.btnStaff.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem5.ImageOptions.SvgImage")));
+            this.btnStaff.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnStaff.ImageOptions.SvgImage")));
             this.btnStaff.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnStaff.ItemAppearance.Normal.Options.UseFont = true;
             this.btnStaff.Name = "btnStaff";
@@ -129,7 +130,7 @@
             // 
             this.btnExpenses.Caption = "GİDERLER";
             this.btnExpenses.Id = 6;
-            this.btnExpenses.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem6.ImageOptions.SvgImage")));
+            this.btnExpenses.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnExpenses.ImageOptions.SvgImage")));
             this.btnExpenses.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnExpenses.ItemAppearance.Normal.Options.UseFont = true;
             this.btnExpenses.Name = "btnExpenses";
@@ -138,7 +139,7 @@
             // 
             this.btnCase.Caption = "KASA";
             this.btnCase.Id = 7;
-            this.btnCase.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem7.ImageOptions.SvgImage")));
+            this.btnCase.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnCase.ImageOptions.SvgImage")));
             this.btnCase.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnCase.ItemAppearance.Normal.Options.UseFont = true;
             this.btnCase.Name = "btnCase";
@@ -147,7 +148,7 @@
             // 
             this.btnNotes.Caption = "NOTLAR";
             this.btnNotes.Id = 8;
-            this.btnNotes.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem8.ImageOptions.SvgImage")));
+            this.btnNotes.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnNotes.ImageOptions.SvgImage")));
             this.btnNotes.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnNotes.ItemAppearance.Normal.Options.UseFont = true;
             this.btnNotes.Name = "btnNotes";
@@ -156,7 +157,7 @@
             // 
             this.btnBanks.Caption = "BANKALAR";
             this.btnBanks.Id = 9;
-            this.btnBanks.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem9.ImageOptions.SvgImage")));
+            this.btnBanks.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnBanks.ImageOptions.SvgImage")));
             this.btnBanks.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnBanks.ItemAppearance.Normal.Options.UseFont = true;
             this.btnBanks.Name = "btnBanks";
@@ -165,7 +166,7 @@
             // 
             this.btnDirectory.Caption = "REHBER";
             this.btnDirectory.Id = 10;
-            this.btnDirectory.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem10.ImageOptions.SvgImage")));
+            this.btnDirectory.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnDirectory.ImageOptions.SvgImage")));
             this.btnDirectory.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnDirectory.ItemAppearance.Normal.Options.UseFont = true;
             this.btnDirectory.Name = "btnDirectory";
@@ -174,7 +175,7 @@
             // 
             this.btnBills.Caption = "FATURALAR";
             this.btnBills.Id = 11;
-            this.btnBills.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem11.ImageOptions.SvgImage")));
+            this.btnBills.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnBills.ImageOptions.SvgImage")));
             this.btnBills.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnBills.ItemAppearance.Normal.Options.UseFont = true;
             this.btnBills.Name = "btnBills";
@@ -183,7 +184,7 @@
             // 
             this.btnSettings.Caption = "AYARLAR";
             this.btnSettings.Id = 12;
-            this.btnSettings.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem12.ImageOptions.SvgImage")));
+            this.btnSettings.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnSettings.ImageOptions.SvgImage")));
             this.btnSettings.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnSettings.ItemAppearance.Normal.Options.UseFont = true;
             this.btnSettings.Name = "btnSettings";
@@ -192,7 +193,7 @@
             // 
             this.btnMainPage.Caption = "ANA SAYFA";
             this.btnMainPage.Id = 13;
-            this.btnMainPage.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem13.ImageOptions.SvgImage")));
+            this.btnMainPage.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnMainPage.ImageOptions.SvgImage")));
             this.btnMainPage.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnMainPage.ItemAppearance.Normal.Options.UseFont = true;
             this.btnMainPage.Name = "btnMainPage";

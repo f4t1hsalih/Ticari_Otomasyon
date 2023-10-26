@@ -10,12 +10,11 @@ using System.Windows.Forms;
 
 namespace Ticari_Otomasyon
 {
-    public partial class Form1 : Form
+    public partial class FrmProducts : Form
     {
-        public Form1()
+        public FrmProducts()
         {
             InitializeComponent();
         }
-
     }
 }
