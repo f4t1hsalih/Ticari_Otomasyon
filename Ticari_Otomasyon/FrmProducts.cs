@@ -22,7 +22,6 @@ namespace Ticari_Otomasyon
             gridControl1.DataSource = dt;
         }
 
-
         private void FrmProducts_Load(object sender, EventArgs e)
         {
             List();
@@ -55,7 +54,7 @@ namespace Ticari_Otomasyon
             cmd.Parameters.AddWithValue("@p1", txtID.Text);
             cmd.ExecuteNonQuery();
             con.connection().Close();
-            MessageBox.Show("Ürün Başarıyla Silindi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            MessageBox.Show("Ürün Başarıyla Silindi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             List();
         }
 
@@ -70,6 +69,27 @@ namespace Ticari_Otomasyon
             nudPiece.Text = dr["piece"].ToString();
             txtBPrice.Text = dr["bprice"].ToString();
             txtSPrice.Text = dr["sprice"].ToString();
+            rtbDetail.Text = dr["detail"].ToString();
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            //Verileri Güncelleme
+            string command = "update tbl_products set name = @p1, brand = @p2, model = @p3, year = @p4, piece = @p5, bprice = @p6, sprice = @p7, detail = @p8 where prod_id = @p9";
+            SqlCommand cmd = new SqlCommand(command, con.connection());
+            cmd.Parameters.AddWithValue("@p1", txtName.Text);
+            cmd.Parameters.AddWithValue("@p2", txtBrand.Text);
+            cmd.Parameters.AddWithValue("@p3", txtModel.Text);
+            cmd.Parameters.AddWithValue("@p4", mskYear.Text);
+            cmd.Parameters.AddWithValue("@p5", int.Parse(nudPiece.Text));
+            cmd.Parameters.AddWithValue("@p6", decimal.Parse(txtBPrice.Text));
+            cmd.Parameters.AddWithValue("@p7", decimal.Parse(txtSPrice.Text));
+            cmd.Parameters.AddWithValue("@p8", rtbDetail.Text);
+            cmd.Parameters.AddWithValue("@p9", txtID.Text);
+            cmd.ExecuteNonQuery();
+            con.connection().Close();
+            MessageBox.Show("Ürün Başarıyla Güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            List();
         }
     }
 }
