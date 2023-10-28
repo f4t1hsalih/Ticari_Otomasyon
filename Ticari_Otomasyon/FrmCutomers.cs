@@ -74,5 +74,25 @@ namespace Ticari_Otomasyon
             MessageBox.Show("Müşteri Başarıyla Kaydedildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             List();
         }
+
+        private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
+        {
+            DataRow dr = gridView1.GetDataRow(gridView1.FocusedRowHandle);
+            if (dr != null)
+            {
+            txtID.Text = dr["cust_id"].ToString();
+            txtName.Text = dr["name"].ToString();
+            txtSurname.Text = dr["surname"].ToString();
+            mskTel1.Text = dr["tel1"].ToString();
+            mskTel2.Text = dr["tel2"].ToString();
+            mskTC.Text = dr["tc"].ToString();
+            txtMail.Text = dr["mail"].ToString();
+            cmbProvince.Text = dr["province"].ToString();
+            cmbDistrict.Text = dr["district"].ToString();
+            rtbAddress.Text = dr["address"].ToString();
+            txtTaxAdministration.Text = dr["tax_administration"].ToString();
+            }
+
+        }
     }
 }
