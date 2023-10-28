@@ -30,40 +30,40 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCutomers));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
-            this.checkedComboBoxEdit1 = new DevExpress.XtraEditors.CheckedComboBoxEdit();
-            this.comboBoxEdit1 = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.cmbDistrict = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.txtTaxAdministration = new DevExpress.XtraEditors.TextEdit();
+            this.cmbProvince = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.mskTC = new System.Windows.Forms.MaskedTextBox();
+            this.mskTel2 = new System.Windows.Forms.MaskedTextBox();
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
             this.btnUpdate = new DevExpress.XtraEditors.SimpleButton();
             this.btnDelete = new DevExpress.XtraEditors.SimpleButton();
-            this.mskYear = new System.Windows.Forms.MaskedTextBox();
+            this.mskTel1 = new System.Windows.Forms.MaskedTextBox();
             this.btnSave = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
-            this.txtBPrice = new DevExpress.XtraEditors.TextEdit();
+            this.txtMail = new DevExpress.XtraEditors.TextEdit();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.txtBrand = new DevExpress.XtraEditors.TextEdit();
+            this.txtSurname = new DevExpress.XtraEditors.TextEdit();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.txtName = new DevExpress.XtraEditors.TextEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.rtbDetail = new System.Windows.Forms.RichTextBox();
+            this.rtbAddress = new System.Windows.Forms.RichTextBox();
             this.txtID = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkedComboBoxEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtBPrice.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtBrand.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbDistrict.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTaxAdministration.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbProvince.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMail.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSurname.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
@@ -76,29 +76,29 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupControl1.Appearance.BackColor = System.Drawing.Color.DarkGray;
             this.groupControl1.Appearance.Options.UseBackColor = true;
-            this.groupControl1.Controls.Add(this.textEdit1);
-            this.groupControl1.Controls.Add(this.checkedComboBoxEdit1);
-            this.groupControl1.Controls.Add(this.comboBoxEdit1);
-            this.groupControl1.Controls.Add(this.maskedTextBox2);
-            this.groupControl1.Controls.Add(this.maskedTextBox1);
+            this.groupControl1.Controls.Add(this.cmbDistrict);
+            this.groupControl1.Controls.Add(this.txtTaxAdministration);
+            this.groupControl1.Controls.Add(this.cmbProvince);
+            this.groupControl1.Controls.Add(this.mskTC);
+            this.groupControl1.Controls.Add(this.mskTel2);
             this.groupControl1.Controls.Add(this.labelControl11);
             this.groupControl1.Controls.Add(this.labelControl10);
             this.groupControl1.Controls.Add(this.btnUpdate);
             this.groupControl1.Controls.Add(this.btnDelete);
-            this.groupControl1.Controls.Add(this.mskYear);
+            this.groupControl1.Controls.Add(this.mskTel1);
             this.groupControl1.Controls.Add(this.btnSave);
             this.groupControl1.Controls.Add(this.labelControl9);
             this.groupControl1.Controls.Add(this.labelControl8);
-            this.groupControl1.Controls.Add(this.txtBPrice);
+            this.groupControl1.Controls.Add(this.txtMail);
             this.groupControl1.Controls.Add(this.labelControl7);
             this.groupControl1.Controls.Add(this.labelControl6);
             this.groupControl1.Controls.Add(this.labelControl5);
             this.groupControl1.Controls.Add(this.labelControl4);
-            this.groupControl1.Controls.Add(this.txtBrand);
+            this.groupControl1.Controls.Add(this.txtSurname);
             this.groupControl1.Controls.Add(this.labelControl3);
             this.groupControl1.Controls.Add(this.txtName);
             this.groupControl1.Controls.Add(this.labelControl2);
-            this.groupControl1.Controls.Add(this.rtbDetail);
+            this.groupControl1.Controls.Add(this.rtbAddress);
             this.groupControl1.Controls.Add(this.txtID);
             this.groupControl1.Controls.Add(this.labelControl1);
             this.groupControl1.Location = new System.Drawing.Point(762, 6);
@@ -106,55 +106,58 @@
             this.groupControl1.Size = new System.Drawing.Size(240, 549);
             this.groupControl1.TabIndex = 3;
             // 
-            // textEdit1
+            // cmbDistrict
             // 
-            this.textEdit1.Location = new System.Drawing.Point(99, 320);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textEdit1.Properties.Appearance.Options.UseFont = true;
-            this.textEdit1.Size = new System.Drawing.Size(120, 24);
-            this.textEdit1.TabIndex = 27;
-            // 
-            // checkedComboBoxEdit1
-            // 
-            this.checkedComboBoxEdit1.Location = new System.Drawing.Point(99, 290);
-            this.checkedComboBoxEdit1.Name = "checkedComboBoxEdit1";
-            this.checkedComboBoxEdit1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.checkedComboBoxEdit1.Properties.Appearance.Options.UseFont = true;
-            this.checkedComboBoxEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.cmbDistrict.Location = new System.Drawing.Point(99, 290);
+            this.cmbDistrict.Name = "cmbDistrict";
+            this.cmbDistrict.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.cmbDistrict.Properties.Appearance.Options.UseFont = true;
+            this.cmbDistrict.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.checkedComboBoxEdit1.Size = new System.Drawing.Size(120, 24);
-            this.checkedComboBoxEdit1.TabIndex = 26;
+            this.cmbDistrict.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.cmbDistrict.Size = new System.Drawing.Size(120, 24);
+            this.cmbDistrict.TabIndex = 28;
             // 
-            // comboBoxEdit1
+            // txtTaxAdministration
             // 
-            this.comboBoxEdit1.Location = new System.Drawing.Point(99, 260);
-            this.comboBoxEdit1.Name = "comboBoxEdit1";
-            this.comboBoxEdit1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.comboBoxEdit1.Properties.Appearance.Options.UseFont = true;
-            this.comboBoxEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.txtTaxAdministration.Location = new System.Drawing.Point(99, 320);
+            this.txtTaxAdministration.Name = "txtTaxAdministration";
+            this.txtTaxAdministration.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtTaxAdministration.Properties.Appearance.Options.UseFont = true;
+            this.txtTaxAdministration.Size = new System.Drawing.Size(120, 24);
+            this.txtTaxAdministration.TabIndex = 27;
+            // 
+            // cmbProvince
+            // 
+            this.cmbProvince.Location = new System.Drawing.Point(99, 260);
+            this.cmbProvince.Name = "cmbProvince";
+            this.cmbProvince.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.cmbProvince.Properties.Appearance.Options.UseFont = true;
+            this.cmbProvince.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.comboBoxEdit1.Size = new System.Drawing.Size(120, 24);
-            this.comboBoxEdit1.TabIndex = 25;
+            this.cmbProvince.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.cmbProvince.Size = new System.Drawing.Size(120, 24);
+            this.cmbProvince.TabIndex = 25;
+            this.cmbProvince.SelectedIndexChanged += new System.EventHandler(this.cmbProvince_SelectedIndexChanged);
             // 
-            // maskedTextBox2
+            // mskTC
             // 
-            this.maskedTextBox2.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.maskedTextBox2.Location = new System.Drawing.Point(99, 198);
-            this.maskedTextBox2.Mask = "00000000000";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(120, 26);
-            this.maskedTextBox2.TabIndex = 24;
-            this.maskedTextBox2.ValidatingType = typeof(int);
+            this.mskTC.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.mskTC.Location = new System.Drawing.Point(99, 198);
+            this.mskTC.Mask = "00000000000";
+            this.mskTC.Name = "mskTC";
+            this.mskTC.Size = new System.Drawing.Size(120, 26);
+            this.mskTC.TabIndex = 24;
+            this.mskTC.ValidatingType = typeof(int);
             // 
-            // maskedTextBox1
+            // mskTel2
             // 
-            this.maskedTextBox1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.maskedTextBox1.Location = new System.Drawing.Point(99, 166);
-            this.maskedTextBox1.Mask = "(999) 000-0000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(120, 26);
-            this.maskedTextBox1.TabIndex = 23;
+            this.mskTel2.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.mskTel2.Location = new System.Drawing.Point(99, 166);
+            this.mskTel2.Mask = "(999) 000-0000";
+            this.mskTel2.Name = "mskTel2";
+            this.mskTel2.Size = new System.Drawing.Size(120, 26);
+            this.mskTel2.TabIndex = 23;
             // 
             // labelControl11
             // 
@@ -198,14 +201,14 @@
             this.btnDelete.TabIndex = 18;
             this.btnDelete.Text = "Sil";
             // 
-            // mskYear
+            // mskTel1
             // 
-            this.mskYear.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.mskYear.Location = new System.Drawing.Point(99, 134);
-            this.mskYear.Mask = "(999) 000-0000";
-            this.mskYear.Name = "mskYear";
-            this.mskYear.Size = new System.Drawing.Size(120, 26);
-            this.mskYear.TabIndex = 3;
+            this.mskTel1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.mskTel1.Location = new System.Drawing.Point(99, 134);
+            this.mskTel1.Mask = "(999) 000-0000";
+            this.mskTel1.Name = "mskTel1";
+            this.mskTel1.Size = new System.Drawing.Size(120, 26);
+            this.mskTel1.TabIndex = 3;
             // 
             // btnSave
             // 
@@ -238,14 +241,14 @@
             this.labelControl8.TabIndex = 16;
             this.labelControl8.Text = "İl: ";
             // 
-            // txtBPrice
+            // txtMail
             // 
-            this.txtBPrice.Location = new System.Drawing.Point(99, 230);
-            this.txtBPrice.Name = "txtBPrice";
-            this.txtBPrice.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtBPrice.Properties.Appearance.Options.UseFont = true;
-            this.txtBPrice.Size = new System.Drawing.Size(120, 24);
-            this.txtBPrice.TabIndex = 5;
+            this.txtMail.Location = new System.Drawing.Point(99, 230);
+            this.txtMail.Name = "txtMail";
+            this.txtMail.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtMail.Properties.Appearance.Options.UseFont = true;
+            this.txtMail.Size = new System.Drawing.Size(120, 24);
+            this.txtMail.TabIndex = 5;
             // 
             // labelControl7
             // 
@@ -287,14 +290,14 @@
             this.labelControl4.TabIndex = 8;
             this.labelControl4.Text = "Tel1: ";
             // 
-            // txtBrand
+            // txtSurname
             // 
-            this.txtBrand.Location = new System.Drawing.Point(99, 104);
-            this.txtBrand.Name = "txtBrand";
-            this.txtBrand.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtBrand.Properties.Appearance.Options.UseFont = true;
-            this.txtBrand.Size = new System.Drawing.Size(120, 24);
-            this.txtBrand.TabIndex = 1;
+            this.txtSurname.Location = new System.Drawing.Point(99, 104);
+            this.txtSurname.Name = "txtSurname";
+            this.txtSurname.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtSurname.Properties.Appearance.Options.UseFont = true;
+            this.txtSurname.Size = new System.Drawing.Size(120, 24);
+            this.txtSurname.TabIndex = 1;
             // 
             // labelControl3
             // 
@@ -325,14 +328,14 @@
             this.labelControl2.TabIndex = 4;
             this.labelControl2.Text = "Ad: ";
             // 
-            // rtbDetail
+            // rtbAddress
             // 
-            this.rtbDetail.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.rtbDetail.Location = new System.Drawing.Point(99, 350);
-            this.rtbDetail.Name = "rtbDetail";
-            this.rtbDetail.Size = new System.Drawing.Size(120, 88);
-            this.rtbDetail.TabIndex = 7;
-            this.rtbDetail.Text = "";
+            this.rtbAddress.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.rtbAddress.Location = new System.Drawing.Point(99, 350);
+            this.rtbAddress.Name = "rtbAddress";
+            this.rtbAddress.Size = new System.Drawing.Size(120, 88);
+            this.rtbAddress.TabIndex = 7;
+            this.rtbAddress.Text = "";
             // 
             // txtID
             // 
@@ -389,11 +392,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkedComboBoxEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtBPrice.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtBrand.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbDistrict.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTaxAdministration.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbProvince.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMail.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSurname.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
@@ -405,32 +408,32 @@
         #endregion
 
         private DevExpress.XtraEditors.GroupControl groupControl1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox mskTC;
+        private System.Windows.Forms.MaskedTextBox mskTel2;
         private DevExpress.XtraEditors.LabelControl labelControl11;
         private DevExpress.XtraEditors.LabelControl labelControl10;
         private DevExpress.XtraEditors.SimpleButton btnUpdate;
         private DevExpress.XtraEditors.SimpleButton btnDelete;
-        private System.Windows.Forms.MaskedTextBox mskYear;
+        private System.Windows.Forms.MaskedTextBox mskTel1;
         private DevExpress.XtraEditors.SimpleButton btnSave;
         private DevExpress.XtraEditors.LabelControl labelControl9;
         private DevExpress.XtraEditors.LabelControl labelControl8;
-        private DevExpress.XtraEditors.TextEdit txtBPrice;
+        private DevExpress.XtraEditors.TextEdit txtMail;
         private DevExpress.XtraEditors.LabelControl labelControl7;
         private DevExpress.XtraEditors.LabelControl labelControl6;
         private DevExpress.XtraEditors.LabelControl labelControl5;
         private DevExpress.XtraEditors.LabelControl labelControl4;
-        private DevExpress.XtraEditors.TextEdit txtBrand;
+        private DevExpress.XtraEditors.TextEdit txtSurname;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.TextEdit txtName;
         private DevExpress.XtraEditors.LabelControl labelControl2;
-        private System.Windows.Forms.RichTextBox rtbDetail;
+        private System.Windows.Forms.RichTextBox rtbAddress;
         private DevExpress.XtraEditors.TextEdit txtID;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
-        private DevExpress.XtraEditors.CheckedComboBoxEdit checkedComboBoxEdit1;
-        private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit1;
+        private DevExpress.XtraEditors.TextEdit txtTaxAdministration;
+        private DevExpress.XtraEditors.ComboBoxEdit cmbProvince;
+        private DevExpress.XtraEditors.ComboBoxEdit cmbDistrict;
     }
 }
