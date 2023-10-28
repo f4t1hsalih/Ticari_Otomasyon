@@ -89,7 +89,7 @@
             this.btnProducts.Caption = "ÜRÜNLER";
             this.btnProducts.Id = 1;
             this.btnProducts.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnProducts.ImageOptions.SvgImage")));
-            this.btnProducts.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnProducts.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnProducts.ItemAppearance.Normal.Options.UseFont = true;
             this.btnProducts.Name = "btnProducts";
             this.btnProducts.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnProducts_ItemClick);
@@ -99,7 +99,7 @@
             this.btnStocks.Caption = "STOKLAR";
             this.btnStocks.Id = 2;
             this.btnStocks.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnStocks.ImageOptions.SvgImage")));
-            this.btnStocks.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnStocks.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnStocks.ItemAppearance.Normal.Options.UseFont = true;
             this.btnStocks.Name = "btnStocks";
             // 
@@ -108,7 +108,7 @@
             this.btnCustomers.Caption = "MÜŞTERİLER";
             this.btnCustomers.Id = 3;
             this.btnCustomers.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnCustomers.ImageOptions.SvgImage")));
-            this.btnCustomers.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnCustomers.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnCustomers.ItemAppearance.Normal.Options.UseFont = true;
             this.btnCustomers.Name = "btnCustomers";
             this.btnCustomers.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnCustomers_ItemClick);
@@ -118,7 +118,7 @@
             this.btnCompanies.Caption = "FİRMALAR";
             this.btnCompanies.Id = 4;
             this.btnCompanies.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnCompanies.ImageOptions.SvgImage")));
-            this.btnCompanies.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnCompanies.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnCompanies.ItemAppearance.Normal.Options.UseFont = true;
             this.btnCompanies.Name = "btnCompanies";
             // 
@@ -127,7 +127,7 @@
             this.btnStaff.Caption = "PERSONELLER";
             this.btnStaff.Id = 5;
             this.btnStaff.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnStaff.ImageOptions.SvgImage")));
-            this.btnStaff.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnStaff.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnStaff.ItemAppearance.Normal.Options.UseFont = true;
             this.btnStaff.Name = "btnStaff";
             // 
@@ -136,7 +136,7 @@
             this.btnExpenses.Caption = "GİDERLER";
             this.btnExpenses.Id = 6;
             this.btnExpenses.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnExpenses.ImageOptions.SvgImage")));
-            this.btnExpenses.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnExpenses.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnExpenses.ItemAppearance.Normal.Options.UseFont = true;
             this.btnExpenses.Name = "btnExpenses";
             // 
@@ -145,7 +145,7 @@
             this.btnCase.Caption = "KASA";
             this.btnCase.Id = 7;
             this.btnCase.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnCase.ImageOptions.SvgImage")));
-            this.btnCase.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnCase.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnCase.ItemAppearance.Normal.Options.UseFont = true;
             this.btnCase.Name = "btnCase";
             // 
@@ -154,7 +154,7 @@
             this.btnNotes.Caption = "NOTLAR";
             this.btnNotes.Id = 8;
             this.btnNotes.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnNotes.ImageOptions.SvgImage")));
-            this.btnNotes.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnNotes.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnNotes.ItemAppearance.Normal.Options.UseFont = true;
             this.btnNotes.Name = "btnNotes";
             // 
@@ -163,7 +163,7 @@
             this.btnBanks.Caption = "BANKALAR";
             this.btnBanks.Id = 9;
             this.btnBanks.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnBanks.ImageOptions.SvgImage")));
-            this.btnBanks.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnBanks.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnBanks.ItemAppearance.Normal.Options.UseFont = true;
             this.btnBanks.Name = "btnBanks";
             // 
@@ -172,7 +172,7 @@
             this.btnDirectory.Caption = "REHBER";
             this.btnDirectory.Id = 10;
             this.btnDirectory.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnDirectory.ImageOptions.SvgImage")));
-            this.btnDirectory.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnDirectory.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnDirectory.ItemAppearance.Normal.Options.UseFont = true;
             this.btnDirectory.Name = "btnDirectory";
             // 
@@ -181,7 +181,7 @@
             this.btnBills.Caption = "FATURALAR";
             this.btnBills.Id = 11;
             this.btnBills.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnBills.ImageOptions.SvgImage")));
-            this.btnBills.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnBills.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnBills.ItemAppearance.Normal.Options.UseFont = true;
             this.btnBills.Name = "btnBills";
             // 
@@ -190,7 +190,7 @@
             this.btnSettings.Caption = "AYARLAR";
             this.btnSettings.Id = 12;
             this.btnSettings.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnSettings.ImageOptions.SvgImage")));
-            this.btnSettings.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnSettings.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnSettings.ItemAppearance.Normal.Options.UseFont = true;
             this.btnSettings.Name = "btnSettings";
             // 
@@ -199,7 +199,7 @@
             this.btnMainPage.Caption = "ANA SAYFA";
             this.btnMainPage.Id = 13;
             this.btnMainPage.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnMainPage.ImageOptions.SvgImage")));
-            this.btnMainPage.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnMainPage.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnMainPage.ItemAppearance.Normal.Options.UseFont = true;
             this.btnMainPage.Name = "btnMainPage";
             // 
@@ -212,6 +212,7 @@
             // 
             // ribbonPageGroup1
             // 
+            this.ribbonPageGroup1.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonPageGroup1.ItemLinks.Add(this.btnMainPage);
             this.ribbonPageGroup1.ItemLinks.Add(this.btnProducts);
             this.ribbonPageGroup1.ItemLinks.Add(this.btnStocks);
@@ -238,9 +239,11 @@
             this.ClientSize = new System.Drawing.Size(1002, 661);
             this.Controls.Add(this.ribbonControl1);
             this.IsMdiContainer = true;
+            this.MinimumSize = new System.Drawing.Size(1018, 700);
             this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TİCARİ OTOMASYON";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).EndInit();
             this.ResumeLayout(false);
