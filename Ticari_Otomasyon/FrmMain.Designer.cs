@@ -111,6 +111,7 @@
             this.btnCustomers.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnCustomers.ItemAppearance.Normal.Options.UseFont = true;
             this.btnCustomers.Name = "btnCustomers";
+            this.btnCustomers.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnCustomers_ItemClick);
             // 
             // btnCompanies
             // 

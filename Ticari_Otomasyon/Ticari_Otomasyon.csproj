@@ -56,6 +56,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmCutomers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCutomers.Designer.cs">
+      <DependentUpon>FrmCutomers.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +77,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlConn.cs" />
+    <EmbeddedResource Include="FrmCutomers.resx">
+      <DependentUpon>FrmCutomers.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>
