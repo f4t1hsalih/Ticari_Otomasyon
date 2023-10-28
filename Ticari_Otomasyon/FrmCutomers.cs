@@ -94,5 +94,16 @@ namespace Ticari_Otomasyon
             }
 
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            string command = "delete from tbl_customers where cust_id = @p1";
+            SqlCommand cmd = new SqlCommand(command, con.connection());
+            cmd.Parameters.AddWithValue("@p1", txtID.Text);
+            cmd.ExecuteNonQuery();
+            con.connection().Close();
+            MessageBox.Show("Müşteri Başarıyla Silindi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            List();
+        }
     }
 }
