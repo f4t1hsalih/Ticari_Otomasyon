@@ -39,7 +39,7 @@
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.txtName = new DevExpress.XtraEditors.TextEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.rtbAddress = new System.Windows.Forms.RichTextBox();
+            this.rchAddress = new System.Windows.Forms.RichTextBox();
             this.txtID = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
@@ -73,6 +73,13 @@
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
             this.xtraTabPage3 = new DevExpress.XtraTab.XtraTabPage();
             this.groupControl7 = new DevExpress.XtraEditors.GroupControl();
+            this.xtraTabControl2 = new DevExpress.XtraTab.XtraTabControl();
+            this.xtraTabPage4 = new DevExpress.XtraTab.XtraTabPage();
+            this.rchCode1 = new System.Windows.Forms.RichTextBox();
+            this.xtraTabPage5 = new DevExpress.XtraTab.XtraTabPage();
+            this.rchCode2 = new System.Windows.Forms.RichTextBox();
+            this.xtraTabPage6 = new DevExpress.XtraTab.XtraTabPage();
+            this.rchCode3 = new System.Windows.Forms.RichTextBox();
             this.groupControl6 = new DevExpress.XtraEditors.GroupControl();
             this.txtCode2 = new DevExpress.XtraEditors.TextEdit();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
@@ -80,13 +87,7 @@
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.txtCode3 = new DevExpress.XtraEditors.TextEdit();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
-            this.xtraTabControl2 = new DevExpress.XtraTab.XtraTabControl();
-            this.xtraTabPage4 = new DevExpress.XtraTab.XtraTabPage();
-            this.xtraTabPage5 = new DevExpress.XtraTab.XtraTabPage();
-            this.xtraTabPage6 = new DevExpress.XtraTab.XtraTabPage();
-            this.rchCode1 = new System.Windows.Forms.RichTextBox();
-            this.rchCode2 = new System.Windows.Forms.RichTextBox();
-            this.rchCode3 = new System.Windows.Forms.RichTextBox();
+            this.btnClear = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.txtTaxAdministration.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSector.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtName.Properties)).BeginInit();
@@ -114,16 +115,16 @@
             this.xtraTabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl7)).BeginInit();
             this.groupControl7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl6)).BeginInit();
-            this.groupControl6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtCode2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtCode1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtCode3.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl2)).BeginInit();
             this.xtraTabControl2.SuspendLayout();
             this.xtraTabPage4.SuspendLayout();
             this.xtraTabPage5.SuspendLayout();
             this.xtraTabPage6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl6)).BeginInit();
+            this.groupControl6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCode2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCode1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCode3.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // txtTaxAdministration
@@ -155,6 +156,7 @@
             this.btnUpdate.Size = new System.Drawing.Size(174, 29);
             this.btnUpdate.TabIndex = 19;
             this.btnUpdate.Text = "Güncelle";
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 
@@ -228,14 +230,14 @@
             this.labelControl2.TabIndex = 4;
             this.labelControl2.Text = "Ad:";
             // 
-            // rtbAddress
+            // rchAddress
             // 
-            this.rtbAddress.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.rtbAddress.Location = new System.Drawing.Point(76, 106);
-            this.rtbAddress.Name = "rtbAddress";
-            this.rtbAddress.Size = new System.Drawing.Size(120, 88);
-            this.rtbAddress.TabIndex = 7;
-            this.rtbAddress.Text = "";
+            this.rchAddress.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.rchAddress.Location = new System.Drawing.Point(76, 106);
+            this.rchAddress.Name = "rchAddress";
+            this.rchAddress.Size = new System.Drawing.Size(120, 88);
+            this.rchAddress.TabIndex = 7;
+            this.rchAddress.Text = "";
             // 
             // txtID
             // 
@@ -513,6 +515,7 @@
             // 
             // groupControl5
             // 
+            this.groupControl5.Controls.Add(this.btnClear);
             this.groupControl5.Controls.Add(this.btnUpdate);
             this.groupControl5.Controls.Add(this.txtTaxAdministration);
             this.groupControl5.Controls.Add(this.btnDelete);
@@ -523,7 +526,7 @@
             this.groupControl5.Controls.Add(this.labelControl8);
             this.groupControl5.Controls.Add(this.labelControl10);
             this.groupControl5.Controls.Add(this.labelControl9);
-            this.groupControl5.Controls.Add(this.rtbAddress);
+            this.groupControl5.Controls.Add(this.rchAddress);
             this.groupControl5.Location = new System.Drawing.Point(4, 3);
             this.groupControl5.Name = "groupControl5";
             this.groupControl5.ShowCaption = false;
@@ -592,6 +595,72 @@
             this.groupControl7.Size = new System.Drawing.Size(232, 398);
             this.groupControl7.TabIndex = 2;
             this.groupControl7.Text = "Özel Kodlar ve Anlamları";
+            // 
+            // xtraTabControl2
+            // 
+            this.xtraTabControl2.Location = new System.Drawing.Point(5, 26);
+            this.xtraTabControl2.Name = "xtraTabControl2";
+            this.xtraTabControl2.SelectedTabPage = this.xtraTabPage4;
+            this.xtraTabControl2.Size = new System.Drawing.Size(222, 367);
+            this.xtraTabControl2.TabIndex = 7;
+            this.xtraTabControl2.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
+            this.xtraTabPage4,
+            this.xtraTabPage5,
+            this.xtraTabPage6});
+            // 
+            // xtraTabPage4
+            // 
+            this.xtraTabPage4.Controls.Add(this.rchCode1);
+            this.xtraTabPage4.Name = "xtraTabPage4";
+            this.xtraTabPage4.Size = new System.Drawing.Size(220, 342);
+            this.xtraTabPage4.Text = "Kod1";
+            // 
+            // rchCode1
+            // 
+            this.rchCode1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rchCode1.Enabled = false;
+            this.rchCode1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.rchCode1.Location = new System.Drawing.Point(0, 0);
+            this.rchCode1.Name = "rchCode1";
+            this.rchCode1.Size = new System.Drawing.Size(220, 342);
+            this.rchCode1.TabIndex = 0;
+            this.rchCode1.Text = "";
+            // 
+            // xtraTabPage5
+            // 
+            this.xtraTabPage5.Controls.Add(this.rchCode2);
+            this.xtraTabPage5.Name = "xtraTabPage5";
+            this.xtraTabPage5.Size = new System.Drawing.Size(220, 342);
+            this.xtraTabPage5.Text = "Kod2";
+            // 
+            // rchCode2
+            // 
+            this.rchCode2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rchCode2.Enabled = false;
+            this.rchCode2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.rchCode2.Location = new System.Drawing.Point(0, 0);
+            this.rchCode2.Name = "rchCode2";
+            this.rchCode2.Size = new System.Drawing.Size(220, 342);
+            this.rchCode2.TabIndex = 1;
+            this.rchCode2.Text = "";
+            // 
+            // xtraTabPage6
+            // 
+            this.xtraTabPage6.Controls.Add(this.rchCode3);
+            this.xtraTabPage6.Name = "xtraTabPage6";
+            this.xtraTabPage6.Size = new System.Drawing.Size(220, 342);
+            this.xtraTabPage6.Text = "Kod3";
+            // 
+            // rchCode3
+            // 
+            this.rchCode3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rchCode3.Enabled = false;
+            this.rchCode3.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.rchCode3.Location = new System.Drawing.Point(0, 0);
+            this.rchCode3.Name = "rchCode3";
+            this.rchCode3.Size = new System.Drawing.Size(220, 342);
+            this.rchCode3.TabIndex = 1;
+            this.rchCode3.Text = "";
             // 
             // groupControl6
             // 
@@ -666,71 +735,17 @@
             this.labelControl6.TabIndex = 6;
             this.labelControl6.Text = "Kod3:";
             // 
-            // xtraTabControl2
+            // btnClear
             // 
-            this.xtraTabControl2.Location = new System.Drawing.Point(5, 26);
-            this.xtraTabControl2.Name = "xtraTabControl2";
-            this.xtraTabControl2.SelectedTabPage = this.xtraTabPage4;
-            this.xtraTabControl2.Size = new System.Drawing.Size(222, 367);
-            this.xtraTabControl2.TabIndex = 7;
-            this.xtraTabControl2.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
-            this.xtraTabPage4,
-            this.xtraTabPage5,
-            this.xtraTabPage6});
-            // 
-            // xtraTabPage4
-            // 
-            this.xtraTabPage4.Controls.Add(this.rchCode1);
-            this.xtraTabPage4.Name = "xtraTabPage4";
-            this.xtraTabPage4.Size = new System.Drawing.Size(220, 342);
-            this.xtraTabPage4.Text = "Kod1";
-            // 
-            // xtraTabPage5
-            // 
-            this.xtraTabPage5.Controls.Add(this.rchCode2);
-            this.xtraTabPage5.Name = "xtraTabPage5";
-            this.xtraTabPage5.Size = new System.Drawing.Size(220, 342);
-            this.xtraTabPage5.Text = "Kod2";
-            // 
-            // xtraTabPage6
-            // 
-            this.xtraTabPage6.Controls.Add(this.rchCode3);
-            this.xtraTabPage6.Name = "xtraTabPage6";
-            this.xtraTabPage6.Size = new System.Drawing.Size(220, 342);
-            this.xtraTabPage6.Text = "Kod3";
-            // 
-            // rchCode1
-            // 
-            this.rchCode1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rchCode1.Enabled = false;
-            this.rchCode1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.rchCode1.Location = new System.Drawing.Point(0, 0);
-            this.rchCode1.Name = "rchCode1";
-            this.rchCode1.Size = new System.Drawing.Size(220, 342);
-            this.rchCode1.TabIndex = 0;
-            this.rchCode1.Text = "";
-            // 
-            // rchCode2
-            // 
-            this.rchCode2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rchCode2.Enabled = false;
-            this.rchCode2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.rchCode2.Location = new System.Drawing.Point(0, 0);
-            this.rchCode2.Name = "rchCode2";
-            this.rchCode2.Size = new System.Drawing.Size(220, 342);
-            this.rchCode2.TabIndex = 1;
-            this.rchCode2.Text = "";
-            // 
-            // rchCode3
-            // 
-            this.rchCode3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rchCode3.Enabled = false;
-            this.rchCode3.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.rchCode3.Location = new System.Drawing.Point(0, 0);
-            this.rchCode3.Name = "rchCode3";
-            this.rchCode3.Size = new System.Drawing.Size(220, 342);
-            this.rchCode3.TabIndex = 1;
-            this.rchCode3.Text = "";
+            this.btnClear.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnClear.Appearance.Options.UseFont = true;
+            this.btnClear.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton1.ImageOptions.SvgImage")));
+            this.btnClear.Location = new System.Drawing.Point(28, 353);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(174, 29);
+            this.btnClear.TabIndex = 33;
+            this.btnClear.Text = "Temizle";
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // FrmCompanies
             // 
@@ -773,17 +788,17 @@
             this.xtraTabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl7)).EndInit();
             this.groupControl7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl2)).EndInit();
+            this.xtraTabControl2.ResumeLayout(false);
+            this.xtraTabPage4.ResumeLayout(false);
+            this.xtraTabPage5.ResumeLayout(false);
+            this.xtraTabPage6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl6)).EndInit();
             this.groupControl6.ResumeLayout(false);
             this.groupControl6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtCode2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCode1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCode3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl2)).EndInit();
-            this.xtraTabControl2.ResumeLayout(false);
-            this.xtraTabPage4.ResumeLayout(false);
-            this.xtraTabPage5.ResumeLayout(false);
-            this.xtraTabPage6.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -799,7 +814,7 @@
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.TextEdit txtName;
         private DevExpress.XtraEditors.LabelControl labelControl2;
-        private System.Windows.Forms.RichTextBox rtbAddress;
+        private System.Windows.Forms.RichTextBox rchAddress;
         private DevExpress.XtraEditors.TextEdit txtID;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraGrid.GridControl gridControl1;
@@ -847,5 +862,6 @@
         private System.Windows.Forms.RichTextBox rchCode1;
         private System.Windows.Forms.RichTextBox rchCode2;
         private System.Windows.Forms.RichTextBox rchCode3;
+        private DevExpress.XtraEditors.SimpleButton btnClear;
     }
 }

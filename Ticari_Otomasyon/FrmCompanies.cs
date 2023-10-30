@@ -30,7 +30,7 @@ namespace Ticari_Otomasyon
             cmbProvince.Clear();
             cmbDistrict.Clear();
             txtTaxAdministration.Clear();
-            rtbAddress.Clear();
+            rchAddress.Clear();
             txtCode1.Clear();
             txtCode2.Clear();
             txtCode3.Clear();
@@ -106,7 +106,7 @@ namespace Ticari_Otomasyon
                 cmbProvince.Text = dr["province"].ToString();
                 cmbDistrict.Text = dr["distinct"].ToString();
                 txtTaxAdministration.Text = dr["tax_administration"].ToString();
-                rtbAddress.Text = dr["address"].ToString();
+                rchAddress.Text = dr["address"].ToString();
                 txtCode1.Text = dr["special_code1"].ToString();
                 txtCode2.Text = dr["special_code2"].ToString();
                 txtCode3.Text = dr["special_code3"].ToString();
@@ -130,7 +130,7 @@ namespace Ticari_Otomasyon
             cmd.Parameters.AddWithValue("@p11", cmbProvince.Text);
             cmd.Parameters.AddWithValue("@p12", cmbDistrict.Text);
             cmd.Parameters.AddWithValue("@p13", txtTaxAdministration.Text);
-            cmd.Parameters.AddWithValue("@p14", rtbAddress.Text);
+            cmd.Parameters.AddWithValue("@p14", rchAddress.Text);
             cmd.Parameters.AddWithValue("@p15", txtCode1.Text);
             cmd.Parameters.AddWithValue("@p16", txtCode2.Text);
             cmd.Parameters.AddWithValue("@p17", txtCode3.Text);
@@ -155,6 +155,40 @@ namespace Ticari_Otomasyon
             con.connection().Close();
             MessageBox.Show("Firma Başarıyla Silindi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             List();
+            Clean();
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            string command = "update tbl_companies set name = @p1, authorized_status = @p2, authorized_name_surname = @p3, authorized_tc = @p4, sector = @p5, tel1 = @p6, tel2 = @p7, tel3 = @p8, mail = @p9, fax = @p10, province = @p11, [distinct] = @p12, tax_administration = @p13, address = @p14, special_code1 = @p15, special_code2 = @p16, special_code3 = @p17 where comp_id = @p18";
+            SqlCommand cmd = new SqlCommand(command, con.connection());
+            cmd.Parameters.AddWithValue("@p1", txtName.Text);
+            cmd.Parameters.AddWithValue("@p2", txtAuthorizedStatus.Text);
+            cmd.Parameters.AddWithValue("@p3", txtAuthorized.Text);
+            cmd.Parameters.AddWithValue("@p4", txtAuthorizedTc.Text);
+            cmd.Parameters.AddWithValue("@p5", txtSector.Text);
+            cmd.Parameters.AddWithValue("@p6", mskTel1.Text);
+            cmd.Parameters.AddWithValue("@p7", mskTel2.Text);
+            cmd.Parameters.AddWithValue("@p8", mskTel3.Text);
+            cmd.Parameters.AddWithValue("@p9", txtMail.Text);
+            cmd.Parameters.AddWithValue("@p10", mskFax.Text);
+            cmd.Parameters.AddWithValue("@p11", cmbProvince.Text);
+            cmd.Parameters.AddWithValue("@p12", cmbDistrict.Text);
+            cmd.Parameters.AddWithValue("@p13", txtTaxAdministration.Text);
+            cmd.Parameters.AddWithValue("@p14", rchAddress.Text);
+            cmd.Parameters.AddWithValue("@p15", txtCode1.Text);
+            cmd.Parameters.AddWithValue("@p16", txtCode2.Text);
+            cmd.Parameters.AddWithValue("@p17", txtCode3.Text);
+            cmd.Parameters.AddWithValue("@p18", txtID.Text);
+            cmd.ExecuteNonQuery();
+            con.connection().Close();
+            MessageBox.Show("Firma Bilgileri Güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            List();
+            Clean();
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
             Clean();
         }
     }
