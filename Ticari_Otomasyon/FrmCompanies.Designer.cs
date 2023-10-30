@@ -177,6 +177,7 @@
             this.btnSave.Size = new System.Drawing.Size(174, 29);
             this.btnSave.TabIndex = 8;
             this.btnSave.Text = "Kaydet";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // labelControl9
             // 
@@ -451,7 +452,6 @@
             // 
             // txtAuthorized
             // 
-            this.txtAuthorized.Enabled = false;
             this.txtAuthorized.Location = new System.Drawing.Point(84, 46);
             this.txtAuthorized.Name = "txtAuthorized";
             this.txtAuthorized.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -541,6 +541,7 @@
             this.cmbProvince.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.cmbProvince.Size = new System.Drawing.Size(120, 24);
             this.cmbProvince.TabIndex = 31;
+            this.cmbProvince.SelectedIndexChanged += new System.EventHandler(this.cmbProvince_SelectedIndexChanged);
             // 
             // cmbDistrict
             // 
