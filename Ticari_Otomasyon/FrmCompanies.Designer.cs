@@ -701,6 +701,8 @@
             // rchCode1
             // 
             this.rchCode1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rchCode1.Enabled = false;
+            this.rchCode1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.rchCode1.Location = new System.Drawing.Point(0, 0);
             this.rchCode1.Name = "rchCode1";
             this.rchCode1.Size = new System.Drawing.Size(220, 342);
@@ -710,6 +712,8 @@
             // rchCode2
             // 
             this.rchCode2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rchCode2.Enabled = false;
+            this.rchCode2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.rchCode2.Location = new System.Drawing.Point(0, 0);
             this.rchCode2.Name = "rchCode2";
             this.rchCode2.Size = new System.Drawing.Size(220, 342);
@@ -719,6 +723,8 @@
             // rchCode3
             // 
             this.rchCode3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rchCode3.Enabled = false;
+            this.rchCode3.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.rchCode3.Location = new System.Drawing.Point(0, 0);
             this.rchCode3.Name = "rchCode3";
             this.rchCode3.Size = new System.Drawing.Size(220, 342);

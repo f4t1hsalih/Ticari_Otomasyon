@@ -35,7 +35,6 @@ namespace Ticari_Otomasyon
             txtCode2.Clear();
             txtCode3.Clear();
         }
-
         void List()
         {
             DataTable dt = new DataTable();
@@ -65,12 +64,27 @@ namespace Ticari_Otomasyon
                 cmbDistrict.Properties.Items.Add(dr[0]);
             }
         }
+        void CodeComments()
+        {
+            SqlCommand cmd = new SqlCommand("select * from tbl_codes", con.connection());
+            SqlDataReader dr = cmd.ExecuteReader();
+
+            while (dr.Read())
+            {
+                rchCode1.Text = dr[0].ToString();
+                rchCode2.Text = dr[1].ToString();
+                rchCode3.Text = dr[2].ToString();
+            }
+
+            con.connection().Close();
+        }
 
         private void FrmCompanies_Load(object sender, EventArgs e)
         {
             List();
             Clean();
             ProvinceList();
+            CodeComments();
         }
 
         private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
