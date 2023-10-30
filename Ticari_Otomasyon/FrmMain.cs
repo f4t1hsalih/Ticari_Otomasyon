@@ -2,7 +2,7 @@
 
 namespace Ticari_Otomasyon
 {
-    public partial class FrmMain : Form
+    public partial class FrmMain : DevExpress.XtraBars.Ribbon.RibbonForm
     {
         public FrmMain()
         {
@@ -28,6 +28,17 @@ namespace Ticari_Otomasyon
                 customers = new FrmCutomers();
                 customers.MdiParent = this;
                 customers.Show();
+            }
+        }
+
+        FrmCompanies companies;
+        private void btnCompanies_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (companies == null)
+            {
+                companies = new FrmCompanies();
+                companies.MdiParent = this;
+                companies.Show();
             }
         }
     }

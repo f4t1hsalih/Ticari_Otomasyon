@@ -105,5 +105,26 @@ namespace Ticari_Otomasyon
             MessageBox.Show("Müşteri Başarıyla Silindi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             List();
         }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            string command = "update tbl_customers set name = @p1, surname = @p2, tel1 = @p3, tel2 = @p4, tc = @p5, mail = @p6, province = @p7, district = @p8, tax_administration = @p9, address = @p10 where cust_id = @p11";
+            SqlCommand cmd = new SqlCommand(command, con.connection());
+            cmd.Parameters.AddWithValue("@p1", txtName.Text);
+            cmd.Parameters.AddWithValue("@p2", txtSurname.Text);
+            cmd.Parameters.AddWithValue("@p3", mskTel1.Text);
+            cmd.Parameters.AddWithValue("@p4", mskTel2.Text);
+            cmd.Parameters.AddWithValue("@p5", mskTC.Text);
+            cmd.Parameters.AddWithValue("@p6", txtMail.Text);
+            cmd.Parameters.AddWithValue("@p7", cmbProvince.Text);
+            cmd.Parameters.AddWithValue("@p8", cmbDistrict.Text);
+            cmd.Parameters.AddWithValue("@p9", rtbAddress.Text);
+            cmd.Parameters.AddWithValue("@p10", txtTaxAdministration.Text);
+            cmd.Parameters.AddWithValue("@p11", txtID.Text);
+            cmd.ExecuteNonQuery();
+            con.connection().Close();
+            MessageBox.Show("Müşteri Bilgileri Güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            List();
+        }
     }
 }

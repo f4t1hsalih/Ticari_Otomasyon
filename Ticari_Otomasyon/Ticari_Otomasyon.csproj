@@ -56,6 +56,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmCompanies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCompanies.Designer.cs">
+      <DependentUpon>FrmCompanies.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmCutomers.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +83,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlConn.cs" />
+    <EmbeddedResource Include="FrmCompanies.resx">
+      <DependentUpon>FrmCompanies.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmCutomers.resx">
       <DependentUpon>FrmCutomers.cs</DependentUpon>
     </EmbeddedResource>
