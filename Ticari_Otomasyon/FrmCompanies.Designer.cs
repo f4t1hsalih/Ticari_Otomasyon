@@ -522,7 +522,7 @@
             this.groupControl5.Controls.Add(this.labelControl10);
             this.groupControl5.Controls.Add(this.labelControl9);
             this.groupControl5.Controls.Add(this.rtbAddress);
-            this.groupControl5.Location = new System.Drawing.Point(3, 3);
+            this.groupControl5.Location = new System.Drawing.Point(4, 3);
             this.groupControl5.Name = "groupControl5";
             this.groupControl5.ShowCaption = false;
             this.groupControl5.Size = new System.Drawing.Size(232, 516);
@@ -732,6 +732,7 @@
             this.Controls.Add(this.gridControl1);
             this.Name = "FrmCompanies";
             this.Text = "Firmalar";
+            this.Load += new System.EventHandler(this.FrmCompanies_Load);
             ((System.ComponentModel.ISupportInitialize)(this.txtTaxAdministration.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSector.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtName.Properties)).EndInit();

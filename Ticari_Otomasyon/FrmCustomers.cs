@@ -5,9 +5,9 @@ using System.Windows.Forms;
 
 namespace Ticari_Otomasyon
 {
-    public partial class FrmCutomers : Form
+    public partial class FrmCustomers : Form
     {
-        public FrmCutomers()
+        public FrmCustomers()
         {
             InitializeComponent();
         }

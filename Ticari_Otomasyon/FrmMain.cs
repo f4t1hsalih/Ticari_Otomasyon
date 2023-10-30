@@ -20,12 +20,12 @@ namespace Ticari_Otomasyon
             }
         }
 
-        FrmCutomers customers;
+        FrmCustomers customers;
         private void btnCustomers_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             if (customers == null)
             {
-                customers = new FrmCutomers();
+                customers = new FrmCustomers();
                 customers.MdiParent = this;
                 customers.Show();
             }

@@ -1,6 +1,6 @@
 ﻿namespace Ticari_Otomasyon
 {
-    partial class FrmCutomers
+    partial class FrmCustomers
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCutomers));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCustomers));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.cmbDistrict = new DevExpress.XtraEditors.ComboBoxEdit();
             this.txtTaxAdministration = new DevExpress.XtraEditors.TextEdit();
