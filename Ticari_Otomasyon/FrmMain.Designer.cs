@@ -167,6 +167,7 @@
             this.btnStaff.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnStaff.ItemAppearance.Normal.Options.UseFont = true;
             this.btnStaff.Name = "btnStaff";
+            this.btnStaff.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnStaff_ItemClick);
             // 
             // btnExpenses
             // 

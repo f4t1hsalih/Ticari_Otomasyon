@@ -41,5 +41,16 @@ namespace Ticari_Otomasyon
                 companies.Show();
             }
         }
+
+        FrmStaff staff;
+        private void btnStaff_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (staff == null)
+            {
+                staff = new FrmStaff();
+                staff.MdiParent = this;
+                staff.Show();
+            }
+        }
     }
 }

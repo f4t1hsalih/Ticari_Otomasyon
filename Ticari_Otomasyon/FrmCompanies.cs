@@ -104,7 +104,7 @@ namespace Ticari_Otomasyon
                 txtMail.Text = dr["mail"].ToString();
                 mskFax.Text = dr["fax"].ToString();
                 cmbProvince.Text = dr["province"].ToString();
-                cmbDistrict.Text = dr["distinct"].ToString();
+                cmbDistrict.Text = dr["district"].ToString();
                 txtTaxAdministration.Text = dr["tax_administration"].ToString();
                 rchAddress.Text = dr["address"].ToString();
                 txtCode1.Text = dr["special_code1"].ToString();
@@ -115,7 +115,7 @@ namespace Ticari_Otomasyon
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            string command = "insert into tbl_companies (name, authorized_status, authorized_name_surname, authorized_tc, sector, tel1, tel2, tel3, mail, fax, province, [distinct], tax_administration, address, special_code1, special_code2, special_code3) values (@p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17)";
+            string command = "insert into tbl_companies (name, authorized_status, authorized_name_surname, authorized_tc, sector, tel1, tel2, tel3, mail, fax, province, district, tax_administration, address, special_code1, special_code2, special_code3) values (@p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17)";
             SqlCommand cmd = new SqlCommand(command, con.connection());
             cmd.Parameters.AddWithValue("@p1", txtName.Text);
             cmd.Parameters.AddWithValue("@p2", txtAuthorizedStatus.Text);
@@ -160,7 +160,7 @@ namespace Ticari_Otomasyon
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            string command = "update tbl_companies set name = @p1, authorized_status = @p2, authorized_name_surname = @p3, authorized_tc = @p4, sector = @p5, tel1 = @p6, tel2 = @p7, tel3 = @p8, mail = @p9, fax = @p10, province = @p11, [distinct] = @p12, tax_administration = @p13, address = @p14, special_code1 = @p15, special_code2 = @p16, special_code3 = @p17 where comp_id = @p18";
+            string command = "update tbl_companies set name = @p1, authorized_status = @p2, authorized_name_surname = @p3, authorized_tc = @p4, sector = @p5, tel1 = @p6, tel2 = @p7, tel3 = @p8, mail = @p9, fax = @p10, province = @p11, district = @p12, tax_administration = @p13, address = @p14, special_code1 = @p15, special_code2 = @p16, special_code3 = @p17 where comp_id = @p18";
             SqlCommand cmd = new SqlCommand(command, con.connection());
             cmd.Parameters.AddWithValue("@p1", txtName.Text);
             cmd.Parameters.AddWithValue("@p2", txtAuthorizedStatus.Text);
