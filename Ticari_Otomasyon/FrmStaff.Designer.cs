@@ -30,8 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmStaff));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.btnClear = new DevExpress.XtraEditors.SimpleButton();
             this.cmbDistrict = new DevExpress.XtraEditors.ComboBoxEdit();
             this.txtDuty = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.cmbProvince = new DevExpress.XtraEditors.ComboBoxEdit();
             this.mskTC = new System.Windows.Forms.MaskedTextBox();
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
@@ -40,7 +42,6 @@
             this.btnDelete = new DevExpress.XtraEditors.SimpleButton();
             this.mskTel = new System.Windows.Forms.MaskedTextBox();
             this.btnSave = new DevExpress.XtraEditors.SimpleButton();
-            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             this.txtMail = new DevExpress.XtraEditors.TextEdit();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
@@ -55,7 +56,6 @@
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.btnClear = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cmbDistrict.Properties)).BeginInit();
@@ -104,6 +104,18 @@
             this.groupControl1.Size = new System.Drawing.Size(240, 549);
             this.groupControl1.TabIndex = 5;
             // 
+            // btnClear
+            // 
+            this.btnClear.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnClear.Appearance.Options.UseFont = true;
+            this.btnClear.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnClear.ImageOptions.SvgImage")));
+            this.btnClear.Location = new System.Drawing.Point(55, 517);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(174, 29);
+            this.btnClear.TabIndex = 34;
+            this.btnClear.Text = "Temizle";
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
             // cmbDistrict
             // 
             this.cmbDistrict.Location = new System.Drawing.Point(99, 258);
@@ -124,6 +136,16 @@
             this.txtDuty.Properties.Appearance.Options.UseFont = true;
             this.txtDuty.Size = new System.Drawing.Size(120, 24);
             this.txtDuty.TabIndex = 27;
+            // 
+            // labelControl9
+            // 
+            this.labelControl9.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl9.Appearance.Options.UseFont = true;
+            this.labelControl9.Location = new System.Drawing.Point(49, 385);
+            this.labelControl9.Name = "labelControl9";
+            this.labelControl9.Size = new System.Drawing.Size(44, 18);
+            this.labelControl9.TabIndex = 17;
+            this.labelControl9.Text = "Görev:";
             // 
             // cmbProvince
             // 
@@ -210,16 +232,6 @@
             this.btnSave.TabIndex = 8;
             this.btnSave.Text = "Kaydet";
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
-            // labelControl9
-            // 
-            this.labelControl9.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl9.Appearance.Options.UseFont = true;
-            this.labelControl9.Location = new System.Drawing.Point(49, 385);
-            this.labelControl9.Name = "labelControl9";
-            this.labelControl9.Size = new System.Drawing.Size(44, 18);
-            this.labelControl9.TabIndex = 17;
-            this.labelControl9.Text = "Görev:";
             // 
             // labelControl8
             // 
@@ -358,18 +370,7 @@
             this.gridView1.OptionsBehavior.AllowDeleteRows = DevExpress.Utils.DefaultBoolean.False;
             this.gridView1.OptionsBehavior.Editable = false;
             this.gridView1.OptionsView.ShowGroupPanel = false;
-            // 
-            // btnClear
-            // 
-            this.btnClear.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnClear.Appearance.Options.UseFont = true;
-            this.btnClear.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnClear.ImageOptions.SvgImage")));
-            this.btnClear.Location = new System.Drawing.Point(55, 517);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(174, 29);
-            this.btnClear.TabIndex = 34;
-            this.btnClear.Text = "Temizle";
-            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
             // 
             // FrmStaff
             // 

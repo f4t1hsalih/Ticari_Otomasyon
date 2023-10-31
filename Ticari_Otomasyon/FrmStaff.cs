@@ -18,7 +18,9 @@ namespace Ticari_Otomasyon
         {
             txtID.Clear();
             txtName.Clear();
+            txtSurname.Clear();
             mskTel.Clear();
+            mskTC.Clear();
             txtMail.Clear();
             cmbProvince.Clear();
             cmbDistrict.Clear();
@@ -91,6 +93,24 @@ namespace Ticari_Otomasyon
             MessageBox.Show("Personel Başarıyla Kaydedildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             List();
             Clean();
+        }
+
+        private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
+        {
+            DataRow dr = gridView1.GetDataRow(gridView1.FocusedRowHandle);
+            if (dr != null)
+            {
+                txtID.Text = dr["staff_id"].ToString();
+                txtName.Text = dr["name"].ToString();
+                txtSurname.Text = dr["surname"].ToString();
+                mskTel.Text = dr["tel"].ToString();
+                mskTC.Text = dr["tc"].ToString();
+                txtMail.Text = dr["mail"].ToString();
+                cmbProvince.Text = dr["province"].ToString();
+                cmbDistrict.Text = dr["district"].ToString();
+                rchAddress.Text = dr["address"].ToString();
+                txtDuty.Text = dr["duty"].ToString();
+            }
         }
     }
 }
