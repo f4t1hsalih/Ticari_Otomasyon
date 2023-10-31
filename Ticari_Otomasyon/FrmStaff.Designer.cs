@@ -38,7 +38,7 @@
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
             this.btnUpdate = new DevExpress.XtraEditors.SimpleButton();
             this.btnDelete = new DevExpress.XtraEditors.SimpleButton();
-            this.mskTel1 = new System.Windows.Forms.MaskedTextBox();
+            this.mskTel = new System.Windows.Forms.MaskedTextBox();
             this.btnSave = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
@@ -50,7 +50,7 @@
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.txtName = new DevExpress.XtraEditors.TextEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.rtbAddress = new System.Windows.Forms.RichTextBox();
+            this.rchAddress = new System.Windows.Forms.RichTextBox();
             this.txtID = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
@@ -85,7 +85,7 @@
             this.groupControl1.Controls.Add(this.labelControl10);
             this.groupControl1.Controls.Add(this.btnUpdate);
             this.groupControl1.Controls.Add(this.btnDelete);
-            this.groupControl1.Controls.Add(this.mskTel1);
+            this.groupControl1.Controls.Add(this.mskTel);
             this.groupControl1.Controls.Add(this.btnSave);
             this.groupControl1.Controls.Add(this.labelControl8);
             this.groupControl1.Controls.Add(this.txtMail);
@@ -96,7 +96,7 @@
             this.groupControl1.Controls.Add(this.labelControl3);
             this.groupControl1.Controls.Add(this.txtName);
             this.groupControl1.Controls.Add(this.labelControl2);
-            this.groupControl1.Controls.Add(this.rtbAddress);
+            this.groupControl1.Controls.Add(this.rchAddress);
             this.groupControl1.Controls.Add(this.txtID);
             this.groupControl1.Controls.Add(this.labelControl1);
             this.groupControl1.Location = new System.Drawing.Point(762, 6);
@@ -136,6 +136,7 @@
             this.cmbProvince.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.cmbProvince.Size = new System.Drawing.Size(120, 24);
             this.cmbProvince.TabIndex = 25;
+            this.cmbProvince.SelectedIndexChanged += new System.EventHandler(this.cmbProvince_SelectedIndexChanged);
             // 
             // mskTC
             // 
@@ -189,14 +190,14 @@
             this.btnDelete.TabIndex = 18;
             this.btnDelete.Text = "Sil";
             // 
-            // mskTel1
+            // mskTel
             // 
-            this.mskTel1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.mskTel1.Location = new System.Drawing.Point(99, 134);
-            this.mskTel1.Mask = "(999) 000-0000";
-            this.mskTel1.Name = "mskTel1";
-            this.mskTel1.Size = new System.Drawing.Size(120, 26);
-            this.mskTel1.TabIndex = 3;
+            this.mskTel.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.mskTel.Location = new System.Drawing.Point(99, 134);
+            this.mskTel.Mask = "(999) 000-0000";
+            this.mskTel.Name = "mskTel";
+            this.mskTel.Size = new System.Drawing.Size(120, 26);
+            this.mskTel.TabIndex = 3;
             // 
             // btnSave
             // 
@@ -208,6 +209,7 @@
             this.btnSave.Size = new System.Drawing.Size(174, 29);
             this.btnSave.TabIndex = 8;
             this.btnSave.Text = "Kaydet";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // labelControl9
             // 
@@ -262,11 +264,11 @@
             // 
             this.labelControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Location = new System.Drawing.Point(55, 137);
+            this.labelControl4.Location = new System.Drawing.Point(60, 137);
             this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(38, 18);
+            this.labelControl4.Size = new System.Drawing.Size(30, 18);
             this.labelControl4.TabIndex = 8;
-            this.labelControl4.Text = "Tel1: ";
+            this.labelControl4.Text = "Tel: ";
             // 
             // txtSurname
             // 
@@ -306,14 +308,14 @@
             this.labelControl2.TabIndex = 4;
             this.labelControl2.Text = "Ad: ";
             // 
-            // rtbAddress
+            // rchAddress
             // 
-            this.rtbAddress.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.rtbAddress.Location = new System.Drawing.Point(99, 288);
-            this.rtbAddress.Name = "rtbAddress";
-            this.rtbAddress.Size = new System.Drawing.Size(120, 88);
-            this.rtbAddress.TabIndex = 7;
-            this.rtbAddress.Text = "";
+            this.rchAddress.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.rchAddress.Location = new System.Drawing.Point(99, 288);
+            this.rchAddress.Name = "rchAddress";
+            this.rchAddress.Size = new System.Drawing.Size(120, 88);
+            this.rchAddress.TabIndex = 7;
+            this.rchAddress.Text = "";
             // 
             // txtID
             // 
@@ -367,6 +369,7 @@
             this.btnClear.Size = new System.Drawing.Size(174, 29);
             this.btnClear.TabIndex = 34;
             this.btnClear.Text = "Temizle";
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // FrmStaff
             // 
@@ -377,6 +380,7 @@
             this.Controls.Add(this.gridControl1);
             this.Name = "FrmStaff";
             this.Text = "Personeller";
+            this.Load += new System.EventHandler(this.FrmStaff_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
@@ -404,7 +408,7 @@
         private DevExpress.XtraEditors.LabelControl labelControl10;
         private DevExpress.XtraEditors.SimpleButton btnUpdate;
         private DevExpress.XtraEditors.SimpleButton btnDelete;
-        private System.Windows.Forms.MaskedTextBox mskTel1;
+        private System.Windows.Forms.MaskedTextBox mskTel;
         private DevExpress.XtraEditors.SimpleButton btnSave;
         private DevExpress.XtraEditors.LabelControl labelControl8;
         private DevExpress.XtraEditors.TextEdit txtMail;
@@ -415,7 +419,7 @@
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.TextEdit txtName;
         private DevExpress.XtraEditors.LabelControl labelControl2;
-        private System.Windows.Forms.RichTextBox rtbAddress;
+        private System.Windows.Forms.RichTextBox rchAddress;
         private DevExpress.XtraEditors.TextEdit txtID;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.LabelControl labelControl9;

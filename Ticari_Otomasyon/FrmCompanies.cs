@@ -143,6 +143,7 @@ namespace Ticari_Otomasyon
 
         private void cmbProvince_SelectedIndexChanged(object sender, EventArgs e)
         {
+            cmbDistrict.Text = "";
             DistrictList();
         }
 
