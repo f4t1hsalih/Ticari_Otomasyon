@@ -112,5 +112,38 @@ namespace Ticari_Otomasyon
                 txtDuty.Text = dr["duty"].ToString();
             }
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            string command = "delete from tbl_staff where staff_id = @p1";
+            SqlCommand cmd = new SqlCommand(command, con.connection());
+            cmd.Parameters.AddWithValue("@p1", txtID.Text);
+            cmd.ExecuteNonQuery();
+            con.connection().Close();
+            MessageBox.Show("Personel Başarıyla Silindi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            List();
+            Clean();
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            string command = "update tbl_staff set name = @p1, surname = @p2, tel = @p3, tc = @p4, mail = @p5, province = @p6, district = @p7, address = @p8, duty = @p9 where staff_id = @p10";
+            SqlCommand cmd = new SqlCommand(command, con.connection());
+            cmd.Parameters.AddWithValue("@p1", txtName.Text);
+            cmd.Parameters.AddWithValue("@p2", txtSurname.Text);
+            cmd.Parameters.AddWithValue("@p3", mskTel.Text);
+            cmd.Parameters.AddWithValue("@p4", mskTC.Text);
+            cmd.Parameters.AddWithValue("@p5", txtMail.Text);
+            cmd.Parameters.AddWithValue("@p6", cmbProvince.Text);
+            cmd.Parameters.AddWithValue("@p7", cmbDistrict.Text);
+            cmd.Parameters.AddWithValue("@p8", rchAddress.Text);
+            cmd.Parameters.AddWithValue("@p9", txtDuty.Text);
+            cmd.Parameters.AddWithValue("@p10", txtID.Text);
+            cmd.ExecuteNonQuery();
+            con.connection().Close();
+            MessageBox.Show("Personel Bilgileri Güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            List();
+            Clean();
+        }
     }
 }
