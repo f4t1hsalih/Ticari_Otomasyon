@@ -52,5 +52,16 @@ namespace Ticari_Otomasyon
                 staff.Show();
             }
         }
+
+        FrmDirectory directory;
+        private void btnDirectory_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (directory == null)
+            {
+                directory = new FrmDirectory();
+                directory.MdiParent = this;
+                directory.Show();
+            }
+        }
     }
 }

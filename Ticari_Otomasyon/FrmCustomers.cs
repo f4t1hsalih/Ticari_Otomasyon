@@ -68,7 +68,7 @@ namespace Ticari_Otomasyon
             cmd.Parameters.AddWithValue("@p6", txtMail.Text);
             cmd.Parameters.AddWithValue("@p7", cmbProvince.Text);
             cmd.Parameters.AddWithValue("@p8", cmbDistrict.Text);
-            cmd.Parameters.AddWithValue("@p9", rtbAddress.Text);
+            cmd.Parameters.AddWithValue("@p9", rchAddress.Text);
             cmd.Parameters.AddWithValue("@p10", txtTaxAdministration.Text);
             cmd.ExecuteNonQuery();
             con.connection().Close();
@@ -90,7 +90,7 @@ namespace Ticari_Otomasyon
             txtMail.Text = dr["mail"].ToString();
             cmbProvince.Text = dr["province"].ToString();
             cmbDistrict.Text = dr["district"].ToString();
-            rtbAddress.Text = dr["address"].ToString();
+            rchAddress.Text = dr["address"].ToString();
             txtTaxAdministration.Text = dr["tax_administration"].ToString();
             }
 
@@ -119,7 +119,7 @@ namespace Ticari_Otomasyon
             cmd.Parameters.AddWithValue("@p6", txtMail.Text);
             cmd.Parameters.AddWithValue("@p7", cmbProvince.Text);
             cmd.Parameters.AddWithValue("@p8", cmbDistrict.Text);
-            cmd.Parameters.AddWithValue("@p9", rtbAddress.Text);
+            cmd.Parameters.AddWithValue("@p9", rchAddress.Text);
             cmd.Parameters.AddWithValue("@p10", txtTaxAdministration.Text);
             cmd.Parameters.AddWithValue("@p11", txtID.Text);
             cmd.ExecuteNonQuery();

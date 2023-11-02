@@ -50,7 +50,7 @@
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.txtName = new DevExpress.XtraEditors.TextEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.rtbDetail = new System.Windows.Forms.RichTextBox();
+            this.rchDetail = new System.Windows.Forms.RichTextBox();
             this.txtID = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
@@ -113,7 +113,7 @@
             this.groupControl1.Controls.Add(this.labelControl3);
             this.groupControl1.Controls.Add(this.txtName);
             this.groupControl1.Controls.Add(this.labelControl2);
-            this.groupControl1.Controls.Add(this.rtbDetail);
+            this.groupControl1.Controls.Add(this.rchDetail);
             this.groupControl1.Controls.Add(this.txtID);
             this.groupControl1.Controls.Add(this.labelControl1);
             this.groupControl1.Location = new System.Drawing.Point(762, 0);
@@ -300,14 +300,14 @@
             this.labelControl2.TabIndex = 4;
             this.labelControl2.Text = "Ad: ";
             // 
-            // rtbDetail
+            // rchDetail
             // 
-            this.rtbDetail.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.rtbDetail.Location = new System.Drawing.Point(99, 290);
-            this.rtbDetail.Name = "rtbDetail";
-            this.rtbDetail.Size = new System.Drawing.Size(120, 96);
-            this.rtbDetail.TabIndex = 7;
-            this.rtbDetail.Text = "";
+            this.rchDetail.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.rchDetail.Location = new System.Drawing.Point(99, 290);
+            this.rchDetail.Name = "rchDetail";
+            this.rchDetail.Size = new System.Drawing.Size(120, 96);
+            this.rchDetail.TabIndex = 7;
+            this.rchDetail.Text = "";
             // 
             // txtID
             // 
@@ -360,7 +360,7 @@
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraEditors.GroupControl groupControl1;
-        private System.Windows.Forms.RichTextBox rtbDetail;
+        private System.Windows.Forms.RichTextBox rchDetail;
         private DevExpress.XtraEditors.TextEdit txtID;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.LabelControl labelControl9;

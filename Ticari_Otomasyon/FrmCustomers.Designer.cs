@@ -52,7 +52,7 @@
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.txtName = new DevExpress.XtraEditors.TextEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.rtbAddress = new System.Windows.Forms.RichTextBox();
+            this.rchAddress = new System.Windows.Forms.RichTextBox();
             this.txtID = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
@@ -98,7 +98,7 @@
             this.groupControl1.Controls.Add(this.labelControl3);
             this.groupControl1.Controls.Add(this.txtName);
             this.groupControl1.Controls.Add(this.labelControl2);
-            this.groupControl1.Controls.Add(this.rtbAddress);
+            this.groupControl1.Controls.Add(this.rchAddress);
             this.groupControl1.Controls.Add(this.txtID);
             this.groupControl1.Controls.Add(this.labelControl1);
             this.groupControl1.Location = new System.Drawing.Point(762, 6);
@@ -331,14 +331,14 @@
             this.labelControl2.TabIndex = 4;
             this.labelControl2.Text = "Ad: ";
             // 
-            // rtbAddress
+            // rchAddress
             // 
-            this.rtbAddress.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.rtbAddress.Location = new System.Drawing.Point(99, 350);
-            this.rtbAddress.Name = "rtbAddress";
-            this.rtbAddress.Size = new System.Drawing.Size(120, 88);
-            this.rtbAddress.TabIndex = 7;
-            this.rtbAddress.Text = "";
+            this.rchAddress.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.rchAddress.Location = new System.Drawing.Point(99, 350);
+            this.rchAddress.Name = "rchAddress";
+            this.rchAddress.Size = new System.Drawing.Size(120, 88);
+            this.rchAddress.TabIndex = 7;
+            this.rchAddress.Text = "";
             // 
             // txtID
             // 
@@ -383,14 +383,14 @@
             this.gridView1.OptionsView.ShowGroupPanel = false;
             this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
             // 
-            // FrmCutomers
+            // FrmCustomers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1002, 561);
             this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.gridControl1);
-            this.Name = "FrmCutomers";
+            this.Name = "FrmCustomers";
             this.Text = "Müşteriler";
             this.Load += new System.EventHandler(this.FrmCutomers_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
@@ -431,7 +431,7 @@
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.TextEdit txtName;
         private DevExpress.XtraEditors.LabelControl labelControl2;
-        private System.Windows.Forms.RichTextBox rtbAddress;
+        private System.Windows.Forms.RichTextBox rchAddress;
         private DevExpress.XtraEditors.TextEdit txtID;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraGrid.GridControl gridControl1;

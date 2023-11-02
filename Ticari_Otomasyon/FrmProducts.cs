@@ -39,7 +39,7 @@ namespace Ticari_Otomasyon
             cmd.Parameters.AddWithValue("@p5", int.Parse(nudPiece.Text));
             cmd.Parameters.AddWithValue("@p6", decimal.Parse(txtBPrice.Text));
             cmd.Parameters.AddWithValue("@p7", decimal.Parse(txtSPrice.Text));
-            cmd.Parameters.AddWithValue("@p8", rtbDetail.Text);
+            cmd.Parameters.AddWithValue("@p8", rchDetail.Text);
             cmd.ExecuteNonQuery();
             con.connection().Close();
             MessageBox.Show("Ürün Sisteme Eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -69,7 +69,7 @@ namespace Ticari_Otomasyon
             nudPiece.Text = dr["piece"].ToString();
             txtBPrice.Text = dr["bprice"].ToString();
             txtSPrice.Text = dr["sprice"].ToString();
-            rtbDetail.Text = dr["detail"].ToString();
+            rchDetail.Text = dr["detail"].ToString();
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
@@ -84,7 +84,7 @@ namespace Ticari_Otomasyon
             cmd.Parameters.AddWithValue("@p5", int.Parse(nudPiece.Text));
             cmd.Parameters.AddWithValue("@p6", decimal.Parse(txtBPrice.Text));
             cmd.Parameters.AddWithValue("@p7", decimal.Parse(txtSPrice.Text));
-            cmd.Parameters.AddWithValue("@p8", rtbDetail.Text);
+            cmd.Parameters.AddWithValue("@p8", rchDetail.Text);
             cmd.Parameters.AddWithValue("@p9", txtID.Text);
             cmd.ExecuteNonQuery();
             con.connection().Close();
