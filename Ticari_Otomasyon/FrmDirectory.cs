@@ -35,5 +35,31 @@ namespace Ticari_Otomasyon
             CustomersList();
             CompaniesList();
         }
+
+        private void gridView1_DoubleClick(object sender, EventArgs e)
+        {
+            FrmMail mail = new FrmMail();
+            DataRow dr = gridView1.GetDataRow(gridView1.FocusedRowHandle);
+
+            if (dr != null)
+            {
+                mail.mail = dr["mail"].ToString();
+            }
+
+            mail.Show();
+        }
+
+        private void gridView2_DoubleClick(object sender, EventArgs e)
+        {
+            FrmMail mail = new FrmMail();
+            DataRow dr = gridView2.GetDataRow(gridView2.FocusedRowHandle);
+
+            if (dr != null)
+            {
+                mail.mail = dr["mail"].ToString();
+            }
+
+            mail.Show();
+        }
     }
 }

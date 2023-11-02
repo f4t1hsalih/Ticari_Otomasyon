@@ -67,6 +67,7 @@
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
             this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
             this.groupControl5 = new DevExpress.XtraEditors.GroupControl();
+            this.btnClear = new DevExpress.XtraEditors.SimpleButton();
             this.cmbProvince = new DevExpress.XtraEditors.ComboBoxEdit();
             this.cmbDistrict = new DevExpress.XtraEditors.ComboBoxEdit();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
@@ -87,7 +88,6 @@
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.txtCode3 = new DevExpress.XtraEditors.TextEdit();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
-            this.btnClear = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.txtTaxAdministration.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSector.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtName.Properties)).BeginInit();
@@ -274,6 +274,8 @@
             // 
             // gridView1
             // 
+            this.gridView1.Appearance.Row.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.gridView1.Appearance.Row.Options.UseBackColor = true;
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsBehavior.AllowAddRows = DevExpress.Utils.DefaultBoolean.False;
@@ -534,6 +536,18 @@
             this.groupControl5.TabIndex = 33;
             this.groupControl5.Text = "groupControl5";
             // 
+            // btnClear
+            // 
+            this.btnClear.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnClear.Appearance.Options.UseFont = true;
+            this.btnClear.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnClear.ImageOptions.SvgImage")));
+            this.btnClear.Location = new System.Drawing.Point(28, 353);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(174, 29);
+            this.btnClear.TabIndex = 33;
+            this.btnClear.Text = "Temizle";
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
             // cmbProvince
             // 
             this.cmbProvince.Location = new System.Drawing.Point(76, 16);
@@ -734,18 +748,6 @@
             this.labelControl6.Size = new System.Drawing.Size(38, 18);
             this.labelControl6.TabIndex = 6;
             this.labelControl6.Text = "Kod3:";
-            // 
-            // btnClear
-            // 
-            this.btnClear.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnClear.Appearance.Options.UseFont = true;
-            this.btnClear.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton1.ImageOptions.SvgImage")));
-            this.btnClear.Location = new System.Drawing.Point(28, 353);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(174, 29);
-            this.btnClear.TabIndex = 33;
-            this.btnClear.Text = "Temizle";
-            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // FrmCompanies
             // 
