@@ -24,9 +24,9 @@ namespace Ticari_Otomasyon
             SmtpClient istemci = new SmtpClient();
             istemci.Credentials = new System.Net.NetworkCredential("Mail", "Şifre");
             istemci.Port = 587;
-            istemci.Host = "smtp.live.com";
+            istemci.Host = "smtp.gmail.com";
             istemci.EnableSsl = true;
-            message.To.Add(rchMessageBody.Text);
+            message.To.Add(txtmail.Text);
             message.From = new MailAddress("Mail");
             message.Subject = txTitle.Text;
             message.Body = rchMessageBody.Text;

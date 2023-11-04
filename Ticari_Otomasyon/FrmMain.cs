@@ -63,5 +63,16 @@ namespace Ticari_Otomasyon
                 directory.Show();
             }
         }
+
+        FrmExpences expences;
+        private void btnExpenses_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (expences == null)
+            {
+                expences = new FrmExpences();
+                expences.MdiParent = this;
+                expences.Show();
+            }
+        }
     }
 }
