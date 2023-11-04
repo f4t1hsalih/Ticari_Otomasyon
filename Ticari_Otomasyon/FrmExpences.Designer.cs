@@ -52,7 +52,7 @@
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.txtNaturalGas = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
+            this.txtInternet = new DevExpress.XtraEditors.TextEdit();
             this.txtSalaries = new DevExpress.XtraEditors.TextEdit();
             this.txtEkstra = new DevExpress.XtraEditors.TextEdit();
             this.btnClear = new DevExpress.XtraEditors.SimpleButton();
@@ -66,7 +66,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNaturalGas.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtInternet.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSalaries.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEkstra.Properties)).BeginInit();
             this.SuspendLayout();
@@ -80,7 +80,7 @@
             this.groupControl1.Controls.Add(this.btnClear);
             this.groupControl1.Controls.Add(this.txtEkstra);
             this.groupControl1.Controls.Add(this.txtSalaries);
-            this.groupControl1.Controls.Add(this.textEdit2);
+            this.groupControl1.Controls.Add(this.txtInternet);
             this.groupControl1.Controls.Add(this.txtNaturalGas);
             this.groupControl1.Controls.Add(this.cmbYear);
             this.groupControl1.Controls.Add(this.txtWater);
@@ -194,6 +194,7 @@
             this.btnUpdate.Size = new System.Drawing.Size(174, 29);
             this.btnUpdate.TabIndex = 19;
             this.btnUpdate.Text = "Güncelle";
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 
@@ -205,6 +206,7 @@
             this.btnDelete.Size = new System.Drawing.Size(174, 29);
             this.btnDelete.TabIndex = 18;
             this.btnDelete.Text = "Sil";
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnSave
             // 
@@ -216,6 +218,7 @@
             this.btnSave.Size = new System.Drawing.Size(174, 29);
             this.btnSave.TabIndex = 8;
             this.btnSave.Text = "Kaydet";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // labelControl8
             // 
@@ -348,6 +351,7 @@
             this.gridView1.OptionsBehavior.AllowDeleteRows = DevExpress.Utils.DefaultBoolean.False;
             this.gridView1.OptionsBehavior.Editable = false;
             this.gridView1.OptionsView.ShowGroupPanel = false;
+            this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
             // 
             // txtNaturalGas
             // 
@@ -358,14 +362,14 @@
             this.txtNaturalGas.Size = new System.Drawing.Size(125, 24);
             this.txtNaturalGas.TabIndex = 29;
             // 
-            // textEdit2
+            // txtInternet
             // 
-            this.textEdit2.Location = new System.Drawing.Point(93, 213);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textEdit2.Properties.Appearance.Options.UseFont = true;
-            this.textEdit2.Size = new System.Drawing.Size(125, 24);
-            this.textEdit2.TabIndex = 30;
+            this.txtInternet.Location = new System.Drawing.Point(93, 213);
+            this.txtInternet.Name = "txtInternet";
+            this.txtInternet.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtInternet.Properties.Appearance.Options.UseFont = true;
+            this.txtInternet.Size = new System.Drawing.Size(125, 24);
+            this.txtInternet.TabIndex = 30;
             // 
             // txtSalaries
             // 
@@ -395,6 +399,7 @@
             this.btnClear.Size = new System.Drawing.Size(174, 29);
             this.btnClear.TabIndex = 35;
             this.btnClear.Text = "Temizle";
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // FrmExpences
             // 
@@ -405,6 +410,7 @@
             this.Controls.Add(this.gridControl1);
             this.Name = "FrmExpences";
             this.Text = "Giderler";
+            this.Load += new System.EventHandler(this.FrmExpences_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
@@ -416,7 +422,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNaturalGas.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtInternet.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSalaries.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEkstra.Properties)).EndInit();
             this.ResumeLayout(false);
@@ -449,7 +455,7 @@
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraEditors.TextEdit txtEkstra;
         private DevExpress.XtraEditors.TextEdit txtSalaries;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
+        private DevExpress.XtraEditors.TextEdit txtInternet;
         private DevExpress.XtraEditors.TextEdit txtNaturalGas;
         private DevExpress.XtraEditors.SimpleButton btnClear;
     }
