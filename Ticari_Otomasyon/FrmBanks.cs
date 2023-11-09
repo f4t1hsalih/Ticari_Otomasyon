@@ -16,7 +16,8 @@ namespace Ticari_Otomasyon
 
         void List()
         {
-            string command = "select * from tbl_banks";
+            //Prosedür ile  sql kodu çalıştırma
+            string command = "execute Bank_Info";
             SqlCommand cmd = new SqlCommand(command, con.connection());
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
