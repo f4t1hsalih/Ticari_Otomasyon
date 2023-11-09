@@ -46,10 +46,24 @@ namespace Ticari_Otomasyon
                 cmbDistrict.Properties.Items.Add(dr[0]);
             }
         }
+        void CompanieList()
+        {
+            string command = "Select comp_id, name from tbl_companies";
+            SqlCommand cmd = new SqlCommand(command, con.connection());
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            lueCompanie.Properties.NullText = "Firma";
+            lueCompanie.Properties.ValueMember = "comp_id";
+            lueCompanie.Properties.DisplayMember = "name";
+            lueCompanie.Properties.DataSource = dt;
+        }
+
         private void FrmBanks_Load(object sender, EventArgs e)
         {
             List();
             ProvinceList();
+            CompanieList();
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -66,7 +80,7 @@ namespace Ticari_Otomasyon
             cmd.Parameters.AddWithValue("@p8", mskTel.Text);
             cmd.Parameters.AddWithValue("@p9", mskDate.Text);
             cmd.Parameters.AddWithValue("@p10", txtAccount_Type.Text);
-            cmd.Parameters.AddWithValue("@p11", int.Parse(txtCompanie.Text));
+            cmd.Parameters.AddWithValue("@p11", int.Parse(lueCompanie.Text));
             cmd.ExecuteNonQuery();
             con.connection().Close();
             MessageBox.Show("Banka Başarıyla Kaydedildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);

@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmBanks));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.mskDate = new System.Windows.Forms.MaskedTextBox();
-            this.txtCompanie = new DevExpress.XtraEditors.TextEdit();
             this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
             this.txtAccount_Type = new DevExpress.XtraEditors.TextEdit();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
@@ -60,9 +59,9 @@
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.lueCompanie = new DevExpress.XtraEditors.LookUpEdit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtCompanie.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAccount_Type.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbDistrict.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAuthorized.Properties)).BeginInit();
@@ -73,6 +72,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lueCompanie.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // groupControl1
@@ -81,8 +81,8 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupControl1.Appearance.BackColor = System.Drawing.Color.DarkGray;
             this.groupControl1.Appearance.Options.UseBackColor = true;
+            this.groupControl1.Controls.Add(this.lueCompanie);
             this.groupControl1.Controls.Add(this.mskDate);
-            this.groupControl1.Controls.Add(this.txtCompanie);
             this.groupControl1.Controls.Add(this.labelControl12);
             this.groupControl1.Controls.Add(this.txtAccount_Type);
             this.groupControl1.Controls.Add(this.labelControl5);
@@ -123,15 +123,6 @@
             this.mskDate.Size = new System.Drawing.Size(120, 26);
             this.mskDate.TabIndex = 41;
             this.mskDate.ValidatingType = typeof(System.DateTime);
-            // 
-            // txtCompanie
-            // 
-            this.txtCompanie.Location = new System.Drawing.Point(99, 380);
-            this.txtCompanie.Name = "txtCompanie";
-            this.txtCompanie.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtCompanie.Properties.Appearance.Options.UseFont = true;
-            this.txtCompanie.Size = new System.Drawing.Size(120, 24);
-            this.txtCompanie.TabIndex = 40;
             // 
             // labelControl12
             // 
@@ -420,6 +411,17 @@
             this.gridView1.OptionsBehavior.Editable = false;
             this.gridView1.OptionsView.ShowGroupPanel = false;
             // 
+            // lueCompanie
+            // 
+            this.lueCompanie.Location = new System.Drawing.Point(99, 380);
+            this.lueCompanie.Name = "lueCompanie";
+            this.lueCompanie.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lueCompanie.Properties.Appearance.Options.UseFont = true;
+            this.lueCompanie.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.lueCompanie.Size = new System.Drawing.Size(120, 24);
+            this.lueCompanie.TabIndex = 42;
+            // 
             // FrmBanks
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -433,7 +435,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtCompanie.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAccount_Type.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbDistrict.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAuthorized.Properties)).EndInit();
@@ -444,6 +445,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lueCompanie.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -475,11 +477,11 @@
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
-        private DevExpress.XtraEditors.TextEdit txtCompanie;
         private DevExpress.XtraEditors.LabelControl labelControl12;
         private DevExpress.XtraEditors.TextEdit txtAccount_Type;
         private DevExpress.XtraEditors.LabelControl labelControl5;
         private DevExpress.XtraEditors.LabelControl labelControl11;
         private System.Windows.Forms.MaskedTextBox mskDate;
+        private DevExpress.XtraEditors.LookUpEdit lueCompanie;
     }
 }
