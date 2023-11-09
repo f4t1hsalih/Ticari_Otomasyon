@@ -38,7 +38,7 @@
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
             this.btnClear = new DevExpress.XtraEditors.SimpleButton();
             this.cmbDistrict = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.txtAAuthorized = new DevExpress.XtraEditors.TextEdit();
+            this.txtAuthorized = new DevExpress.XtraEditors.TextEdit();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.cmbProvince = new DevExpress.XtraEditors.ComboBoxEdit();
             this.mskIBAN = new System.Windows.Forms.MaskedTextBox();
@@ -65,7 +65,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtCompanie.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAccount_Type.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbDistrict.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtAAuthorized.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAuthorized.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbProvince.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtBranch.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAccount_Number.Properties)).BeginInit();
@@ -89,7 +89,7 @@
             this.groupControl1.Controls.Add(this.labelControl11);
             this.groupControl1.Controls.Add(this.btnClear);
             this.groupControl1.Controls.Add(this.cmbDistrict);
-            this.groupControl1.Controls.Add(this.txtAAuthorized);
+            this.groupControl1.Controls.Add(this.txtAuthorized);
             this.groupControl1.Controls.Add(this.labelControl9);
             this.groupControl1.Controls.Add(this.cmbProvince);
             this.groupControl1.Controls.Add(this.mskIBAN);
@@ -195,14 +195,14 @@
             this.cmbDistrict.Size = new System.Drawing.Size(120, 24);
             this.cmbDistrict.TabIndex = 28;
             // 
-            // txtAAuthorized
+            // txtAuthorized
             // 
-            this.txtAAuthorized.Location = new System.Drawing.Point(99, 256);
-            this.txtAAuthorized.Name = "txtAAuthorized";
-            this.txtAAuthorized.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtAAuthorized.Properties.Appearance.Options.UseFont = true;
-            this.txtAAuthorized.Size = new System.Drawing.Size(120, 24);
-            this.txtAAuthorized.TabIndex = 27;
+            this.txtAuthorized.Location = new System.Drawing.Point(99, 256);
+            this.txtAuthorized.Name = "txtAuthorized";
+            this.txtAuthorized.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtAuthorized.Properties.Appearance.Options.UseFont = true;
+            this.txtAuthorized.Size = new System.Drawing.Size(120, 24);
+            this.txtAuthorized.TabIndex = 27;
             // 
             // labelControl9
             // 
@@ -225,6 +225,7 @@
             this.cmbProvince.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.cmbProvince.Size = new System.Drawing.Size(120, 24);
             this.cmbProvince.TabIndex = 25;
+            this.cmbProvince.SelectedIndexChanged += new System.EventHandler(this.cmbProvince_SelectedIndexChanged);
             // 
             // mskIBAN
             // 
@@ -286,6 +287,7 @@
             this.btnSave.Size = new System.Drawing.Size(174, 29);
             this.btnSave.TabIndex = 8;
             this.btnSave.Text = "Kaydet";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // labelControl8
             // 
@@ -434,7 +436,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtCompanie.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAccount_Type.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbDistrict.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtAAuthorized.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAuthorized.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbProvince.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtBranch.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAccount_Number.Properties)).EndInit();
@@ -451,7 +453,7 @@
         private DevExpress.XtraEditors.GroupControl groupControl1;
         private DevExpress.XtraEditors.SimpleButton btnClear;
         private DevExpress.XtraEditors.ComboBoxEdit cmbDistrict;
-        private DevExpress.XtraEditors.TextEdit txtAAuthorized;
+        private DevExpress.XtraEditors.TextEdit txtAuthorized;
         private DevExpress.XtraEditors.LabelControl labelControl9;
         private DevExpress.XtraEditors.ComboBoxEdit cmbProvince;
         private System.Windows.Forms.MaskedTextBox mskIBAN;
