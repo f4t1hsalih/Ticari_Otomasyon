@@ -259,6 +259,7 @@
             this.btnUpdate.Size = new System.Drawing.Size(174, 29);
             this.btnUpdate.TabIndex = 19;
             this.btnUpdate.Text = "Güncelle";
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 

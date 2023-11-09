@@ -106,6 +106,7 @@ namespace Ticari_Otomasyon
 
         private void cmbProvince_SelectedIndexChanged(object sender, EventArgs e)
         {
+            cmbDistrict.Text = "";
             DistrictList();
         }
 
@@ -142,6 +143,29 @@ namespace Ticari_Otomasyon
             cmd.ExecuteNonQuery();
             con.connection().Close();
             MessageBox.Show("Banka Başarıyla Silindi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            List();
+            Clean();
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            string command = "update tbl_banks set name = @p1, province = @p2, district = @p3, branch = @p4, iban = @p5, account_number = @p6, authorized = @p7, tel = @p8, date = @p9, account_type = @p10, comp_id = @p11 where bank_id = @p12";
+            SqlCommand cmd = new SqlCommand(command, con.connection());
+            cmd.Parameters.AddWithValue("@p1", txtBankName.Text);
+            cmd.Parameters.AddWithValue("@p2", cmbProvince.Text);
+            cmd.Parameters.AddWithValue("@p3", cmbDistrict.Text);
+            cmd.Parameters.AddWithValue("@p4", txtBranch.Text);
+            cmd.Parameters.AddWithValue("@p5", mskIBAN.Text);
+            cmd.Parameters.AddWithValue("@p6", txtAccount_Number.Text);
+            cmd.Parameters.AddWithValue("@p7", txtAuthorized.Text);
+            cmd.Parameters.AddWithValue("@p8", mskTel.Text);
+            cmd.Parameters.AddWithValue("@p9", mskDate.Text);
+            cmd.Parameters.AddWithValue("@p10", txtAccount_Type.Text);
+            cmd.Parameters.AddWithValue("@p11", lueCompanie.EditValue);
+            cmd.Parameters.AddWithValue("@p12", txtID.Text);
+            cmd.ExecuteNonQuery();
+            con.connection().Close();
+            MessageBox.Show("Banka Bilgileri Güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             List();
             Clean();
         }
