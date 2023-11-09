@@ -14,6 +14,21 @@ namespace Ticari_Otomasyon
 
         SqlConn con = new SqlConn();
 
+        void Clean()
+        {
+            txtID.Clear();
+            txtBankName.Clear();
+            cmbProvince.Clear();
+            cmbDistrict.Clear();
+            txtBranch.Clear();
+            mskIBAN.Clear();
+            txtAccount_Number.Clear();
+            txtAuthorized.Clear();
+            mskTel.Clear();
+            mskDate.Clear();
+            txtAccount_Type.Clear();
+            lueCompanie.Clear();
+        }
         void List()
         {
             //Prosedür ile  sql kodu çalıştırma
@@ -62,6 +77,7 @@ namespace Ticari_Otomasyon
         private void FrmBanks_Load(object sender, EventArgs e)
         {
             List();
+            Clean();
             ProvinceList();
             CompanieList();
         }
@@ -80,17 +96,42 @@ namespace Ticari_Otomasyon
             cmd.Parameters.AddWithValue("@p8", mskTel.Text);
             cmd.Parameters.AddWithValue("@p9", mskDate.Text);
             cmd.Parameters.AddWithValue("@p10", txtAccount_Type.Text);
-            cmd.Parameters.AddWithValue("@p11", int.Parse(lueCompanie.Text));
+            cmd.Parameters.AddWithValue("@p11", lueCompanie.EditValue);
             cmd.ExecuteNonQuery();
             con.connection().Close();
             MessageBox.Show("Banka Başarıyla Kaydedildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             List();
-            //Clean();
+            Clean();
         }
 
         private void cmbProvince_SelectedIndexChanged(object sender, EventArgs e)
         {
             DistrictList();
+        }
+
+        private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
+        {
+            DataRow dr = gridView1.GetDataRow(gridView1.FocusedRowHandle);
+            if (dr != null)
+            {
+                txtID.Text = dr["ID"].ToString();
+                txtBankName.Text = dr["Banka"].ToString();
+                cmbProvince.Text = dr["İl"].ToString();
+                cmbDistrict.Text = dr["İlçe"].ToString();
+                txtBranch.Text = dr["Şube"].ToString();
+                mskIBAN.Text = dr["IBAN"].ToString();
+                txtAccount_Number.Text = dr["Hesap No"].ToString();
+                txtAuthorized.Text = dr["Yetkili"].ToString();
+                mskTel.Text = dr["Telefon"].ToString();
+                mskDate.Text = dr["Tarih"].ToString();
+                txtAccount_Type.Text = dr["Hesap Türü"].ToString();
+                lueCompanie.Text = dr["Şirket"].ToString();
+            }
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            Clean();
         }
     }
 }
