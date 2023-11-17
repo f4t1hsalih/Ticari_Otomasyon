@@ -21,10 +21,28 @@ namespace Ticari_Otomasyon
             da.Fill(dt);
             gridControl1.DataSource = dt;
         }
+        void Clean()
+        {
+            txtID.Clear();
+            txtSerie.Clear();
+            txtSequenceNumber.Clear();
+            mskDate.Clear();
+            mskHour.Clear();
+            txtTaxAdministration.Clear();
+            txtBuyer.Clear();
+            txtDeliverer.Clear();
+            txtReceiver.Clear();
+            txtProdName.Clear();
+            txtAmount.Clear();
+            txtPrice.Clear();
+            txtTotal.Clear();
+            txtInvoiceProdID.Clear();
+        }
 
         private void FrmBills_Load(object sender, EventArgs e)
         {
             List();
+            Clean();
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -43,6 +61,7 @@ namespace Ticari_Otomasyon
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Fatura Başarıyla Kaydedildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 List();
+                Clean();
             }
         }
 
@@ -61,6 +80,11 @@ namespace Ticari_Otomasyon
                 txtDeliverer.Text = dr["deliverer"].ToString();
                 txtReceiver.Text = dr["receiver"].ToString();
             }
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            Clean();
         }
     }
 }
