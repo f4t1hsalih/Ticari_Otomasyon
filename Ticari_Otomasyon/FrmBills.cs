@@ -45,5 +45,22 @@ namespace Ticari_Otomasyon
                 List();
             }
         }
+
+        private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
+        {
+            DataRow dr = gridView1.GetDataRow(gridView1.FocusedRowHandle);
+            if (dr != null)
+            {
+                txtID.Text = dr["invoice_info_id"].ToString();
+                txtSerie.Text = dr["serie"].ToString();
+                txtSequenceNumber.Text = dr["sequence_number"].ToString();
+                mskDate.Text = dr["date"].ToString();
+                mskHour.Text = dr["hour"].ToString();
+                txtTaxAdministration.Text = dr["tax_administration"].ToString();
+                txtBuyer.Text = dr["buyer"].ToString();
+                txtDeliverer.Text = dr["deliverer"].ToString();
+                txtReceiver.Text = dr["receiver"].ToString();
+            }
+        }
     }
 }
