@@ -469,6 +469,7 @@
             this.btnSave.Size = new System.Drawing.Size(174, 29);
             this.btnSave.TabIndex = 8;
             this.btnSave.Text = "Kaydet";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // labelControl11
             // 
