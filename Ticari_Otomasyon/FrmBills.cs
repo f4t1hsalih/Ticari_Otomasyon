@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Ticari_Otomasyon
 {
@@ -15,6 +16,21 @@ namespace Ticari_Otomasyon
         public FrmBills()
         {
             InitializeComponent();
+        }
+
+        SqlConn con = new SqlConn();
+
+        void List()
+        {
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter("select * from tbl_invoice_info", con.connection());
+            da.Fill(dt);
+            gridControl1.DataSource = dt;
+        }
+
+        private void FrmBills_Load(object sender, EventArgs e)
+        {
+            List();
         }
     }
 }

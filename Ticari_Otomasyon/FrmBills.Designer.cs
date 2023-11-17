@@ -543,6 +543,7 @@
             this.Controls.Add(this.gridControl1);
             this.Name = "FrmBills";
             this.Text = "Faturalar";
+            this.Load += new System.EventHandler(this.FrmBills_Load);
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
             this.xtraTabControl1.ResumeLayout(false);
             this.xtraTabPage1.ResumeLayout(false);
