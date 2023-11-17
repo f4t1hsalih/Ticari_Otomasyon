@@ -237,6 +237,7 @@
             this.btnBills.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnBills.ItemAppearance.Normal.Options.UseFont = true;
             this.btnBills.Name = "btnBills";
+            this.btnBills.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnBills_ItemClick);
             // 
             // btnSettings
             // 

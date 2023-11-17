@@ -85,5 +85,16 @@ namespace Ticari_Otomasyon
                 banks.Show();
             }
         }
+
+        FrmBills bills;
+        private void btnBills_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (bills == null)
+            {
+                bills = new FrmBills();
+                bills.MdiParent = this;
+                bills.Show();
+            }
+        }
     }
 }
