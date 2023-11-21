@@ -106,5 +106,17 @@ namespace Ticari_Otomasyon
         {
             Clean();
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            string command = "delete from tbl_invoice_info where invoice_info_id = @p1";
+            SqlCommand cmd = new SqlCommand(command, con.connection());
+            cmd.Parameters.AddWithValue("@p1", txtID.Text);
+            cmd.ExecuteNonQuery();
+            con.connection().Close();
+            MessageBox.Show("Fatura Başarıyla Silindi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            List();
+            Clean();
+        }
     }
 }
