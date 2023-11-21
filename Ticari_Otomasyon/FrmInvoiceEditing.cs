@@ -33,6 +33,17 @@ namespace Ticari_Otomasyon
         private void FrmInvoiceEditing_Load(object sender, EventArgs e)
         {
             txtInvoiceInfoID.Text = prodId;
+
+            SqlCommand cmd = new SqlCommand("select * from tbl_invoice_detail where invoice_prod_id ='" + prodId + "'", con.connection());
+            SqlDataReader dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                txtProdName.Text = dr[1].ToString();
+                txtAmount.Text = dr[2].ToString();
+                txtPrice.Text = dr[3].ToString();
+                txtTotal.Text = dr[4].ToString();
+            }
+            con.connection().Close();
         }
 
         private void btnClean_Click(object sender, EventArgs e)
