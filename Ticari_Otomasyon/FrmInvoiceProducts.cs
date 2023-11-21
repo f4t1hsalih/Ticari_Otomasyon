@@ -34,7 +34,7 @@ namespace Ticari_Otomasyon
             DataRow dr = gridView1.GetDataRow(gridView1.FocusedRowHandle);
             if (dr != null)
             {
-                InvoiceEditing.prodId = dr["invoice_info_id"].ToString();
+                InvoiceEditing.prodId = dr["invoice_prod_id"].ToString();
             }
             InvoiceEditing.Show();
         }
