@@ -27,5 +27,16 @@ namespace Ticari_Otomasyon
         {
             List();
         }
+
+        private void gridView1_DoubleClick(object sender, EventArgs e)
+        {
+            FrmInvoiceEditing InvoiceEditing = new FrmInvoiceEditing();
+            DataRow dr = gridView1.GetDataRow(gridView1.FocusedRowHandle);
+            if (dr != null)
+            {
+                InvoiceEditing.prodId = dr["invoice_info_id"].ToString();
+            }
+            InvoiceEditing.Show();
+        }
     }
 }

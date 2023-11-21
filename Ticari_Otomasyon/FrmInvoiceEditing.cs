@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Ticari_Otomasyon
 {
@@ -27,6 +28,8 @@ namespace Ticari_Otomasyon
             txtTotal.Clear();
         }
 
+        SqlConn con = new SqlConn();
+
         private void FrmInvoiceEditing_Load(object sender, EventArgs e)
         {
             txtInvoiceInfoID.Text = prodId;
@@ -35,6 +38,11 @@ namespace Ticari_Otomasyon
         private void btnClean_Click(object sender, EventArgs e)
         {
             Clean();
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
