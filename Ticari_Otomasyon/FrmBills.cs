@@ -63,6 +63,26 @@ namespace Ticari_Otomasyon
                 List();
                 Clean();
             }
+
+            if (txtInvoiceProdID.Text != "")
+            {
+                double amount, price, total;
+                price = Convert.ToDouble(txtPrice.Text);
+                amount = Convert.ToDouble(txtAmount.Text);
+                total = amount * price;
+                txtTotal.Text = total.ToString();
+
+                SqlCommand cmd = new SqlCommand("insert into tbl_invoice_detail (prod_name, amount, price, total, invoice_info_id) values (@p1, @p2, @p3, @p4, @p5)", con.connection());
+                cmd.Parameters.AddWithValue("@p1", txtProdName.Text);
+                cmd.Parameters.AddWithValue("@p2", txtAmount.Text);
+                cmd.Parameters.AddWithValue("@p3", txtPrice.Text);
+                cmd.Parameters.AddWithValue("@p4", txtTotal.Text);
+                cmd.Parameters.AddWithValue("@p5", txtInvoiceProdID.Text);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Faturaya Ait Ürün Başarıyla Kaydedildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                List();
+                Clean();
+            }
         }
 
         private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
