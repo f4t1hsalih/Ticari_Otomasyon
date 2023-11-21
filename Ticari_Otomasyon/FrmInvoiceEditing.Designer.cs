@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmInvoiceEditing));
             this.groupControl5 = new DevExpress.XtraEditors.GroupControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.txtInvoiceInfoID = new DevExpress.XtraEditors.TextEdit();
+            this.txtInvoiceProdID = new DevExpress.XtraEditors.TextEdit();
             this.txtTotal = new DevExpress.XtraEditors.TextEdit();
             this.txtPrice = new DevExpress.XtraEditors.TextEdit();
             this.txtAmount = new DevExpress.XtraEditors.TextEdit();
@@ -45,7 +45,7 @@
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).BeginInit();
             this.groupControl5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtInvoiceInfoID.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtInvoiceProdID.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTotal.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPrice.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAmount.Properties)).BeginInit();
@@ -55,7 +55,7 @@
             // groupControl5
             // 
             this.groupControl5.Controls.Add(this.labelControl1);
-            this.groupControl5.Controls.Add(this.txtInvoiceInfoID);
+            this.groupControl5.Controls.Add(this.txtInvoiceProdID);
             this.groupControl5.Controls.Add(this.txtTotal);
             this.groupControl5.Controls.Add(this.txtPrice);
             this.groupControl5.Controls.Add(this.txtAmount);
@@ -84,15 +84,15 @@
             this.labelControl1.TabIndex = 39;
             this.labelControl1.Text = "Fatura ID:";
             // 
-            // txtInvoiceInfoID
+            // txtInvoiceProdID
             // 
-            this.txtInvoiceInfoID.Enabled = false;
-            this.txtInvoiceInfoID.Location = new System.Drawing.Point(95, 13);
-            this.txtInvoiceInfoID.Name = "txtInvoiceInfoID";
-            this.txtInvoiceInfoID.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtInvoiceInfoID.Properties.Appearance.Options.UseFont = true;
-            this.txtInvoiceInfoID.Size = new System.Drawing.Size(137, 24);
-            this.txtInvoiceInfoID.TabIndex = 38;
+            this.txtInvoiceProdID.Enabled = false;
+            this.txtInvoiceProdID.Location = new System.Drawing.Point(95, 13);
+            this.txtInvoiceProdID.Name = "txtInvoiceProdID";
+            this.txtInvoiceProdID.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtInvoiceProdID.Properties.Appearance.Options.UseFont = true;
+            this.txtInvoiceProdID.Size = new System.Drawing.Size(137, 24);
+            this.txtInvoiceProdID.TabIndex = 38;
             // 
             // txtTotal
             // 
@@ -220,7 +220,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).EndInit();
             this.groupControl5.ResumeLayout(false);
             this.groupControl5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtInvoiceInfoID.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtInvoiceProdID.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTotal.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPrice.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAmount.Properties)).EndInit();
@@ -233,7 +233,7 @@
 
         private DevExpress.XtraEditors.GroupControl groupControl5;
         private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraEditors.TextEdit txtInvoiceInfoID;
+        private DevExpress.XtraEditors.TextEdit txtInvoiceProdID;
         private DevExpress.XtraEditors.TextEdit txtTotal;
         private DevExpress.XtraEditors.TextEdit txtPrice;
         private DevExpress.XtraEditors.TextEdit txtAmount;

@@ -1,13 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Windows.Forms;
 
 namespace Ticari_Otomasyon
 {
@@ -32,7 +25,7 @@ namespace Ticari_Otomasyon
 
         private void FrmInvoiceEditing_Load(object sender, EventArgs e)
         {
-            txtInvoiceInfoID.Text = prodId;
+            txtInvoiceProdID.Text = prodId;
 
             SqlCommand cmd = new SqlCommand("select * from tbl_invoice_detail where invoice_prod_id ='" + prodId + "'", con.connection());
             SqlDataReader dr = cmd.ExecuteReader();
@@ -53,7 +46,23 @@ namespace Ticari_Otomasyon
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
+            double amount, price, total;
+            price = Convert.ToDouble(txtPrice.Text);
+            amount = Convert.ToDouble(txtAmount.Text);
+            total = amount * price;
+            txtTotal.Text = total.ToString();
 
+            string command = "update tbl_invoice_detail set prod_name = @p1, amount = @p2, price = @p3, total = @p4 where invoice_prod_id = @p5";
+            SqlCommand cmd = new SqlCommand(command, con.connection());
+            cmd.Parameters.AddWithValue("@p1", txtProdName.Text);
+            cmd.Parameters.AddWithValue("@p2", txtAmount.Text);
+            cmd.Parameters.AddWithValue("@p3", Convert.ToDecimal(txtPrice.Text));
+            cmd.Parameters.AddWithValue("@p4", Convert.ToDecimal(txtTotal.Text));
+            cmd.Parameters.AddWithValue("@p5", txtInvoiceProdID.Text);
+            cmd.ExecuteNonQuery();
+            con.connection().Close();
+            MessageBox.Show("Fatura Ürün Başarıyla Güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            Clean();
         }
     }
 }
