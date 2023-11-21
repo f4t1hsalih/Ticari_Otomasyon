@@ -118,5 +118,25 @@ namespace Ticari_Otomasyon
             List();
             Clean();
         }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            string command = "update tbl_invoice_info set serie = @p1, sequence_number = @p2, date = @p3, hour = @p4, tax_administration = @p5, buyer = @p6, deliverer = @p7, receiver = @p8 where invoice_info_id = @p9";
+            SqlCommand cmd = new SqlCommand(command, con.connection());
+            cmd.Parameters.AddWithValue("@p1", txtSerie.Text);
+            cmd.Parameters.AddWithValue("@p2", txtSequenceNumber.Text);
+            cmd.Parameters.AddWithValue("@p3", mskDate.Text);
+            cmd.Parameters.AddWithValue("@p4", mskHour.Text);
+            cmd.Parameters.AddWithValue("@p5", txtTaxAdministration.Text);
+            cmd.Parameters.AddWithValue("@p6", txtBuyer.Text);
+            cmd.Parameters.AddWithValue("@p7", txtDeliverer.Text);
+            cmd.Parameters.AddWithValue("@p8", txtReceiver.Text);
+            cmd.Parameters.AddWithValue("@p9", txtID.Text);
+            cmd.ExecuteNonQuery();
+            con.connection().Close();
+            MessageBox.Show("Fatura Bilgisi Güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            List();
+            Clean();
+        }
     }
 }
