@@ -92,6 +92,12 @@
     <Compile Include="FrmExpences.Designer.cs">
       <DependentUpon>FrmExpences.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmInvoiceProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInvoiceProducts.Designer.cs">
+      <DependentUpon>FrmInvoiceProducts.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMail.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,6 +142,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmExpences.resx">
       <DependentUpon>FrmExpences.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInvoiceProducts.resx">
+      <DependentUpon>FrmInvoiceProducts.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMail.resx">
       <DependentUpon>FrmMail.cs</DependentUpon>
