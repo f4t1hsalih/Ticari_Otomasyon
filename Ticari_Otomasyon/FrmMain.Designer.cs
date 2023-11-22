@@ -202,6 +202,7 @@
             this.btnNotes.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnNotes.ItemAppearance.Normal.Options.UseFont = true;
             this.btnNotes.Name = "btnNotes";
+            this.btnNotes.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnNotes_ItemClick);
             // 
             // btnBanks
             // 

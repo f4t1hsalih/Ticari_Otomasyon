@@ -1,6 +1,4 @@
-﻿using System.Windows.Forms;
-
-namespace Ticari_Otomasyon
+﻿namespace Ticari_Otomasyon
 {
     public partial class FrmMain : DevExpress.XtraBars.Ribbon.RibbonForm
     {
@@ -9,7 +7,7 @@ namespace Ticari_Otomasyon
             InitializeComponent();
         }
 
-        FrmProducts products ;
+        FrmProducts products;
         private void btnProducts_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             if (products == null)
@@ -94,6 +92,17 @@ namespace Ticari_Otomasyon
                 bills = new FrmBills();
                 bills.MdiParent = this;
                 bills.Show();
+            }
+        }
+
+        FrmNotes notes;
+        private void btnNotes_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (notes == null)
+            {
+                notes = new FrmNotes();
+                notes.MdiParent = this;
+                notes.Show();
             }
         }
     }
