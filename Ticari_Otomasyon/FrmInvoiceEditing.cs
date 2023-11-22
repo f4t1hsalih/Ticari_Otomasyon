@@ -64,5 +64,16 @@ namespace Ticari_Otomasyon
             MessageBox.Show("Fatura Ürün Başarıyla Güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             Clean();
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            string command = "delete from tbl_invoice_detail where invoice_prod_id = @p1";
+            SqlCommand cmd = new SqlCommand(command, con.connection());
+            cmd.Parameters.AddWithValue("@p1", txtInvoiceProdID.Text);
+            cmd.ExecuteNonQuery();
+            con.connection().Close();
+            MessageBox.Show("Faturada Bulunan Ürün Başarıyla Silindi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            Clean();
+        }
     }
 }
