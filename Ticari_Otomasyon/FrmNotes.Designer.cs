@@ -150,6 +150,7 @@
             this.btnDelete.Size = new System.Drawing.Size(174, 29);
             this.btnDelete.TabIndex = 18;
             this.btnDelete.Text = "Sil";
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // mskDate
             // 

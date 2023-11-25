@@ -59,7 +59,7 @@ namespace Ticari_Otomasyon
             DataRow dr = gridView1.GetDataRow(gridView1.FocusedRowHandle);
             if (dr != null)
             {
-                txtID.Text = dr["notes_id"].ToString();
+                txtID.Text = dr["note_id"].ToString();
                 txtTitle.Text = dr["title"].ToString();
                 rchDetail.Text = dr["detail"].ToString();
                 txtCreator.Text = dr["creator"].ToString();
@@ -70,6 +70,17 @@ namespace Ticari_Otomasyon
 
         private void btnClear_Click(object sender, EventArgs e)
         {
+            Clean();
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            SqlCommand cmd = new SqlCommand("delete from tbl_notes where note_id = @p1");
+            cmd.Parameters.AddWithValue("@p1", txtID.Text);
+            cmd.ExecuteNonQuery();
+            con.connection().Close();
+            MessageBox.Show("Not Başarıyla Silindi","Bilgi",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            List();
             Clean();
         }
     }
