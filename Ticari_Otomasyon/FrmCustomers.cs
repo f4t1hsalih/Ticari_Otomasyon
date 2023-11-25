@@ -21,6 +21,22 @@ namespace Ticari_Otomasyon
             da.Fill(dt);
             gridControl1.DataSource = dt;
         }
+
+        void Clean()
+        {
+            txtName.Clear();
+            txtID.Clear();
+            txtMail.Clear();
+            txtSurname.Clear();
+            txtTaxAdministration.Clear();
+            mskTC.Clear();
+            mskTel1.Clear();
+            mskTel2.Clear();
+            cmbProvince.SelectedIndex = 0;
+            cmbDistrict.Clear();
+            rchAddress.Clear();
+        }
+
         void ProvinceList()
         {
             string command = "Select province from tbl_provinces";
@@ -47,6 +63,7 @@ namespace Ticari_Otomasyon
         private void FrmCutomers_Load(object sender, EventArgs e)
         {
             List();
+            Clean();
             ProvinceList();
         }
 
@@ -74,6 +91,7 @@ namespace Ticari_Otomasyon
             con.connection().Close();
             MessageBox.Show("Müşteri Başarıyla Kaydedildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             List();
+            Clean();
         }
 
         private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
@@ -105,6 +123,7 @@ namespace Ticari_Otomasyon
             con.connection().Close();
             MessageBox.Show("Müşteri Başarıyla Silindi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             List();
+            Clean();
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
@@ -126,6 +145,12 @@ namespace Ticari_Otomasyon
             con.connection().Close();
             MessageBox.Show("Müşteri Bilgileri Güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             List();
+            Clean();
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            Clean();
         }
     }
 }
