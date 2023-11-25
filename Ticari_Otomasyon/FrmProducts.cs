@@ -21,10 +21,23 @@ namespace Ticari_Otomasyon
             da.Fill(dt);
             gridControl1.DataSource = dt;
         }
+        void Clean()
+        {
+            txtName.Clear();
+            txtBPrice.Clear();
+            txtID.Clear();
+            txtBrand.Clear();
+            txtModel.Clear();
+            txtSPrice.Clear();
+            mskYear.Clear();
+            nudPiece.Value = 0;
+            rchDetail.Clear();
+        }
 
         private void FrmProducts_Load(object sender, EventArgs e)
         {
             List();
+            Clean();
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -44,6 +57,7 @@ namespace Ticari_Otomasyon
             con.connection().Close();
             MessageBox.Show("Ürün Sisteme Eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             List();
+            Clean();
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -56,6 +70,7 @@ namespace Ticari_Otomasyon
             con.connection().Close();
             MessageBox.Show("Ürün Başarıyla Silindi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             List();
+            Clean();
         }
 
         private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
@@ -90,6 +105,12 @@ namespace Ticari_Otomasyon
             con.connection().Close();
             MessageBox.Show("Ürün Başarıyla Güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             List();
+            Clean();
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            Clean();
         }
     }
 }
