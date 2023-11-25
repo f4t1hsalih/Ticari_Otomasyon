@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmNotes));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.btnClear = new DevExpress.XtraEditors.SimpleButton();
+            this.txtAppeal = new DevExpress.XtraEditors.TextEdit();
             this.txtCreator = new DevExpress.XtraEditors.TextEdit();
             this.mskHour = new System.Windows.Forms.MaskedTextBox();
             this.btnUpdate = new DevExpress.XtraEditors.SimpleButton();
@@ -48,16 +50,14 @@
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.txtAppeal = new DevExpress.XtraEditors.TextEdit();
-            this.btnClear = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAppeal.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCreator.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTitle.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtAppeal.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // groupControl1
@@ -88,6 +88,26 @@
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(240, 549);
             this.groupControl1.TabIndex = 5;
+            // 
+            // btnClear
+            // 
+            this.btnClear.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnClear.Appearance.Options.UseFont = true;
+            this.btnClear.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnClear.ImageOptions.SvgImage")));
+            this.btnClear.Location = new System.Drawing.Point(45, 442);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(174, 29);
+            this.btnClear.TabIndex = 34;
+            this.btnClear.Text = "Temizle";
+            // 
+            // txtAppeal
+            // 
+            this.txtAppeal.Location = new System.Drawing.Point(99, 198);
+            this.txtAppeal.Name = "txtAppeal";
+            this.txtAppeal.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtAppeal.Properties.Appearance.Options.UseFont = true;
+            this.txtAppeal.Size = new System.Drawing.Size(120, 24);
+            this.txtAppeal.TabIndex = 28;
             // 
             // txtCreator
             // 
@@ -273,26 +293,6 @@
             this.gridView1.OptionsBehavior.Editable = false;
             this.gridView1.OptionsView.ShowGroupPanel = false;
             // 
-            // txtAppeal
-            // 
-            this.txtAppeal.Location = new System.Drawing.Point(99, 198);
-            this.txtAppeal.Name = "txtAppeal";
-            this.txtAppeal.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtAppeal.Properties.Appearance.Options.UseFont = true;
-            this.txtAppeal.Size = new System.Drawing.Size(120, 24);
-            this.txtAppeal.TabIndex = 28;
-            // 
-            // btnClear
-            // 
-            this.btnClear.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnClear.Appearance.Options.UseFont = true;
-            this.btnClear.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnClear.ImageOptions.SvgImage")));
-            this.btnClear.Location = new System.Drawing.Point(45, 442);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(174, 29);
-            this.btnClear.TabIndex = 34;
-            this.btnClear.Text = "Temizle";
-            // 
             // FrmNotes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -302,15 +302,16 @@
             this.Controls.Add(this.gridControl1);
             this.Name = "FrmNotes";
             this.Text = "Notlar";
+            this.Load += new System.EventHandler(this.FrmNotes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAppeal.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCreator.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTitle.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtAppeal.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
