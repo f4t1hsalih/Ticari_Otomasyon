@@ -143,7 +143,7 @@
             this.txtReceiver.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtReceiver.Properties.Appearance.Options.UseFont = true;
             this.txtReceiver.Size = new System.Drawing.Size(120, 24);
-            this.txtReceiver.TabIndex = 9;
+            this.txtReceiver.TabIndex = 8;
             // 
             // txtDeliverer
             // 
@@ -152,7 +152,7 @@
             this.txtDeliverer.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtDeliverer.Properties.Appearance.Options.UseFont = true;
             this.txtDeliverer.Size = new System.Drawing.Size(120, 24);
-            this.txtDeliverer.TabIndex = 8;
+            this.txtDeliverer.TabIndex = 7;
             // 
             // txtBuyer
             // 
@@ -161,7 +161,7 @@
             this.txtBuyer.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtBuyer.Properties.Appearance.Options.UseFont = true;
             this.txtBuyer.Size = new System.Drawing.Size(120, 24);
-            this.txtBuyer.TabIndex = 7;
+            this.txtBuyer.TabIndex = 6;
             // 
             // labelControl15
             // 
@@ -215,7 +215,7 @@
             this.txtTaxAdministration.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtTaxAdministration.Properties.Appearance.Options.UseFont = true;
             this.txtTaxAdministration.Size = new System.Drawing.Size(120, 24);
-            this.txtTaxAdministration.TabIndex = 9;
+            this.txtTaxAdministration.TabIndex = 5;
             // 
             // mskHour
             // 
@@ -224,7 +224,7 @@
             this.mskHour.Mask = "00:00";
             this.mskHour.Name = "mskHour";
             this.mskHour.Size = new System.Drawing.Size(120, 26);
-            this.mskHour.TabIndex = 8;
+            this.mskHour.TabIndex = 4;
             this.mskHour.ValidatingType = typeof(System.DateTime);
             // 
             // mskDate
@@ -234,7 +234,7 @@
             this.mskDate.Mask = "00/00/0000";
             this.mskDate.Name = "mskDate";
             this.mskDate.Size = new System.Drawing.Size(120, 26);
-            this.mskDate.TabIndex = 7;
+            this.mskDate.TabIndex = 3;
             this.mskDate.ValidatingType = typeof(System.DateTime);
             // 
             // labelControl12
@@ -289,7 +289,7 @@
             this.txtSerie.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtSerie.Properties.Appearance.Options.UseFont = true;
             this.txtSerie.Size = new System.Drawing.Size(120, 24);
-            this.txtSerie.TabIndex = 0;
+            this.txtSerie.TabIndex = 1;
             // 
             // labelControl1
             // 
@@ -309,7 +309,7 @@
             this.txtID.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtID.Properties.Appearance.Options.UseFont = true;
             this.txtID.Size = new System.Drawing.Size(120, 24);
-            this.txtID.TabIndex = 1;
+            this.txtID.TabIndex = 99;
             // 
             // labelControl2
             // 
@@ -328,7 +328,7 @@
             this.txtSequenceNumber.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtSequenceNumber.Properties.Appearance.Options.UseFont = true;
             this.txtSequenceNumber.Size = new System.Drawing.Size(120, 24);
-            this.txtSequenceNumber.TabIndex = 1;
+            this.txtSequenceNumber.TabIndex = 2;
             // 
             // labelControl3
             // 
@@ -364,7 +364,7 @@
             this.groupControl5.Controls.Add(this.labelControl8);
             this.groupControl5.Controls.Add(this.labelControl10);
             this.groupControl5.Controls.Add(this.labelControl9);
-            this.groupControl5.Location = new System.Drawing.Point(4, 3);
+            this.groupControl5.Location = new System.Drawing.Point(5, 3);
             this.groupControl5.Name = "groupControl5";
             this.groupControl5.ShowCaption = false;
             this.groupControl5.Size = new System.Drawing.Size(233, 516);
@@ -388,7 +388,7 @@
             this.txtInvoiceProdID.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtInvoiceProdID.Properties.Appearance.Options.UseFont = true;
             this.txtInvoiceProdID.Size = new System.Drawing.Size(120, 24);
-            this.txtInvoiceProdID.TabIndex = 38;
+            this.txtInvoiceProdID.TabIndex = 13;
             // 
             // txtTotal
             // 
@@ -397,7 +397,7 @@
             this.txtTotal.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtTotal.Properties.Appearance.Options.UseFont = true;
             this.txtTotal.Size = new System.Drawing.Size(120, 24);
-            this.txtTotal.TabIndex = 37;
+            this.txtTotal.TabIndex = 12;
             // 
             // txtPrice
             // 
@@ -406,7 +406,7 @@
             this.txtPrice.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtPrice.Properties.Appearance.Options.UseFont = true;
             this.txtPrice.Size = new System.Drawing.Size(120, 24);
-            this.txtPrice.TabIndex = 36;
+            this.txtPrice.TabIndex = 11;
             // 
             // txtAmount
             // 
@@ -415,7 +415,7 @@
             this.txtAmount.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtAmount.Properties.Appearance.Options.UseFont = true;
             this.txtAmount.Size = new System.Drawing.Size(120, 24);
-            this.txtAmount.TabIndex = 35;
+            this.txtAmount.TabIndex = 10;
             // 
             // txtProdName
             // 
@@ -424,7 +424,7 @@
             this.txtProdName.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtProdName.Properties.Appearance.Options.UseFont = true;
             this.txtProdName.Size = new System.Drawing.Size(120, 24);
-            this.txtProdName.TabIndex = 34;
+            this.txtProdName.TabIndex = 9;
             // 
             // btnClear
             // 
@@ -434,7 +434,7 @@
             this.btnClear.Location = new System.Drawing.Point(28, 353);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(174, 29);
-            this.btnClear.TabIndex = 33;
+            this.btnClear.TabIndex = 17;
             this.btnClear.Text = "Temizle";
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
@@ -446,7 +446,7 @@
             this.btnUpdate.Location = new System.Drawing.Point(28, 318);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(174, 29);
-            this.btnUpdate.TabIndex = 19;
+            this.btnUpdate.TabIndex = 16;
             this.btnUpdate.Text = "Güncelle";
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
@@ -458,7 +458,7 @@
             this.btnDelete.Location = new System.Drawing.Point(28, 283);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(174, 29);
-            this.btnDelete.TabIndex = 18;
+            this.btnDelete.TabIndex = 15;
             this.btnDelete.Text = "Sil";
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
@@ -470,7 +470,7 @@
             this.btnSave.Location = new System.Drawing.Point(28, 248);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(174, 29);
-            this.btnSave.TabIndex = 8;
+            this.btnSave.TabIndex = 14;
             this.btnSave.Text = "Kaydet";
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
@@ -523,7 +523,7 @@
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
             this.gridControl1.Size = new System.Drawing.Size(736, 549);
-            this.gridControl1.TabIndex = 7;
+            this.gridControl1.TabIndex = 99;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 

@@ -112,7 +112,7 @@
             this.groupControl1.Location = new System.Drawing.Point(762, 6);
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(240, 549);
-            this.groupControl1.TabIndex = 7;
+            this.groupControl1.TabIndex = 0;
             // 
             // lueCompanie
             // 
@@ -123,7 +123,7 @@
             this.lueCompanie.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lueCompanie.Size = new System.Drawing.Size(120, 24);
-            this.lueCompanie.TabIndex = 42;
+            this.lueCompanie.TabIndex = 10;
             // 
             // mskDate
             // 
@@ -132,7 +132,7 @@
             this.mskDate.Mask = "00/00/0000";
             this.mskDate.Name = "mskDate";
             this.mskDate.Size = new System.Drawing.Size(120, 26);
-            this.mskDate.TabIndex = 41;
+            this.mskDate.TabIndex = 8;
             this.mskDate.ValidatingType = typeof(System.DateTime);
             // 
             // labelControl12
@@ -152,7 +152,7 @@
             this.txtAccount_Type.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtAccount_Type.Properties.Appearance.Options.UseFont = true;
             this.txtAccount_Type.Size = new System.Drawing.Size(120, 24);
-            this.txtAccount_Type.TabIndex = 38;
+            this.txtAccount_Type.TabIndex = 9;
             // 
             // labelControl5
             // 
@@ -182,7 +182,7 @@
             this.btnClear.Location = new System.Drawing.Point(55, 517);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(174, 29);
-            this.btnClear.TabIndex = 34;
+            this.btnClear.TabIndex = 14;
             this.btnClear.Text = "Temizle";
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
@@ -196,7 +196,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmbDistrict.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.cmbDistrict.Size = new System.Drawing.Size(120, 24);
-            this.cmbDistrict.TabIndex = 28;
+            this.cmbDistrict.TabIndex = 2;
             // 
             // txtAuthorized
             // 
@@ -205,7 +205,7 @@
             this.txtAuthorized.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtAuthorized.Properties.Appearance.Options.UseFont = true;
             this.txtAuthorized.Size = new System.Drawing.Size(120, 24);
-            this.txtAuthorized.TabIndex = 27;
+            this.txtAuthorized.TabIndex = 6;
             // 
             // labelControl9
             // 
@@ -227,7 +227,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmbProvince.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.cmbProvince.Size = new System.Drawing.Size(120, 24);
-            this.cmbProvince.TabIndex = 25;
+            this.cmbProvince.TabIndex = 1;
             this.cmbProvince.SelectedIndexChanged += new System.EventHandler(this.cmbProvince_SelectedIndexChanged);
             // 
             // mskIBAN
@@ -236,7 +236,7 @@
             this.mskIBAN.Location = new System.Drawing.Point(99, 194);
             this.mskIBAN.Name = "mskIBAN";
             this.mskIBAN.Size = new System.Drawing.Size(120, 26);
-            this.mskIBAN.TabIndex = 24;
+            this.mskIBAN.TabIndex = 4;
             this.mskIBAN.ValidatingType = typeof(int);
             // 
             // labelControl10
@@ -257,7 +257,7 @@
             this.btnUpdate.Location = new System.Drawing.Point(54, 482);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(174, 29);
-            this.btnUpdate.TabIndex = 19;
+            this.btnUpdate.TabIndex = 13;
             this.btnUpdate.Text = "Güncelle";
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
@@ -269,7 +269,7 @@
             this.btnDelete.Location = new System.Drawing.Point(54, 447);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(174, 29);
-            this.btnDelete.TabIndex = 18;
+            this.btnDelete.TabIndex = 12;
             this.btnDelete.Text = "Sil";
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
@@ -280,7 +280,7 @@
             this.mskTel.Mask = "(999) 000-0000";
             this.mskTel.Name = "mskTel";
             this.mskTel.Size = new System.Drawing.Size(120, 26);
-            this.mskTel.TabIndex = 3;
+            this.mskTel.TabIndex = 7;
             // 
             // btnSave
             // 
@@ -290,7 +290,7 @@
             this.btnSave.Location = new System.Drawing.Point(54, 412);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(174, 29);
-            this.btnSave.TabIndex = 8;
+            this.btnSave.TabIndex = 11;
             this.btnSave.Text = "Kaydet";
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
@@ -311,7 +311,7 @@
             this.txtBranch.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtBranch.Properties.Appearance.Options.UseFont = true;
             this.txtBranch.Size = new System.Drawing.Size(120, 24);
-            this.txtBranch.TabIndex = 5;
+            this.txtBranch.TabIndex = 3;
             // 
             // labelControl7
             // 
@@ -350,7 +350,7 @@
             this.txtAccount_Number.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtAccount_Number.Properties.Appearance.Options.UseFont = true;
             this.txtAccount_Number.Size = new System.Drawing.Size(120, 24);
-            this.txtAccount_Number.TabIndex = 1;
+            this.txtAccount_Number.TabIndex = 5;
             // 
             // labelControl3
             // 
@@ -389,7 +389,7 @@
             this.txtID.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtID.Properties.Appearance.Options.UseFont = true;
             this.txtID.Size = new System.Drawing.Size(120, 24);
-            this.txtID.TabIndex = 1;
+            this.txtID.TabIndex = 99;
             // 
             // labelControl1
             // 
@@ -410,7 +410,7 @@
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
             this.gridControl1.Size = new System.Drawing.Size(756, 549);
-            this.gridControl1.TabIndex = 6;
+            this.gridControl1.TabIndex = 999;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
