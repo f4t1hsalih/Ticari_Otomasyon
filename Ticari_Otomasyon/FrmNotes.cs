@@ -41,5 +41,19 @@ namespace Ticari_Otomasyon
             MessageBox.Show("Not başarıyla kayedildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             List();
         }
+
+        private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
+        {
+            DataRow dr = gridView1.GetDataRow(gridView1.FocusedRowHandle);
+            if (dr != null)
+            {
+                txtID.Text = dr["notes_id"].ToString();
+                txtTitle.Text = dr["title"].ToString();
+                rchDetail.Text = dr["detail"].ToString();
+                txtCreator.Text = dr["creator"].ToString();
+                mskDate.Text = dr["date"].ToString();
+                mskHour.Text = dr["hour"].ToString();
+            }
+        }
     }
 }
