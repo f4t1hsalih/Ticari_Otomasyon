@@ -99,6 +99,7 @@
             this.btnClear.Size = new System.Drawing.Size(174, 29);
             this.btnClear.TabIndex = 34;
             this.btnClear.Text = "Temizle";
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // txtAppeal
             // 

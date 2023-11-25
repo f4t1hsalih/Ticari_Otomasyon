@@ -21,10 +21,21 @@ namespace Ticari_Otomasyon
             da.Fill(dt);
             gridControl1.DataSource = dt;
         }
+        void Clean()
+        {
+            txtID.Clear();
+            txtTitle.Clear();
+            txtAppeal.Clear();
+            txtCreator.Clear();
+            mskDate.Clear();
+            mskHour.Clear();
+            rchDetail.Clear();
+        }
 
         private void FrmNotes_Load(object sender, EventArgs e)
         {
             List();
+            Clean();
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -40,6 +51,7 @@ namespace Ticari_Otomasyon
             con.connection().Close();
             MessageBox.Show("Not başarıyla kayedildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             List();
+            Clean();
         }
 
         private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
@@ -54,6 +66,11 @@ namespace Ticari_Otomasyon
                 mskDate.Text = dr["date"].ToString();
                 mskHour.Text = dr["hour"].ToString();
             }
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            Clean();
         }
     }
 }
