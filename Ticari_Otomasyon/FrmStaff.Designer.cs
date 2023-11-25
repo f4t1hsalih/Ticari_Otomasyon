@@ -102,7 +102,7 @@
             this.groupControl1.Location = new System.Drawing.Point(762, 6);
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(240, 549);
-            this.groupControl1.TabIndex = 5;
+            this.groupControl1.TabIndex = 0;
             // 
             // btnClear
             // 
@@ -112,7 +112,7 @@
             this.btnClear.Location = new System.Drawing.Point(55, 517);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(174, 29);
-            this.btnClear.TabIndex = 34;
+            this.btnClear.TabIndex = 13;
             this.btnClear.Text = "Temizle";
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
@@ -126,7 +126,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmbDistrict.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.cmbDistrict.Size = new System.Drawing.Size(120, 24);
-            this.cmbDistrict.TabIndex = 28;
+            this.cmbDistrict.TabIndex = 7;
             // 
             // txtDuty
             // 
@@ -135,7 +135,7 @@
             this.txtDuty.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtDuty.Properties.Appearance.Options.UseFont = true;
             this.txtDuty.Size = new System.Drawing.Size(120, 24);
-            this.txtDuty.TabIndex = 27;
+            this.txtDuty.TabIndex = 9;
             // 
             // labelControl9
             // 
@@ -157,7 +157,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmbProvince.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.cmbProvince.Size = new System.Drawing.Size(120, 24);
-            this.cmbProvince.TabIndex = 25;
+            this.cmbProvince.TabIndex = 6;
             this.cmbProvince.SelectedIndexChanged += new System.EventHandler(this.cmbProvince_SelectedIndexChanged);
             // 
             // mskTC
@@ -167,7 +167,7 @@
             this.mskTC.Mask = "00000000000";
             this.mskTC.Name = "mskTC";
             this.mskTC.Size = new System.Drawing.Size(120, 26);
-            this.mskTC.TabIndex = 24;
+            this.mskTC.TabIndex = 4;
             this.mskTC.ValidatingType = typeof(int);
             // 
             // labelControl11
@@ -198,7 +198,7 @@
             this.btnUpdate.Location = new System.Drawing.Point(54, 482);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(174, 29);
-            this.btnUpdate.TabIndex = 19;
+            this.btnUpdate.TabIndex = 12;
             this.btnUpdate.Text = "Güncelle";
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
@@ -210,7 +210,7 @@
             this.btnDelete.Location = new System.Drawing.Point(54, 447);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(174, 29);
-            this.btnDelete.TabIndex = 18;
+            this.btnDelete.TabIndex = 11;
             this.btnDelete.Text = "Sil";
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
@@ -231,7 +231,7 @@
             this.btnSave.Location = new System.Drawing.Point(54, 412);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(174, 29);
-            this.btnSave.TabIndex = 8;
+            this.btnSave.TabIndex = 10;
             this.btnSave.Text = "Kaydet";
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
@@ -291,7 +291,7 @@
             this.txtSurname.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtSurname.Properties.Appearance.Options.UseFont = true;
             this.txtSurname.Size = new System.Drawing.Size(120, 24);
-            this.txtSurname.TabIndex = 1;
+            this.txtSurname.TabIndex = 2;
             // 
             // labelControl3
             // 
@@ -310,7 +310,7 @@
             this.txtName.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtName.Properties.Appearance.Options.UseFont = true;
             this.txtName.Size = new System.Drawing.Size(120, 24);
-            this.txtName.TabIndex = 0;
+            this.txtName.TabIndex = 1;
             // 
             // labelControl2
             // 
@@ -328,7 +328,7 @@
             this.rchAddress.Location = new System.Drawing.Point(99, 288);
             this.rchAddress.Name = "rchAddress";
             this.rchAddress.Size = new System.Drawing.Size(120, 88);
-            this.rchAddress.TabIndex = 7;
+            this.rchAddress.TabIndex = 8;
             this.rchAddress.Text = "";
             // 
             // txtID
@@ -339,7 +339,7 @@
             this.txtID.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtID.Properties.Appearance.Options.UseFont = true;
             this.txtID.Size = new System.Drawing.Size(120, 24);
-            this.txtID.TabIndex = 1;
+            this.txtID.TabIndex = 999;
             // 
             // labelControl1
             // 
@@ -360,7 +360,7 @@
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
             this.gridControl1.Size = new System.Drawing.Size(756, 549);
-            this.gridControl1.TabIndex = 4;
+            this.gridControl1.TabIndex = 9999;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 

@@ -30,7 +30,7 @@ namespace Ticari_Otomasyon
         void List()
         {
             DataTable dt = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter("select * from tbl_expenses", con.connection());
+            SqlDataAdapter da = new SqlDataAdapter("select * from tbl_expenses Oder By expense_id asc", con.connection());
             da.Fill(dt);
             gridControl1.DataSource = dt;
         }

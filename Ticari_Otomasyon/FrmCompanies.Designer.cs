@@ -134,7 +134,7 @@
             this.txtTaxAdministration.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtTaxAdministration.Properties.Appearance.Options.UseFont = true;
             this.txtTaxAdministration.Size = new System.Drawing.Size(120, 24);
-            this.txtTaxAdministration.TabIndex = 27;
+            this.txtTaxAdministration.TabIndex = 13;
             // 
             // labelControl11
             // 
@@ -154,7 +154,7 @@
             this.btnUpdate.Location = new System.Drawing.Point(28, 318);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(174, 29);
-            this.btnUpdate.TabIndex = 19;
+            this.btnUpdate.TabIndex = 20;
             this.btnUpdate.Text = "Güncelle";
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
@@ -166,7 +166,7 @@
             this.btnDelete.Location = new System.Drawing.Point(28, 283);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(174, 29);
-            this.btnDelete.TabIndex = 18;
+            this.btnDelete.TabIndex = 19;
             this.btnDelete.Text = "Sil";
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
@@ -178,7 +178,7 @@
             this.btnSave.Location = new System.Drawing.Point(28, 248);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(174, 29);
-            this.btnSave.TabIndex = 8;
+            this.btnSave.TabIndex = 18;
             this.btnSave.Text = "Kaydet";
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
@@ -199,7 +199,7 @@
             this.txtSector.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtSector.Properties.Appearance.Options.UseFont = true;
             this.txtSector.Size = new System.Drawing.Size(120, 24);
-            this.txtSector.TabIndex = 1;
+            this.txtSector.TabIndex = 2;
             // 
             // labelControl3
             // 
@@ -218,7 +218,7 @@
             this.txtName.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtName.Properties.Appearance.Options.UseFont = true;
             this.txtName.Size = new System.Drawing.Size(120, 24);
-            this.txtName.TabIndex = 0;
+            this.txtName.TabIndex = 1;
             // 
             // labelControl2
             // 
@@ -236,7 +236,7 @@
             this.rchAddress.Location = new System.Drawing.Point(76, 106);
             this.rchAddress.Name = "rchAddress";
             this.rchAddress.Size = new System.Drawing.Size(120, 88);
-            this.rchAddress.TabIndex = 7;
+            this.rchAddress.TabIndex = 14;
             this.rchAddress.Text = "";
             // 
             // txtID
@@ -247,7 +247,7 @@
             this.txtID.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtID.Properties.Appearance.Options.UseFont = true;
             this.txtID.Size = new System.Drawing.Size(120, 24);
-            this.txtID.TabIndex = 1;
+            this.txtID.TabIndex = 999;
             // 
             // labelControl1
             // 
@@ -268,7 +268,7 @@
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
             this.gridControl1.Size = new System.Drawing.Size(723, 549);
-            this.gridControl1.TabIndex = 4;
+            this.gridControl1.TabIndex = 999;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
@@ -292,7 +292,7 @@
             this.xtraTabControl1.Name = "xtraTabControl1";
             this.xtraTabControl1.SelectedTabPage = this.xtraTabPage1;
             this.xtraTabControl1.Size = new System.Drawing.Size(261, 549);
-            this.xtraTabControl1.TabIndex = 6;
+            this.xtraTabControl1.TabIndex = 11;
             this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.xtraTabPage1,
             this.xtraTabPage2,
@@ -334,7 +334,7 @@
             this.txtMail.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtMail.Properties.Appearance.Options.UseFont = true;
             this.txtMail.Size = new System.Drawing.Size(120, 24);
-            this.txtMail.TabIndex = 15;
+            this.txtMail.TabIndex = 10;
             // 
             // labelControl19
             // 
@@ -353,7 +353,7 @@
             this.mskFax.Mask = "(999) 000-0000";
             this.mskFax.Name = "mskFax";
             this.mskFax.Size = new System.Drawing.Size(120, 26);
-            this.mskFax.TabIndex = 12;
+            this.mskFax.TabIndex = 9;
             // 
             // mskTel3
             // 
@@ -362,7 +362,7 @@
             this.mskTel3.Mask = "(999) 000-0000";
             this.mskTel3.Name = "mskTel3";
             this.mskTel3.Size = new System.Drawing.Size(120, 26);
-            this.mskTel3.TabIndex = 11;
+            this.mskTel3.TabIndex = 8;
             // 
             // mskTel2
             // 
@@ -371,7 +371,7 @@
             this.mskTel2.Mask = "(999) 000-0000";
             this.mskTel2.Name = "mskTel2";
             this.mskTel2.Size = new System.Drawing.Size(120, 26);
-            this.mskTel2.TabIndex = 10;
+            this.mskTel2.TabIndex = 7;
             // 
             // mskTel1
             // 
@@ -380,7 +380,7 @@
             this.mskTel1.Mask = "(999) 000-0000";
             this.mskTel1.Name = "mskTel1";
             this.mskTel1.Size = new System.Drawing.Size(120, 26);
-            this.mskTel1.TabIndex = 9;
+            this.mskTel1.TabIndex = 6;
             // 
             // labelControl18
             // 
@@ -444,7 +444,7 @@
             this.txtAuthorizedStatus.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtAuthorizedStatus.Properties.Appearance.Options.UseFont = true;
             this.txtAuthorizedStatus.Size = new System.Drawing.Size(120, 24);
-            this.txtAuthorizedStatus.TabIndex = 0;
+            this.txtAuthorizedStatus.TabIndex = 4;
             // 
             // labelControl12
             // 
@@ -463,7 +463,7 @@
             this.txtAuthorized.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtAuthorized.Properties.Appearance.Options.UseFont = true;
             this.txtAuthorized.Size = new System.Drawing.Size(120, 24);
-            this.txtAuthorized.TabIndex = 1;
+            this.txtAuthorized.TabIndex = 3;
             // 
             // labelControl13
             // 
@@ -482,7 +482,7 @@
             this.txtAuthorizedTc.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtAuthorizedTc.Properties.Appearance.Options.UseFont = true;
             this.txtAuthorizedTc.Size = new System.Drawing.Size(120, 24);
-            this.txtAuthorizedTc.TabIndex = 1;
+            this.txtAuthorizedTc.TabIndex = 5;
             // 
             // labelControl14
             // 
@@ -514,7 +514,7 @@
             this.xtraTabPage2.Controls.Add(this.groupControl5);
             this.xtraTabPage2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("xtraTabPage2.ImageOptions.Image")));
             this.xtraTabPage2.Name = "xtraTabPage2";
-            this.xtraTabPage2.Size = new System.Drawing.Size(238, 524);
+            this.xtraTabPage2.Size = new System.Drawing.Size(259, 521);
             this.xtraTabPage2.Text = "Adres Bilgileri";
             // 
             // groupControl5
@@ -546,7 +546,7 @@
             this.btnClear.Location = new System.Drawing.Point(28, 353);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(174, 29);
-            this.btnClear.TabIndex = 33;
+            this.btnClear.TabIndex = 21;
             this.btnClear.Text = "Temizle";
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
@@ -560,7 +560,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmbProvince.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.cmbProvince.Size = new System.Drawing.Size(120, 24);
-            this.cmbProvince.TabIndex = 31;
+            this.cmbProvince.TabIndex = 11;
             this.cmbProvince.SelectedIndexChanged += new System.EventHandler(this.cmbProvince_SelectedIndexChanged);
             // 
             // cmbDistrict
@@ -573,7 +573,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmbDistrict.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.cmbDistrict.Size = new System.Drawing.Size(120, 24);
-            this.cmbDistrict.TabIndex = 32;
+            this.cmbDistrict.TabIndex = 12;
             // 
             // labelControl8
             // 
@@ -601,13 +601,13 @@
             this.xtraTabPage3.Controls.Add(this.groupControl6);
             this.xtraTabPage3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("xtraTabPage3.ImageOptions.Image")));
             this.xtraTabPage3.Name = "xtraTabPage3";
-            this.xtraTabPage3.Size = new System.Drawing.Size(238, 521);
+            this.xtraTabPage3.Size = new System.Drawing.Size(259, 521);
             this.xtraTabPage3.Text = "Özel Kodlar";
             // 
             // groupControl7
             // 
             this.groupControl7.Controls.Add(this.xtraTabControl2);
-            this.groupControl7.Location = new System.Drawing.Point(3, 121);
+            this.groupControl7.Location = new System.Drawing.Point(4, 121);
             this.groupControl7.Name = "groupControl7";
             this.groupControl7.Size = new System.Drawing.Size(232, 398);
             this.groupControl7.TabIndex = 2;
@@ -701,7 +701,7 @@
             this.txtCode2.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtCode2.Properties.Appearance.Options.UseFont = true;
             this.txtCode2.Size = new System.Drawing.Size(120, 24);
-            this.txtCode2.TabIndex = 0;
+            this.txtCode2.TabIndex = 16;
             // 
             // labelControl4
             // 
@@ -721,7 +721,7 @@
             this.txtCode1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtCode1.Properties.Appearance.Options.UseFont = true;
             this.txtCode1.Size = new System.Drawing.Size(120, 24);
-            this.txtCode1.TabIndex = 1;
+            this.txtCode1.TabIndex = 15;
             // 
             // labelControl5
             // 
@@ -740,7 +740,7 @@
             this.txtCode3.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtCode3.Properties.Appearance.Options.UseFont = true;
             this.txtCode3.Size = new System.Drawing.Size(120, 24);
-            this.txtCode3.TabIndex = 1;
+            this.txtCode3.TabIndex = 17;
             // 
             // labelControl6
             // 

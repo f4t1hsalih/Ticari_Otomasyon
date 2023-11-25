@@ -30,6 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmExpences));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.btnClear = new DevExpress.XtraEditors.SimpleButton();
+            this.txtEkstra = new DevExpress.XtraEditors.TextEdit();
+            this.txtSalaries = new DevExpress.XtraEditors.TextEdit();
+            this.txtInternet = new DevExpress.XtraEditors.TextEdit();
+            this.txtNaturalGas = new DevExpress.XtraEditors.TextEdit();
             this.cmbYear = new DevExpress.XtraEditors.ComboBoxEdit();
             this.txtWater = new DevExpress.XtraEditors.TextEdit();
             this.cmbMonth = new DevExpress.XtraEditors.ComboBoxEdit();
@@ -51,13 +56,12 @@
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.txtNaturalGas = new DevExpress.XtraEditors.TextEdit();
-            this.txtInternet = new DevExpress.XtraEditors.TextEdit();
-            this.txtSalaries = new DevExpress.XtraEditors.TextEdit();
-            this.txtEkstra = new DevExpress.XtraEditors.TextEdit();
-            this.btnClear = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtEkstra.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSalaries.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtInternet.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNaturalGas.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbYear.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtWater.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbMonth.Properties)).BeginInit();
@@ -65,10 +69,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtNaturalGas.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtInternet.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtSalaries.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtEkstra.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // groupControl1
@@ -104,7 +104,55 @@
             this.groupControl1.Location = new System.Drawing.Point(762, 6);
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(240, 549);
-            this.groupControl1.TabIndex = 5;
+            this.groupControl1.TabIndex = 0;
+            // 
+            // btnClear
+            // 
+            this.btnClear.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnClear.Appearance.Options.UseFont = true;
+            this.btnClear.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnClear.ImageOptions.SvgImage")));
+            this.btnClear.Location = new System.Drawing.Point(44, 505);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(174, 29);
+            this.btnClear.TabIndex = 13;
+            this.btnClear.Text = "Temizle";
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
+            // txtEkstra
+            // 
+            this.txtEkstra.Location = new System.Drawing.Point(93, 273);
+            this.txtEkstra.Name = "txtEkstra";
+            this.txtEkstra.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtEkstra.Properties.Appearance.Options.UseFont = true;
+            this.txtEkstra.Size = new System.Drawing.Size(125, 24);
+            this.txtEkstra.TabIndex = 8;
+            // 
+            // txtSalaries
+            // 
+            this.txtSalaries.Location = new System.Drawing.Point(93, 243);
+            this.txtSalaries.Name = "txtSalaries";
+            this.txtSalaries.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtSalaries.Properties.Appearance.Options.UseFont = true;
+            this.txtSalaries.Size = new System.Drawing.Size(125, 24);
+            this.txtSalaries.TabIndex = 7;
+            // 
+            // txtInternet
+            // 
+            this.txtInternet.Location = new System.Drawing.Point(93, 213);
+            this.txtInternet.Name = "txtInternet";
+            this.txtInternet.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtInternet.Properties.Appearance.Options.UseFont = true;
+            this.txtInternet.Size = new System.Drawing.Size(125, 24);
+            this.txtInternet.TabIndex = 6;
+            // 
+            // txtNaturalGas
+            // 
+            this.txtNaturalGas.Location = new System.Drawing.Point(93, 183);
+            this.txtNaturalGas.Name = "txtNaturalGas";
+            this.txtNaturalGas.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtNaturalGas.Properties.Appearance.Options.UseFont = true;
+            this.txtNaturalGas.Size = new System.Drawing.Size(125, 24);
+            this.txtNaturalGas.TabIndex = 5;
             // 
             // cmbYear
             // 
@@ -128,7 +176,7 @@
             "2030"});
             this.cmbYear.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.cmbYear.Size = new System.Drawing.Size(125, 24);
-            this.cmbYear.TabIndex = 28;
+            this.cmbYear.TabIndex = 2;
             // 
             // txtWater
             // 
@@ -137,7 +185,7 @@
             this.txtWater.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtWater.Properties.Appearance.Options.UseFont = true;
             this.txtWater.Size = new System.Drawing.Size(125, 24);
-            this.txtWater.TabIndex = 27;
+            this.txtWater.TabIndex = 4;
             // 
             // cmbMonth
             // 
@@ -162,7 +210,7 @@
             "Aralık"});
             this.cmbMonth.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.cmbMonth.Size = new System.Drawing.Size(125, 24);
-            this.cmbMonth.TabIndex = 25;
+            this.cmbMonth.TabIndex = 1;
             // 
             // labelControl11
             // 
@@ -192,7 +240,7 @@
             this.btnUpdate.Location = new System.Drawing.Point(44, 470);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(174, 29);
-            this.btnUpdate.TabIndex = 19;
+            this.btnUpdate.TabIndex = 12;
             this.btnUpdate.Text = "Güncelle";
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
@@ -204,7 +252,7 @@
             this.btnDelete.Location = new System.Drawing.Point(44, 435);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(174, 29);
-            this.btnDelete.TabIndex = 18;
+            this.btnDelete.TabIndex = 11;
             this.btnDelete.Text = "Sil";
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
@@ -216,7 +264,7 @@
             this.btnSave.Location = new System.Drawing.Point(44, 400);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(174, 29);
-            this.btnSave.TabIndex = 8;
+            this.btnSave.TabIndex = 10;
             this.btnSave.Text = "Kaydet";
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
@@ -237,7 +285,7 @@
             this.txtElectric.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtElectric.Properties.Appearance.Options.UseFont = true;
             this.txtElectric.Size = new System.Drawing.Size(125, 24);
-            this.txtElectric.TabIndex = 5;
+            this.txtElectric.TabIndex = 3;
             // 
             // labelControl7
             // 
@@ -305,7 +353,7 @@
             this.rchNotes.Location = new System.Drawing.Point(93, 303);
             this.rchNotes.Name = "rchNotes";
             this.rchNotes.Size = new System.Drawing.Size(125, 88);
-            this.rchNotes.TabIndex = 7;
+            this.rchNotes.TabIndex = 9;
             this.rchNotes.Text = "";
             // 
             // txtID
@@ -316,7 +364,7 @@
             this.txtID.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtID.Properties.Appearance.Options.UseFont = true;
             this.txtID.Size = new System.Drawing.Size(125, 24);
-            this.txtID.TabIndex = 1;
+            this.txtID.TabIndex = 99;
             // 
             // labelControl1
             // 
@@ -337,7 +385,7 @@
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
             this.gridControl1.Size = new System.Drawing.Size(756, 549);
-            this.gridControl1.TabIndex = 4;
+            this.gridControl1.TabIndex = 999;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
@@ -353,54 +401,6 @@
             this.gridView1.OptionsView.ShowGroupPanel = false;
             this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
             // 
-            // txtNaturalGas
-            // 
-            this.txtNaturalGas.Location = new System.Drawing.Point(93, 183);
-            this.txtNaturalGas.Name = "txtNaturalGas";
-            this.txtNaturalGas.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtNaturalGas.Properties.Appearance.Options.UseFont = true;
-            this.txtNaturalGas.Size = new System.Drawing.Size(125, 24);
-            this.txtNaturalGas.TabIndex = 29;
-            // 
-            // txtInternet
-            // 
-            this.txtInternet.Location = new System.Drawing.Point(93, 213);
-            this.txtInternet.Name = "txtInternet";
-            this.txtInternet.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtInternet.Properties.Appearance.Options.UseFont = true;
-            this.txtInternet.Size = new System.Drawing.Size(125, 24);
-            this.txtInternet.TabIndex = 30;
-            // 
-            // txtSalaries
-            // 
-            this.txtSalaries.Location = new System.Drawing.Point(93, 243);
-            this.txtSalaries.Name = "txtSalaries";
-            this.txtSalaries.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtSalaries.Properties.Appearance.Options.UseFont = true;
-            this.txtSalaries.Size = new System.Drawing.Size(125, 24);
-            this.txtSalaries.TabIndex = 31;
-            // 
-            // txtEkstra
-            // 
-            this.txtEkstra.Location = new System.Drawing.Point(93, 273);
-            this.txtEkstra.Name = "txtEkstra";
-            this.txtEkstra.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtEkstra.Properties.Appearance.Options.UseFont = true;
-            this.txtEkstra.Size = new System.Drawing.Size(125, 24);
-            this.txtEkstra.TabIndex = 32;
-            // 
-            // btnClear
-            // 
-            this.btnClear.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnClear.Appearance.Options.UseFont = true;
-            this.btnClear.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnClear.ImageOptions.SvgImage")));
-            this.btnClear.Location = new System.Drawing.Point(44, 505);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(174, 29);
-            this.btnClear.TabIndex = 35;
-            this.btnClear.Text = "Temizle";
-            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
-            // 
             // FrmExpences
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -414,6 +414,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtEkstra.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSalaries.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtInternet.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNaturalGas.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbYear.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtWater.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbMonth.Properties)).EndInit();
@@ -421,10 +425,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtNaturalGas.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtInternet.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtSalaries.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtEkstra.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
