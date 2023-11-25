@@ -40,16 +40,16 @@ namespace Ticari_Otomasyon
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            SqlCommand cmd = new SqlCommand("insert into tbl_notes(date, hour, title, detail, creator, appeal) values (@p1, @p2, @p3, @p4, @p5)", con.connection());
+            SqlCommand cmd = new SqlCommand("insert into tbl_notes(date, hour, title, detail, creator, appeal) values (@p1, @p2, @p3, @p4, @p5, @p6)", con.connection());
             cmd.Parameters.AddWithValue("@p1", mskDate.Text);
             cmd.Parameters.AddWithValue("@p2", mskHour.Text);
             cmd.Parameters.AddWithValue("@p3", txtTitle.Text);
             cmd.Parameters.AddWithValue("@p4", rchDetail.Text);
             cmd.Parameters.AddWithValue("@p5", txtCreator.Text);
-            cmd.Parameters.AddWithValue("@p1", txtAppeal.Text);
+            cmd.Parameters.AddWithValue("@p6", txtAppeal.Text);
             cmd.ExecuteNonQuery();
             con.connection().Close();
-            MessageBox.Show("Not başarıyla kayedildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Not Başarıyla Kaydedildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             List();
             Clean();
         }
@@ -80,6 +80,23 @@ namespace Ticari_Otomasyon
             cmd.ExecuteNonQuery();
             con.connection().Close();
             MessageBox.Show("Not Başarıyla Silindi","Bilgi",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            List();
+            Clean();
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            SqlCommand cmd = new SqlCommand("update tbl_notes set date = @p1, hour = @p2, title = @p3, detail = @p4, creator = @p5, appeal = @p6 where note_id = @p7");
+            cmd.Parameters.AddWithValue("@p1", mskDate.Text);
+            cmd.Parameters.AddWithValue("@p2", mskHour.Text);
+            cmd.Parameters.AddWithValue("@p3", txtTitle.Text);
+            cmd.Parameters.AddWithValue("@p4", rchDetail.Text);
+            cmd.Parameters.AddWithValue("@p5", txtCreator.Text);
+            cmd.Parameters.AddWithValue("@p6", txtAppeal.Text);
+            cmd.Parameters.AddWithValue("@p7", txtID.Text);
+            cmd.ExecuteNonQuery();
+            con.connection().Close();
+            MessageBox.Show("Not Başarıyla Güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             List();
             Clean();
         }
