@@ -79,7 +79,7 @@ namespace Ticari_Otomasyon
             cmd.Parameters.AddWithValue("@p1", txtID.Text);
             cmd.ExecuteNonQuery();
             con.connection().Close();
-            MessageBox.Show("Not Başarıyla Silindi","Bilgi",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            MessageBox.Show("Not Başarıyla Silindi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             List();
             Clean();
         }
@@ -99,6 +99,20 @@ namespace Ticari_Otomasyon
             MessageBox.Show("Not Başarıyla Güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             List();
             Clean();
+        }
+
+        private void gridView1_DoubleClick(object sender, EventArgs e)
+        {
+            FrmNoteDetail noteDetail = new FrmNoteDetail();
+
+            DataRow dr = gridView1.GetDataRow(gridView1.FocusedRowHandle);
+
+            if (dr != null)
+            {
+                noteDetail.detail = dr["detail"].ToString();
+                noteDetail.Show();
+            }
+
         }
     }
 }
