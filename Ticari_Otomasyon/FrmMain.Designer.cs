@@ -64,16 +64,16 @@
             this.btnBills = new DevExpress.XtraBars.BarButtonItem();
             this.btnSettings = new DevExpress.XtraBars.BarButtonItem();
             this.btnMainPage = new DevExpress.XtraBars.BarButtonItem();
+            this.btnMovements = new DevExpress.XtraBars.BarButtonItem();
+            this.btnRaporlar = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
             this.toolbarFormControl1 = new DevExpress.XtraBars.ToolbarForm.ToolbarFormControl();
             this.repositoryItemRibbonSearchEdit1 = new DevExpress.XtraBars.Ribbon.Internal.RepositoryItemRibbonSearchEdit();
             this.repositoryItemRibbonSearchEdit2 = new DevExpress.XtraBars.Ribbon.Internal.RepositoryItemRibbonSearchEdit();
-            this.btnMovements = new DevExpress.XtraBars.BarButtonItem();
-            this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.btnRaporlar = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.toolbarFormControl1)).BeginInit();
@@ -270,6 +270,25 @@
             this.btnMainPage.ItemAppearance.Normal.Options.UseFont = true;
             this.btnMainPage.Name = "btnMainPage";
             // 
+            // btnMovements
+            // 
+            this.btnMovements.Caption = "Hareketler";
+            this.btnMovements.Id = 14;
+            this.btnMovements.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnMovements.ImageOptions.SvgImage")));
+            this.btnMovements.ItemAppearance.Hovered.Font = new System.Drawing.Font("Tahoma", 10.25F);
+            this.btnMovements.ItemAppearance.Hovered.Options.UseFont = true;
+            this.btnMovements.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9.75F);
+            this.btnMovements.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnMovements.Name = "btnMovements";
+            this.btnMovements.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnMovements_ItemClick);
+            // 
+            // btnRaporlar
+            // 
+            this.btnRaporlar.Caption = "Raporlar";
+            this.btnRaporlar.Id = 15;
+            this.btnRaporlar.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnRaporlar.ImageOptions.SvgImage")));
+            this.btnRaporlar.Name = "btnRaporlar";
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -298,6 +317,16 @@
             this.ribbonPageGroup1.ItemLinks.Add(this.btnMovements);
             this.ribbonPageGroup1.ItemLinks.Add(this.btnRaporlar);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
+            // 
+            // ribbonPageGroup2
+            // 
+            this.ribbonPageGroup2.Name = "ribbonPageGroup2";
+            this.ribbonPageGroup2.Text = "ribbonPageGroup2";
+            // 
+            // ribbonPageGroup3
+            // 
+            this.ribbonPageGroup3.Name = "ribbonPageGroup3";
+            this.ribbonPageGroup3.Text = "ribbonPageGroup3";
             // 
             // xtraTabbedMdiManager1
             // 
@@ -336,34 +365,6 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Clear, "", -1, true, false, false, editorButtonImageOptions4, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject13, serializableAppearanceObject14, serializableAppearanceObject15, serializableAppearanceObject16, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.repositoryItemRibbonSearchEdit2.Name = "repositoryItemRibbonSearchEdit2";
             this.repositoryItemRibbonSearchEdit2.NullText = "Search";
-            // 
-            // btnMovements
-            // 
-            this.btnMovements.Caption = "Hareketler";
-            this.btnMovements.Id = 14;
-            this.btnMovements.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem1.ImageOptions.SvgImage")));
-            this.btnMovements.ItemAppearance.Hovered.Font = new System.Drawing.Font("Tahoma", 10.25F);
-            this.btnMovements.ItemAppearance.Hovered.Options.UseFont = true;
-            this.btnMovements.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9.75F);
-            this.btnMovements.ItemAppearance.Normal.Options.UseFont = true;
-            this.btnMovements.Name = "btnMovements";
-            // 
-            // ribbonPageGroup2
-            // 
-            this.ribbonPageGroup2.Name = "ribbonPageGroup2";
-            this.ribbonPageGroup2.Text = "ribbonPageGroup2";
-            // 
-            // ribbonPageGroup3
-            // 
-            this.ribbonPageGroup3.Name = "ribbonPageGroup3";
-            this.ribbonPageGroup3.Text = "ribbonPageGroup3";
-            // 
-            // btnRaporlar
-            // 
-            this.btnRaporlar.Caption = "Raporlar";
-            this.btnRaporlar.Id = 15;
-            this.btnRaporlar.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem1.ImageOptions.SvgImage1")));
-            this.btnRaporlar.Name = "btnRaporlar";
             // 
             // FrmMain
             // 

@@ -105,5 +105,16 @@
                 notes.Show();
             }
         }
+
+        FrmMovements movements;
+        private void btnMovements_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (movements == null)
+            {
+                movements = new FrmMovements();
+                movements.MdiParent = this;
+                movements.Show();
+            }
+        }
     }
 }
