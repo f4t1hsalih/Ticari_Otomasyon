@@ -94,7 +94,10 @@
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Constantia", 14.25F);
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmAdmin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Giriş";
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -72,21 +72,21 @@
             // 
             this.xtraTabPage3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("xtraTabPage3.ImageOptions.Image")));
             this.xtraTabPage3.Name = "xtraTabPage3";
-            this.xtraTabPage3.Size = new System.Drawing.Size(0, 0);
+            this.xtraTabPage3.Size = new System.Drawing.Size(1000, 517);
             this.xtraTabPage3.Text = "KasaRaporları";
             // 
             // xtraTabPage4
             // 
             this.xtraTabPage4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("xtraTabPage4.ImageOptions.Image")));
             this.xtraTabPage4.Name = "xtraTabPage4";
-            this.xtraTabPage4.Size = new System.Drawing.Size(0, 0);
+            this.xtraTabPage4.Size = new System.Drawing.Size(1000, 517);
             this.xtraTabPage4.Text = "Gider Raporları";
             // 
             // xtraTabPage5
             // 
             this.xtraTabPage5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("xtraTabPage5.ImageOptions.Image")));
             this.xtraTabPage5.Name = "xtraTabPage5";
-            this.xtraTabPage5.Size = new System.Drawing.Size(0, 0);
+            this.xtraTabPage5.Size = new System.Drawing.Size(1000, 517);
             this.xtraTabPage5.Text = "Personel Raporları";
             // 
             // FrmReports
@@ -96,6 +96,7 @@
             this.ClientSize = new System.Drawing.Size(1002, 561);
             this.Controls.Add(this.xtraTabControl1);
             this.Name = "FrmReports";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Raporlar";
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
             this.xtraTabControl1.ResumeLayout(false);

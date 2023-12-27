@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace Ticari_Otomasyon
@@ -15,6 +10,32 @@ namespace Ticari_Otomasyon
         public FrmStocks()
         {
             InitializeComponent();
+        }
+
+        SqlConn con = new SqlConn();
+
+        private void FrmStocks_Load(object sender, EventArgs e)
+        {
+            SqlDataAdapter da = new SqlDataAdapter("Select name, sum(piece) as 'Miktar' from tbl_products group by name", con.connection());
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            gridControl1.DataSource = dt;
+
+            SqlCommand cmd = new SqlCommand("Select name, sum(piece) as 'Miktar' from tbl_products group by name", con.connection());
+            SqlDataReader dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                chartControl1.Series["Series 1"].Points.AddPoint(Convert.ToString(dr[0]), int.Parse(dr[1].ToString()));
+            }
+            con.connection().Close();
+
+            SqlCommand cmd2 = new SqlCommand("Select province, count(*) from tbl_companies group by province", con.connection());
+            SqlDataReader dr2 = cmd2.ExecuteReader();
+            while (dr2.Read())
+            {
+                chartControl2.Series["Series 1"].Points.AddPoint(Convert.ToString(dr2[0]), int.Parse(dr2[1].ToString()));
+            }
+            con.connection().Close();
         }
     }
 }
