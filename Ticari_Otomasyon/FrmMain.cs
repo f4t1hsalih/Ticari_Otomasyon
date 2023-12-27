@@ -1,4 +1,6 @@
-﻿namespace Ticari_Otomasyon
+﻿using DevExpress.XtraReports;
+
+namespace Ticari_Otomasyon
 {
     public partial class FrmMain : DevExpress.XtraBars.Ribbon.RibbonForm
     {
@@ -114,6 +116,40 @@
                 movements = new FrmMovements();
                 movements.MdiParent = this;
                 movements.Show();
+            }
+        }
+
+        FrmStocks stocks;
+
+        private void btnStocks_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (stocks == null)
+            {
+                stocks = new FrmStocks();
+                stocks.MdiParent = this;
+                stocks.Show();
+            }
+        }
+
+        private void btnCase_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
+        }
+
+        private void btnSettings_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
+        }
+
+        FrmReports reports;
+
+        private void btnReports_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (reports == null)
+            {
+                reports = new FrmReports();
+                reports.MdiParent = this;
+                reports.Show();
             }
         }
     }
