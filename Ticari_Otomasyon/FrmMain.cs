@@ -1,4 +1,5 @@
-﻿using DevExpress.XtraReports;
+﻿using DevExpress.PivotGrid.OLAP.Mdx;
+using DevExpress.XtraReports;
 
 namespace Ticari_Otomasyon
 {
@@ -136,9 +137,16 @@ namespace Ticari_Otomasyon
 
         }
 
+        FrmSettings settings;
+
         private void btnSettings_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-
+            if (settings == null)
+            {
+                settings = new FrmSettings();
+                settings.MdiParent = this;
+                settings.Show();
+            }
         }
 
         FrmReports reports;
