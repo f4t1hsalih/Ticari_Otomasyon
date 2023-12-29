@@ -83,6 +83,7 @@
             // 
             // FrmAdmin
             // 
+            this.AcceptButton = this.btnEntry;
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
