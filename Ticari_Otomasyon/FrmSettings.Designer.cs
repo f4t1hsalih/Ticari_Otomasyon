@@ -33,8 +33,8 @@
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtUsername = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
@@ -81,21 +81,23 @@
             this.label2.TabIndex = 11;
             this.label2.Text = "Şifre:";
             // 
-            // textBox1
+            // txtUsername
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox1.Location = new System.Drawing.Point(210, 237);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(129, 26);
-            this.textBox1.TabIndex = 12;
+            this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtUsername.Location = new System.Drawing.Point(210, 237);
+            this.txtUsername.MaxLength = 10;
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(129, 26);
+            this.txtUsername.TabIndex = 12;
             // 
-            // textBox2
+            // txtPassword
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox2.Location = new System.Drawing.Point(210, 269);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(129, 26);
-            this.textBox2.TabIndex = 13;
+            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtPassword.Location = new System.Drawing.Point(210, 269);
+            this.txtPassword.MaxLength = 10;
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(129, 26);
+            this.txtPassword.TabIndex = 13;
             // 
             // simpleButton1
             // 
@@ -107,6 +109,7 @@
             this.simpleButton1.Size = new System.Drawing.Size(129, 40);
             this.simpleButton1.TabIndex = 14;
             this.simpleButton1.Text = "KAYDET";
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // FrmSettings
             // 
@@ -116,8 +119,8 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(492, 375);
             this.Controls.Add(this.simpleButton1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.gridControl1);
@@ -126,6 +129,7 @@
             this.Name = "FrmSettings";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ayarlar";
+            this.Load += new System.EventHandler(this.FrmSettings_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
@@ -139,8 +143,8 @@
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtUsername;
+        private System.Windows.Forms.TextBox txtPassword;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
     }
 }

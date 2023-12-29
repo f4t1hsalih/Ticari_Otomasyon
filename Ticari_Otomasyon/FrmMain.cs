@@ -144,7 +144,6 @@ namespace Ticari_Otomasyon
             if (settings == null)
             {
                 settings = new FrmSettings();
-                settings.MdiParent = this;
                 settings.Show();
             }
         }
