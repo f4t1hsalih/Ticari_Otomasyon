@@ -99,6 +99,12 @@
     <Compile Include="FrmBanks.Designer.cs">
       <DependentUpon>FrmBanks.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmCase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCase.Designer.cs">
+      <DependentUpon>FrmCase.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmCompanies.cs">
       <SubType>Form</SubType>
     </Compile>
