@@ -132,9 +132,16 @@ namespace Ticari_Otomasyon
             }
         }
 
+        FrmCase till;
+
         private void btnCase_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-
+            if (till == null)
+            {
+                till = new FrmCase();
+                till.MdiParent = this;
+                till.Show();
+            }
         }
 
         FrmSettings settings;
