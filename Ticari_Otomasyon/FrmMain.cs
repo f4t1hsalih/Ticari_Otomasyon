@@ -1,5 +1,6 @@
 ﻿using DevExpress.PivotGrid.OLAP.Mdx;
 using DevExpress.XtraReports;
+using System.Windows.Forms;
 
 namespace Ticari_Otomasyon
 {
@@ -165,6 +166,11 @@ namespace Ticari_Otomasyon
                 reports.MdiParent = this;
                 reports.Show();
             }
+        }
+
+        private void FrmMain_FormClosed(object sender, System.Windows.Forms.FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
