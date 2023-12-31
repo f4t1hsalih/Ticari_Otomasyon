@@ -11,6 +11,8 @@ namespace Ticari_Otomasyon
             InitializeComponent();
         }
 
+        public string user;
+
         FrmProducts products;
         private void btnProducts_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
@@ -140,6 +142,7 @@ namespace Ticari_Otomasyon
             if (till == null)
             {
                 till = new FrmCase();
+                till.name = user;
                 till.MdiParent = this;
                 till.Show();
             }

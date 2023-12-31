@@ -12,6 +12,8 @@ namespace Ticari_Otomasyon
             InitializeComponent();
         }
 
+        public string name;
+
         SqlConn con = new SqlConn();
 
         void ListCustMovements()
@@ -36,6 +38,8 @@ namespace Ticari_Otomasyon
 
         private void FrmCase_Load(object sender, EventArgs e)
         {
+            lblActiveUser.Text = name;
+
             ListCustMovements();
             ListCompMovements();
 
@@ -117,6 +121,26 @@ namespace Ticari_Otomasyon
                 lblStockNumber.Text = dr8[0].ToString();
             }
             dr8.Close();
+            con.connection().Close();
+
+            //1.Charta controle elektrik faturası son 4 ay listeleme
+            SqlCommand cmd9 = new SqlCommand("select top 4 month, electric from tbl_expenses order by expense_id desc", con.connection());
+            SqlDataReader dr9 = cmd9.ExecuteReader();
+            if (dr9.Read())
+            {
+                chartControl1.Series["Aylar"].Points.Add(new DevExpress.XtraCharts.SeriesPoint(dr9[0], dr9[1]));
+            }
+            dr9.Close();
+            con.connection().Close();
+
+            //2.Charta controle su faturası son 4 ay listeleme
+            SqlCommand cmd10 = new SqlCommand("select top 4 month, water from tbl_expenses order by expense_id desc", con.connection());
+            SqlDataReader dr10 = cmd10.ExecuteReader();
+            if (dr10.Read())
+            {
+                chartControl2.Series["Aylar"].Points.Add(new DevExpress.XtraCharts.SeriesPoint(dr10[0], dr10[1]));
+            }
+            dr10.Close();
             con.connection().Close();
         }
     }

@@ -40,6 +40,7 @@ namespace Ticari_Otomasyon
             if (dr.Read())
             {
                 FrmMain main = new FrmMain();
+                main.user = txtUsername.Text;
                 main.Show();
                 this.Hide();
             }
