@@ -66,10 +66,12 @@
             // 
             // groupControl1
             // 
+            this.groupControl1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.groupControl1.Controls.Add(this.gridControl1);
-            this.groupControl1.Location = new System.Drawing.Point(12, 12);
+            this.groupControl1.Location = new System.Drawing.Point(12, 284);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(334, 265);
+            this.groupControl1.Size = new System.Drawing.Size(307, 265);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "AZALAN STOKLAR";
             // 
@@ -79,7 +81,7 @@
             this.gridControl1.Location = new System.Drawing.Point(2, 23);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(330, 240);
+            this.gridControl1.Size = new System.Drawing.Size(303, 240);
             this.gridControl1.TabIndex = 1000;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -98,9 +100,9 @@
             // groupControl2
             // 
             this.groupControl2.Controls.Add(this.gridControl2);
-            this.groupControl2.Location = new System.Drawing.Point(12, 284);
+            this.groupControl2.Location = new System.Drawing.Point(12, 12);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(334, 265);
+            this.groupControl2.Size = new System.Drawing.Size(307, 265);
             this.groupControl2.TabIndex = 1;
             this.groupControl2.Text = "SON 10 HAREKET";
             // 
@@ -110,7 +112,7 @@
             this.gridControl2.Location = new System.Drawing.Point(2, 23);
             this.gridControl2.MainView = this.gridView2;
             this.gridControl2.Name = "gridControl2";
-            this.gridControl2.Size = new System.Drawing.Size(330, 240);
+            this.gridControl2.Size = new System.Drawing.Size(303, 240);
             this.gridControl2.TabIndex = 1000;
             this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView2});
@@ -129,9 +131,9 @@
             // groupControl3
             // 
             this.groupControl3.Controls.Add(this.gridControl3);
-            this.groupControl3.Location = new System.Drawing.Point(350, 284);
+            this.groupControl3.Location = new System.Drawing.Point(325, 13);
             this.groupControl3.Name = "groupControl3";
-            this.groupControl3.Size = new System.Drawing.Size(332, 265);
+            this.groupControl3.Size = new System.Drawing.Size(305, 265);
             this.groupControl3.TabIndex = 3;
             this.groupControl3.Text = "EN ÇOK İŞ YAPILAN 10 FİRMA";
             // 
@@ -141,7 +143,7 @@
             this.gridControl3.Location = new System.Drawing.Point(2, 23);
             this.gridControl3.MainView = this.gridView3;
             this.gridControl3.Name = "gridControl3";
-            this.gridControl3.Size = new System.Drawing.Size(328, 240);
+            this.gridControl3.Size = new System.Drawing.Size(301, 240);
             this.gridControl3.TabIndex = 1000;
             this.gridControl3.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView3});
@@ -159,10 +161,12 @@
             // 
             // groupControl4
             // 
+            this.groupControl4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.groupControl4.Controls.Add(this.gridControl4);
-            this.groupControl4.Location = new System.Drawing.Point(350, 12);
+            this.groupControl4.Location = new System.Drawing.Point(325, 284);
             this.groupControl4.Name = "groupControl4";
-            this.groupControl4.Size = new System.Drawing.Size(334, 265);
+            this.groupControl4.Size = new System.Drawing.Size(307, 265);
             this.groupControl4.TabIndex = 2;
             this.groupControl4.Text = "AJANDA";
             // 
@@ -172,7 +176,7 @@
             this.gridControl4.Location = new System.Drawing.Point(2, 23);
             this.gridControl4.MainView = this.gridView4;
             this.gridControl4.Name = "gridControl4";
-            this.gridControl4.Size = new System.Drawing.Size(330, 240);
+            this.gridControl4.Size = new System.Drawing.Size(303, 240);
             this.gridControl4.TabIndex = 1000;
             this.gridControl4.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView4});
@@ -190,10 +194,12 @@
             // 
             // xtraTabControl1
             // 
-            this.xtraTabControl1.Location = new System.Drawing.Point(690, 12);
+            this.xtraTabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.xtraTabControl1.Location = new System.Drawing.Point(638, 12);
             this.xtraTabControl1.Name = "xtraTabControl1";
             this.xtraTabControl1.SelectedTabPage = this.xtraTabPage1;
-            this.xtraTabControl1.Size = new System.Drawing.Size(300, 537);
+            this.xtraTabControl1.Size = new System.Drawing.Size(352, 537);
             this.xtraTabControl1.TabIndex = 4;
             this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.xtraTabPage1,
@@ -203,7 +209,7 @@
             // 
             this.xtraTabPage1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("xtraTabPage1.ImageOptions.Image")));
             this.xtraTabPage1.Name = "xtraTabPage1";
-            this.xtraTabPage1.Size = new System.Drawing.Size(298, 509);
+            this.xtraTabPage1.Size = new System.Drawing.Size(350, 509);
             this.xtraTabPage1.Text = "DÖVİZ KURLARI";
             // 
             // xtraTabPage2

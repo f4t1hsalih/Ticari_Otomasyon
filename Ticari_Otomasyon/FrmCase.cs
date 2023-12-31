@@ -2,6 +2,7 @@
 using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
+using DevExpress.Charts;
 
 namespace Ticari_Otomasyon
 {
@@ -130,7 +131,7 @@ namespace Ticari_Otomasyon
             gridControl2.DataSource = dt;
 
             //2.Charta controle tüm ayların toplam fatura tutarlarını çekme
-            SqlCommand cmd10 = new SqlCommand("select month(electric + water + natural_gas + internet + ekstra) from tbl_expenses", con.connection());
+            SqlCommand cmd10 = new SqlCommand("select month, (electric + water + natural_gas + internet + ekstra) from tbl_expenses", con.connection());
             SqlDataReader dr10 = cmd10.ExecuteReader();
             if (dr10.Read())
             {
