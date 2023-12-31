@@ -69,13 +69,13 @@
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
+            this.groupControl11 = new DevExpress.XtraEditors.GroupControl();
             this.chartControl2 = new DevExpress.XtraCharts.ChartControl();
+            this.groupControl10 = new DevExpress.XtraEditors.GroupControl();
             this.chartControl1 = new DevExpress.XtraCharts.ChartControl();
             this.gridControl2 = new DevExpress.XtraGrid.GridControl();
             this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.groupControl10 = new DevExpress.XtraEditors.GroupControl();
-            this.groupControl11 = new DevExpress.XtraEditors.GroupControl();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
             this.xtraTabPage1.SuspendLayout();
@@ -102,19 +102,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.xtraTabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl11)).BeginInit();
+            this.groupControl11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl10)).BeginInit();
+            this.groupControl10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(xyDiagram2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(series2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl10)).BeginInit();
-            this.groupControl10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl11)).BeginInit();
-            this.groupControl11.SuspendLayout();
             this.SuspendLayout();
             // 
             // xtraTabControl1
@@ -504,6 +504,15 @@
             this.xtraTabPage2.Size = new System.Drawing.Size(1000, 517);
             this.xtraTabPage2.Text = "Kasa Çıkış Hareketleri";
             // 
+            // groupControl11
+            // 
+            this.groupControl11.Controls.Add(this.chartControl2);
+            this.groupControl11.Location = new System.Drawing.Point(11, 266);
+            this.groupControl11.Name = "groupControl11";
+            this.groupControl11.Size = new System.Drawing.Size(367, 240);
+            this.groupControl11.TabIndex = 13;
+            this.groupControl11.Text = "Toplam Fatura Tutarları";
+            // 
             // chartControl2
             // 
             xyDiagram1.AxisX.VisibleInPanesSerializable = "-1";
@@ -520,6 +529,15 @@
         series1};
             this.chartControl2.Size = new System.Drawing.Size(357, 209);
             this.chartControl2.TabIndex = 11;
+            // 
+            // groupControl10
+            // 
+            this.groupControl10.Controls.Add(this.chartControl1);
+            this.groupControl10.Location = new System.Drawing.Point(11, 3);
+            this.groupControl10.Name = "groupControl10";
+            this.groupControl10.Size = new System.Drawing.Size(367, 257);
+            this.groupControl10.TabIndex = 12;
+            this.groupControl10.Text = "***";
             // 
             // chartControl1
             // 
@@ -568,24 +586,6 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // groupControl10
-            // 
-            this.groupControl10.Controls.Add(this.chartControl1);
-            this.groupControl10.Location = new System.Drawing.Point(11, 3);
-            this.groupControl10.Name = "groupControl10";
-            this.groupControl10.Size = new System.Drawing.Size(367, 257);
-            this.groupControl10.TabIndex = 12;
-            this.groupControl10.Text = "***";
-            // 
-            // groupControl11
-            // 
-            this.groupControl11.Controls.Add(this.chartControl2);
-            this.groupControl11.Location = new System.Drawing.Point(11, 266);
-            this.groupControl11.Name = "groupControl11";
-            this.groupControl11.Size = new System.Drawing.Size(367, 240);
-            this.groupControl11.TabIndex = 13;
-            this.groupControl11.Text = "Toplam Fatura Tutarları";
-            // 
             // FrmCase
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -593,6 +593,7 @@
             this.ClientSize = new System.Drawing.Size(1002, 561);
             this.Controls.Add(this.xtraTabControl1);
             this.Name = "FrmCase";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kasa";
             this.Load += new System.EventHandler(this.FrmCase_Load);
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
@@ -630,19 +631,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.xtraTabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl11)).EndInit();
+            this.groupControl11.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(series1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl10)).EndInit();
+            this.groupControl10.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(xyDiagram2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(series2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl10)).EndInit();
-            this.groupControl10.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl11)).EndInit();
-            this.groupControl11.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

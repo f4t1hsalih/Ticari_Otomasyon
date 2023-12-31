@@ -123,6 +123,12 @@ namespace Ticari_Otomasyon
             dr8.Close();
             con.connection().Close();
 
+            SqlCommand cmd9 = new SqlCommand("select * from tbl_expenses", con.connection());
+            SqlDataAdapter da = new SqlDataAdapter(cmd9);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            gridControl2.DataSource = dt;
+
             //2.Charta controle tüm ayların toplam fatura tutarlarını çekme
             SqlCommand cmd10 = new SqlCommand("select month(electric + water + natural_gas + internet + ekstra) from tbl_expenses", con.connection());
             SqlDataReader dr10 = cmd10.ExecuteReader();
@@ -131,7 +137,7 @@ namespace Ticari_Otomasyon
                 chartControl2.Series["Aylar"].Points.Add(new DevExpress.XtraCharts.SeriesPoint(dr10[0], dr10[1]));
             }
             dr10.Close();
-            con.connection().Close();
+            con.connection().Close(); 
         }
         int sayac;
         private void timer1_Tick(object sender, EventArgs e)

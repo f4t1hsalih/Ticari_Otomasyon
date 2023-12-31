@@ -175,5 +175,27 @@ namespace Ticari_Otomasyon
         {
             Application.Exit();
         }
+
+        FrmQuickGlance quickGlance;
+
+        private void btnMainPage_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (quickGlance == null)
+            {
+                quickGlance = new FrmQuickGlance();
+                quickGlance.MdiParent = this;
+                quickGlance.Show();
+            }
+        }
+
+        private void FrmMain_Load(object sender, System.EventArgs e)
+        {
+            if (quickGlance == null)
+            {
+                quickGlance = new FrmQuickGlance();
+                quickGlance.MdiParent = this;
+                quickGlance.Show();
+            }
+        }
     }
 }
