@@ -43,8 +43,10 @@
             this.gridView4 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
-            this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
+            this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlStocks)).BeginInit();
@@ -64,6 +66,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
             this.xtraTabPage1.SuspendLayout();
+            this.xtraTabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupControl1
@@ -218,13 +222,6 @@
             this.xtraTabPage1.Size = new System.Drawing.Size(350, 509);
             this.xtraTabPage1.Text = "DÖVİZ KURLARI";
             // 
-            // xtraTabPage2
-            // 
-            this.xtraTabPage2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("xtraTabPage2.ImageOptions.Image")));
-            this.xtraTabPage2.Name = "xtraTabPage2";
-            this.xtraTabPage2.Size = new System.Drawing.Size(350, 509);
-            this.xtraTabPage2.Text = "HABERLER";
-            // 
             // webBrowser1
             // 
             this.webBrowser1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -233,6 +230,41 @@
             this.webBrowser1.Name = "webBrowser1";
             this.webBrowser1.Size = new System.Drawing.Size(350, 509);
             this.webBrowser1.TabIndex = 0;
+            // 
+            // xtraTabPage2
+            // 
+            this.xtraTabPage2.Controls.Add(this.listBox1);
+            this.xtraTabPage2.Controls.Add(this.pictureBox1);
+            this.xtraTabPage2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("xtraTabPage2.ImageOptions.Image")));
+            this.xtraTabPage2.Name = "xtraTabPage2";
+            this.xtraTabPage2.Size = new System.Drawing.Size(350, 509);
+            this.xtraTabPage2.Text = "HABERLER";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(344, 89);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // listBox1
+            // 
+            this.listBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.listBox1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.HorizontalScrollbar = true;
+            this.listBox1.ItemHeight = 16;
+            this.listBox1.Location = new System.Drawing.Point(3, 98);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(344, 404);
+            this.listBox1.TabIndex = 1;
             // 
             // FrmQuickGlance
             // 
@@ -267,6 +299,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
             this.xtraTabControl1.ResumeLayout(false);
             this.xtraTabPage1.ResumeLayout(false);
+            this.xtraTabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -289,5 +323,7 @@
         private DevExpress.XtraTab.XtraTabPage xtraTabPage1;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage2;
         private System.Windows.Forms.WebBrowser webBrowser1;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

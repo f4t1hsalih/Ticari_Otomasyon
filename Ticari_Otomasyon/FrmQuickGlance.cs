@@ -2,6 +2,7 @@
 using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
+using System.Xml;
 
 namespace Ticari_Otomasyon
 {
@@ -46,12 +47,25 @@ namespace Ticari_Otomasyon
             gridControlFihrist.DataSource = dt;
         }
 
+        void News()
+        {
+            XmlTextReader xmlread = new XmlTextReader("https://www.haberturk.com/rss");
+            while (xmlread.Read())
+            {
+                if (xmlread.Name=="title")
+                {
+                    listBox1.Items.Add(xmlread.ReadString());
+                }
+            }
+        }
+
         private void FrmQuickGlance_Load(object sender, EventArgs e)
         {
             Stocks();
             Agenda();
             CompMovements();
             Fihrist();
+            News();
 
             webBrowser1.Navigate("http://www.tcmb.gov.tr/kurlar/today.xml");
         }
