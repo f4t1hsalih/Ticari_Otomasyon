@@ -123,18 +123,8 @@ namespace Ticari_Otomasyon
             dr8.Close();
             con.connection().Close();
 
-            //1.Charta controle elektrik faturası son 4 ay listeleme
-            SqlCommand cmd9 = new SqlCommand("select top 4 month, electric from tbl_expenses order by expense_id desc", con.connection());
-            SqlDataReader dr9 = cmd9.ExecuteReader();
-            if (dr9.Read())
-            {
-                chartControl1.Series["Aylar"].Points.Add(new DevExpress.XtraCharts.SeriesPoint(dr9[0], dr9[1]));
-            }
-            dr9.Close();
-            con.connection().Close();
-
-            //2.Charta controle su faturası son 4 ay listeleme
-            SqlCommand cmd10 = new SqlCommand("select top 4 month, water from tbl_expenses order by expense_id desc", con.connection());
+            //2.Charta controle tüm ayların toplam fatura tutarlarını çekme
+            SqlCommand cmd10 = new SqlCommand("select month(electric + water + natural_gas + internet + ekstra) from tbl_expenses", con.connection());
             SqlDataReader dr10 = cmd10.ExecuteReader();
             if (dr10.Read())
             {
@@ -142,6 +132,91 @@ namespace Ticari_Otomasyon
             }
             dr10.Close();
             con.connection().Close();
+        }
+        int sayac;
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            sayac++;
+
+            //1.Chart controle elektrik faturası son 4 ay listeleme
+            if (sayac > 0 && sayac <= 4)
+            {
+                groupControl10.Text = "Elektrik";
+                chartControl1.Series["Aylar"].Points.Clear();
+
+                SqlCommand cmd = new SqlCommand("select top 4 month, electric from tbl_expenses order by expense_id desc", con.connection());
+                SqlDataReader dr = cmd.ExecuteReader();
+                if (dr.Read())
+                {
+                    chartControl1.Series["Aylar"].Points.Add(new DevExpress.XtraCharts.SeriesPoint(dr[0], dr[1]));
+                }
+                dr.Close();
+                con.connection().Close();
+            }
+            //1.Chart controle su faturası son 4 ay listeleme
+            if (sayac > 4 && sayac <= 8)
+            {
+                groupControl10.Text = "Su";
+                chartControl1.Series["Aylar"].Points.Clear();
+
+                SqlCommand cmd = new SqlCommand("select top 4 month, water from tbl_expenses order by expense_id desc", con.connection());
+                SqlDataReader dr = cmd.ExecuteReader();
+                if (dr.Read())
+                {
+                    chartControl1.Series["Aylar"].Points.Add(new DevExpress.XtraCharts.SeriesPoint(dr[0], dr[1]));
+                }
+                dr.Close();
+                con.connection().Close();
+            }
+            //1.Chart controle doğalgaz faturası son 4 ay listeleme
+            if (sayac > 8 && sayac <= 12)
+            {
+                groupControl10.Text = "Doğalgaz";
+                chartControl1.Series["Aylar"].Points.Clear();
+
+                SqlCommand cmd = new SqlCommand("select top 4 month, natural_gas from tbl_expenses order by expense_id desc", con.connection());
+                SqlDataReader dr = cmd.ExecuteReader();
+                if (dr.Read())
+                {
+                    chartControl1.Series["Aylar"].Points.Add(new DevExpress.XtraCharts.SeriesPoint(dr[0], dr[1]));
+                }
+                dr.Close();
+                con.connection().Close();
+            }
+            //1.Chart controle internet faturası son 4 ay listeleme
+            if (sayac > 12 && sayac <= 16)
+            {
+                groupControl10.Text = "İnternet";
+                chartControl1.Series["Aylar"].Points.Clear();
+
+                SqlCommand cmd = new SqlCommand("select top 4 month, internet from tbl_expenses order by expense_id desc", con.connection());
+                SqlDataReader dr = cmd.ExecuteReader();
+                if (dr.Read())
+                {
+                    chartControl1.Series["Aylar"].Points.Add(new DevExpress.XtraCharts.SeriesPoint(dr[0], dr[1]));
+                }
+                dr.Close();
+                con.connection().Close();
+            }
+            //1.Chart controle ekstra faturası son 4 ay listeleme
+            if (sayac > 16 && sayac <= 20)
+            {
+                groupControl10.Text = "Ekstra";
+                chartControl1.Series["Aylar"].Points.Clear();
+
+                SqlCommand cmd = new SqlCommand("select top 4 month, ekstra from tbl_expenses order by expense_id desc", con.connection());
+                SqlDataReader dr = cmd.ExecuteReader();
+                if (dr.Read())
+                {
+                    chartControl1.Series["Aylar"].Points.Add(new DevExpress.XtraCharts.SeriesPoint(dr[0], dr[1]));
+                }
+                dr.Close();
+                con.connection().Close();
+            }
+            if (sayac > 20)
+            {
+                sayac = 0;
+            }
         }
     }
 }

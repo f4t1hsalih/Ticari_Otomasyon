@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCase));
             DevExpress.XtraCharts.XYDiagram xyDiagram1 = new DevExpress.XtraCharts.XYDiagram();
             DevExpress.XtraCharts.Series series1 = new DevExpress.XtraCharts.Series();
@@ -72,6 +73,9 @@
             this.chartControl1 = new DevExpress.XtraCharts.ChartControl();
             this.gridControl2 = new DevExpress.XtraGrid.GridControl();
             this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.groupControl10 = new DevExpress.XtraEditors.GroupControl();
+            this.groupControl11 = new DevExpress.XtraEditors.GroupControl();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
             this.xtraTabPage1.SuspendLayout();
@@ -107,6 +111,10 @@
             ((System.ComponentModel.ISupportInitialize)(series2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl10)).BeginInit();
+            this.groupControl10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl11)).BeginInit();
+            this.groupControl11.SuspendLayout();
             this.SuspendLayout();
             // 
             // xtraTabControl1
@@ -488,8 +496,8 @@
             this.xtraTabPage2.Appearance.HeaderHotTracked.Options.UseFont = true;
             this.xtraTabPage2.Appearance.PageClient.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.xtraTabPage2.Appearance.PageClient.Options.UseFont = true;
-            this.xtraTabPage2.Controls.Add(this.chartControl2);
-            this.xtraTabPage2.Controls.Add(this.chartControl1);
+            this.xtraTabPage2.Controls.Add(this.groupControl11);
+            this.xtraTabPage2.Controls.Add(this.groupControl10);
             this.xtraTabPage2.Controls.Add(this.gridControl2);
             this.xtraTabPage2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("xtraTabPage2.ImageOptions.SvgImage")));
             this.xtraTabPage2.Name = "xtraTabPage2";
@@ -502,7 +510,7 @@
             xyDiagram1.AxisY.VisibleInPanesSerializable = "-1";
             this.chartControl2.Diagram = xyDiagram1;
             this.chartControl2.Legend.LegendID = -1;
-            this.chartControl2.Location = new System.Drawing.Point(5, 275);
+            this.chartControl2.Location = new System.Drawing.Point(5, 26);
             this.chartControl2.Name = "chartControl2";
             series1.Name = "Aylar";
             series1.SeriesID = 3;
@@ -510,7 +518,7 @@
             series1.View = sideBySideBarSeriesView1;
             this.chartControl2.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series1};
-            this.chartControl2.Size = new System.Drawing.Size(332, 222);
+            this.chartControl2.Size = new System.Drawing.Size(357, 209);
             this.chartControl2.TabIndex = 11;
             // 
             // chartControl1
@@ -521,13 +529,13 @@
             xyDiagram2.AxisY.VisibleInPanesSerializable = "-1";
             this.chartControl1.Diagram = xyDiagram2;
             this.chartControl1.Legend.LegendID = -1;
-            this.chartControl1.Location = new System.Drawing.Point(4, 32);
+            this.chartControl1.Location = new System.Drawing.Point(5, 26);
             this.chartControl1.Name = "chartControl1";
             series2.Name = "Aylar";
             series2.SeriesID = 3;
             this.chartControl1.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series2};
-            this.chartControl1.Size = new System.Drawing.Size(332, 222);
+            this.chartControl1.Size = new System.Drawing.Size(357, 222);
             this.chartControl1.TabIndex = 10;
             // 
             // gridControl2
@@ -535,10 +543,10 @@
             this.gridControl2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.gridControl2.Location = new System.Drawing.Point(343, 0);
+            this.gridControl2.Location = new System.Drawing.Point(384, 0);
             this.gridControl2.MainView = this.gridView2;
             this.gridControl2.Name = "gridControl2";
-            this.gridControl2.Size = new System.Drawing.Size(657, 506);
+            this.gridControl2.Size = new System.Drawing.Size(616, 506);
             this.gridControl2.TabIndex = 9;
             this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView2});
@@ -553,6 +561,30 @@
             this.gridView2.OptionsBehavior.AllowDeleteRows = DevExpress.Utils.DefaultBoolean.False;
             this.gridView2.OptionsBehavior.Editable = false;
             this.gridView2.OptionsView.ShowGroupPanel = false;
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // groupControl10
+            // 
+            this.groupControl10.Controls.Add(this.chartControl1);
+            this.groupControl10.Location = new System.Drawing.Point(11, 3);
+            this.groupControl10.Name = "groupControl10";
+            this.groupControl10.Size = new System.Drawing.Size(367, 257);
+            this.groupControl10.TabIndex = 12;
+            this.groupControl10.Text = "***";
+            // 
+            // groupControl11
+            // 
+            this.groupControl11.Controls.Add(this.chartControl2);
+            this.groupControl11.Location = new System.Drawing.Point(11, 266);
+            this.groupControl11.Name = "groupControl11";
+            this.groupControl11.Size = new System.Drawing.Size(367, 240);
+            this.groupControl11.TabIndex = 13;
+            this.groupControl11.Text = "Toplam Fatura Tutarları";
             // 
             // FrmCase
             // 
@@ -607,6 +639,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl10)).EndInit();
+            this.groupControl10.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl11)).EndInit();
+            this.groupControl11.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -651,5 +687,8 @@
         private DevExpress.XtraCharts.ChartControl chartControl2;
         private DevExpress.XtraGrid.GridControl gridControl3;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView3;
+        private System.Windows.Forms.Timer timer1;
+        private DevExpress.XtraEditors.GroupControl groupControl10;
+        private DevExpress.XtraEditors.GroupControl groupControl11;
     }
 }
