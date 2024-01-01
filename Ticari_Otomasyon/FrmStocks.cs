@@ -37,5 +37,17 @@ namespace Ticari_Otomasyon
             }
             con.connection().Close();
         }
+
+        private void gridView1_DoubleClick(object sender, EventArgs e)
+        {
+            FrmStockDetail stockDetail = new FrmStockDetail();
+            DataRow dr = gridView1.GetDataRow(gridView1.FocusedRowHandle);
+
+            if (dr != null)
+            {
+                stockDetail.name = dr["name"].ToString();
+            }
+            stockDetail.Show();
+        }
     }
 }
