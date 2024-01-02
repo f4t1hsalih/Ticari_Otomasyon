@@ -59,12 +59,14 @@ namespace Ticari_Otomasyon
                 cmd.Parameters.AddWithValue("@p7", txtDeliverer.Text);
                 cmd.Parameters.AddWithValue("@p8", txtReceiver.Text);
                 cmd.ExecuteNonQuery();
+                con.connection().Close();
                 MessageBox.Show("Fatura Başarıyla Kaydedildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 List();
                 Clean();
             }
 
-            if (txtInvoiceProdID.Text != "")
+            //Firma Carisi
+            if (txtInvoiceProdID.Text != "" && cmbType.Text == "Firma")
             {
                 double amount, price, total;
                 price = Convert.ToDouble(txtPrice.Text);
@@ -79,6 +81,71 @@ namespace Ticari_Otomasyon
                 cmd.Parameters.AddWithValue("@p4", txtTotal.Text);
                 cmd.Parameters.AddWithValue("@p5", txtInvoiceProdID.Text);
                 cmd.ExecuteNonQuery();
+                con.connection().Close();
+
+                //Hareket tablosuna veri kaydetme
+                SqlCommand cmd2 = new SqlCommand("insert into tbl_compMovements (prod_id, piece, staff_id, comp_id, price, total, invoice_info_id, date) values (@h1, @h2, @h3, @h4, @h5, @h6, @h7, @h8)", con.connection());
+                cmd2.Parameters.AddWithValue("@h1", txtProdID.Text);
+                cmd2.Parameters.AddWithValue("@h2", txtAmount.Text);
+                cmd2.Parameters.AddWithValue("@h3", txtStaffID.Text);
+                cmd2.Parameters.AddWithValue("@h4", txtCompID.Text);
+                cmd2.Parameters.AddWithValue("@h5", decimal.Parse(txtPrice.Text));
+                cmd2.Parameters.AddWithValue("@h6", decimal.Parse(txtTotal.Text));
+                cmd2.Parameters.AddWithValue("@h7", txtInvoiceProdID.Text);
+                cmd2.Parameters.AddWithValue("@h8", mskDate.Text);
+                cmd2.ExecuteNonQuery();
+                con.connection().Close();
+
+                //Stok Sayısını Azaltma
+                SqlCommand cmd3 = new SqlCommand("update tbl_products set piece=piece-@s1 where prod_id=@s2", con.connection());
+                cmd3.Parameters.AddWithValue("@s1", txtAmount.Text);
+                cmd3.Parameters.AddWithValue("@s2", txtProdID.Text);
+                cmd3.ExecuteNonQuery();
+                con.connection().Close();
+
+                MessageBox.Show("Faturaya Ait Ürün Başarıyla Kaydedildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                List();
+                Clean();
+            }
+
+            //Müşteri Carisi
+            else if (txtInvoiceProdID.Text != "" && cmbType.Text == "Müşteri")
+            {
+                double amount, price, total;
+                price = Convert.ToDouble(txtPrice.Text);
+                amount = Convert.ToDouble(txtAmount.Text);
+                total = amount * price;
+                txtTotal.Text = total.ToString();
+
+                SqlCommand cmd = new SqlCommand("insert into tbl_invoice_detail (prod_name, amount, price, total, invoice_info_id) values (@p1, @p2, @p3, @p4, @p5)", con.connection());
+                cmd.Parameters.AddWithValue("@p1", txtProdName.Text);
+                cmd.Parameters.AddWithValue("@p2", txtAmount.Text);
+                cmd.Parameters.AddWithValue("@p3", txtPrice.Text);
+                cmd.Parameters.AddWithValue("@p4", txtTotal.Text);
+                cmd.Parameters.AddWithValue("@p5", txtInvoiceProdID.Text);
+                cmd.ExecuteNonQuery();
+                con.connection().Close();
+
+                //Hareket tablosuna veri kaydetme
+                SqlCommand cmd2 = new SqlCommand("insert into tbl_custMovements (prod_id, piece, staff_id, cust_id, price, total, invoice_info_id, date) values (@h1, @h2, @h3, @h4, @h5, @h6, @h7, @h8)", con.connection());
+                cmd2.Parameters.AddWithValue("@h1", txtProdID.Text);
+                cmd2.Parameters.AddWithValue("@h2", txtAmount.Text);
+                cmd2.Parameters.AddWithValue("@h3", txtStaffID.Text);
+                cmd2.Parameters.AddWithValue("@h4", txtCompID.Text);
+                cmd2.Parameters.AddWithValue("@h5", decimal.Parse(txtPrice.Text));
+                cmd2.Parameters.AddWithValue("@h6", decimal.Parse(txtTotal.Text));
+                cmd2.Parameters.AddWithValue("@h7", txtInvoiceProdID.Text);
+                cmd2.Parameters.AddWithValue("@h8", mskDate.Text);
+                cmd2.ExecuteNonQuery();
+                con.connection().Close();
+
+                //Stok Sayısını Azaltma
+                SqlCommand cmd3 = new SqlCommand("update tbl_products set piece=piece-@s1 where prod_id=@s2", con.connection());
+                cmd3.Parameters.AddWithValue("@s1", txtAmount.Text);
+                cmd3.Parameters.AddWithValue("@s2", txtProdID.Text);
+                cmd3.ExecuteNonQuery();
+                con.connection().Close();
+
                 MessageBox.Show("Faturaya Ait Ürün Başarıyla Kaydedildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 List();
                 Clean();

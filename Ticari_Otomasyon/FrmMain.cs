@@ -16,7 +16,7 @@ namespace Ticari_Otomasyon
         FrmProducts products;
         private void btnProducts_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (products == null)
+            if (products == null || products.IsDisposed)
             {
                 products = new FrmProducts();
                 products.MdiParent = this;
@@ -27,7 +27,7 @@ namespace Ticari_Otomasyon
         FrmCustomers customers;
         private void btnCustomers_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (customers == null)
+            if (customers == null || customers.IsDisposed)
             {
                 customers = new FrmCustomers();
                 customers.MdiParent = this;
@@ -38,7 +38,7 @@ namespace Ticari_Otomasyon
         FrmCompanies companies;
         private void btnCompanies_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (companies == null)
+            if (companies == null || companies.IsDisposed)
             {
                 companies = new FrmCompanies();
                 companies.MdiParent = this;
@@ -49,7 +49,7 @@ namespace Ticari_Otomasyon
         FrmStaff staff;
         private void btnStaff_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (staff == null)
+            if (staff == null || staff.IsDisposed)
             {
                 staff = new FrmStaff();
                 staff.MdiParent = this;
@@ -60,7 +60,7 @@ namespace Ticari_Otomasyon
         FrmDirectory directory;
         private void btnDirectory_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (directory == null)
+            if (directory == null || directory.IsDisposed)
             {
                 directory = new FrmDirectory();
                 directory.MdiParent = this;
@@ -71,7 +71,7 @@ namespace Ticari_Otomasyon
         FrmExpences expences;
         private void btnExpenses_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (expences == null)
+            if (expences == null || expences.IsDisposed)
             {
                 expences = new FrmExpences();
                 expences.MdiParent = this;
@@ -82,7 +82,7 @@ namespace Ticari_Otomasyon
         FrmBanks banks;
         private void btnBanks_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (banks == null)
+            if (banks == null || banks.IsDisposed)
             {
                 banks = new FrmBanks();
                 banks.MdiParent = this;
@@ -93,7 +93,7 @@ namespace Ticari_Otomasyon
         FrmBills bills;
         private void btnBills_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (bills == null)
+            if (bills == null || bills.IsDisposed)
             {
                 bills = new FrmBills();
                 bills.MdiParent = this;
@@ -104,7 +104,7 @@ namespace Ticari_Otomasyon
         FrmNotes notes;
         private void btnNotes_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (notes == null)
+            if (notes == null || notes.IsDisposed)
             {
                 notes = new FrmNotes();
                 notes.MdiParent = this;
@@ -115,7 +115,7 @@ namespace Ticari_Otomasyon
         FrmMovements movements;
         private void btnMovements_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (movements == null)
+            if (movements == null || movements.IsDisposed)
             {
                 movements = new FrmMovements();
                 movements.MdiParent = this;
@@ -127,7 +127,7 @@ namespace Ticari_Otomasyon
 
         private void btnStocks_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (stocks == null)
+            if (stocks == null || stocks.IsDisposed)
             {
                 stocks = new FrmStocks();
                 stocks.MdiParent = this;
@@ -139,7 +139,7 @@ namespace Ticari_Otomasyon
 
         private void btnCase_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (till == null)
+            if (till == null || till.IsDisposed)
             {
                 till = new FrmCase();
                 till.name = user;
@@ -152,7 +152,7 @@ namespace Ticari_Otomasyon
 
         private void btnSettings_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (settings == null)
+            if (settings == null || settings.IsDisposed)
             {
                 settings = new FrmSettings();
                 settings.Show();
@@ -163,7 +163,7 @@ namespace Ticari_Otomasyon
 
         private void btnReports_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (reports == null)
+            if (reports == null || reports.IsDisposed)
             {
                 reports = new FrmReports();
                 reports.MdiParent = this;
@@ -180,7 +180,7 @@ namespace Ticari_Otomasyon
 
         private void btnMainPage_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (quickGlance == null)
+            if (quickGlance == null || quickGlance.IsDisposed)
             {
                 quickGlance = new FrmQuickGlance();
                 quickGlance.MdiParent = this;
@@ -190,7 +190,7 @@ namespace Ticari_Otomasyon
 
         private void FrmMain_Load(object sender, System.EventArgs e)
         {
-            if (quickGlance == null)
+            if (quickGlance == null || quickGlance.IsDisposed)
             {
                 quickGlance = new FrmQuickGlance();
                 quickGlance.MdiParent = this;
